@@ -1,0 +1,627 @@
+// +--------------------------------------------------------------+
+// |                     Single Key Bindings                      |
+// +--------------------------------------------------------------+
+	[ ] F1 @{ app:open-help }
+	[ ] F2 @{ workspace:edit-file-title }
+	[x] F3
+	[x] F4
+	[x] F5
+	[x] F6
+	[x] F7
+	[x] F8
+	[x] F9
+	[x] F10
+	[x] F11
+	[x] F12
+
+// +--------------------------------------------------------------+
+// |                        Ctrl+ Bindings                        |
+// +--------------------------------------------------------------+
+	[x] Ctrl+F1
+	[x] Ctrl+F2
+	[x] Ctrl+F3
+	[x] Ctrl+F4
+	[x] Ctrl+F5
+	[x] Ctrl+F6
+	[x] Ctrl+F7
+	[x] Ctrl+F8
+	[x] Ctrl+F9
+	[x] Ctrl+F10
+	[x] Ctrl+F11
+	[x] Ctrl+F12
+
+	[x] Ctrl+`
+	[ ] Ctrl+1 @{ workspace:goto-tab-1 }
+	[ ] Ctrl+2 @{ workspace:goto-tab-2 }
+	[ ] Ctrl+3 @{ workspace:goto-tab-3 }
+	[ ] Ctrl+4 @{ workspace:goto-tab-4 }
+	[ ] Ctrl+5 @{ workspace:goto-tab-5 }
+	[ ] Ctrl+6 @{ workspace:goto-tab-6 }
+	[ ] Ctrl+7 @{ workspace:goto-tab-7 }
+	[ ] Ctrl+8 @{ workspace:goto-tab-8 }
+	[ ] Ctrl+9 @{ workspace:goto-last-tab }
+	[x] Ctrl+0
+	[x] Ctrl+-
+	[x] Ctrl+=
+
+	[x] Ctrl+q
+	[ ] Ctrl+w @{ workspace:close }
+	[ ] Ctrl+e @{ markdown:toggle-preview }
+	[x] Ctrl+r
+	[ ] Ctrl+t @{ workspace:new-tab }
+	[x] Ctrl+y
+	[x] Ctrl+u
+	[ ] Ctrl+i @{ editor:toggle-italics }
+	[ ] Ctrl+o @{ switcher:open }
+	[ ] Ctrl+p @{ command-palette:open }
+	[x] Ctrl+[
+	[x] Ctrl+]
+	[x] Ctrl+\\
+
+	[x] Ctrl+a
+	[ ] Ctrl+s @{ editor:save-file }
+	[ ] Ctrl+d @{ editor:delete-paragraph }
+	[ ] Ctrl+f @{ editor:open-search }
+	[ ] Ctrl+g @{ graph:open }
+	[ ] Ctrl+h @{ editor:open-search-replace }
+	[x] Ctrl+j
+	[ ] Ctrl+k @{ editor:insert-link }
+	[ ] Ctrl+l @{ editor:toggle-checklist-status }
+	[ ] Ctrl+; @{ markdown:add-metadata-property }
+	[x] Ctrl+'
+
+	[x] Ctrl+z
+	[x] Ctrl+x
+	[x] Ctrl+c
+	[x] Ctrl+v
+	[ ] Ctrl+b @{ editor:toggle-bold }
+	[ ] Ctrl+n @{ file-explorer:new-file }
+	[x] Ctrl+m
+	[ ] Ctrl+, @{ app:open-settings }
+	[x] Ctrl+.
+	[ ] Ctrl+/ @{ editor:toggle-comments }
+
+	[x] Ctrl+Insert
+	[x] Ctrl+Delete
+	[x] Ctrl+Home
+	[x] Ctrl+End
+	[ ] Ctrl+PageUp @{ workspace:previous-tab }
+	[ ] Ctrl+PageDown @{ workspace:next-tab }
+
+	[x] Ctrl+ArrowUp
+	[x] Ctrl+ArrowDown
+	[x] Ctrl+ArrowLeft
+	[x] Ctrl+ArrowRight
+
+	[x] Ctrl+Escape
+	[x] Ctrl+Backspace
+	[ ] Ctrl+Enter @{ editor:open-link-in-new-leaf }
+	[ ] Ctrl+Tab @{ workspace:next-tab }
+	[x] Ctrl+Space
+	[x] Ctrl+Cancel
+	[x] Ctrl+Pause
+
+	[x] Ctrl++
+	[x] Ctrl+-
+	[x] Ctrl+*
+	[x] Ctrl+/
+	[x] Ctrl+Numpad0
+	[x] Ctrl+Numpad1
+	[x] Ctrl+Numpad2
+	[x] Ctrl+Numpad3
+	[x] Ctrl+Numpad4
+	[x] Ctrl+Numpad5
+	[x] Ctrl+Numpad6
+	[x] Ctrl+Numpad7
+	[x] Ctrl+Numpad8
+	[x] Ctrl+Numpad9
+
+// +--------------------------------------------------------------+
+// |                        Ctrl+Shift+ Bindings                        |
+// +--------------------------------------------------------------+
+	[x] Ctrl+Shift+F1
+	[x] Ctrl+Shift+F2
+	[x] Ctrl+Shift+F3
+	[x] Ctrl+Shift+F4
+	[x] Ctrl+Shift+F5
+	[x] Ctrl+Shift+F6
+	[x] Ctrl+Shift+F7
+	[x] Ctrl+Shift+F8
+	[x] Ctrl+Shift+F9
+	[x] Ctrl+Shift+F10
+	[x] Ctrl+Shift+F11
+	[x] Ctrl+Shift+F12
+
+	[x] Ctrl+Shift+`
+	[x] Ctrl+Shift+1
+	[x] Ctrl+Shift+2
+	[x] Ctrl+Shift+3
+	[x] Ctrl+Shift+4
+	[x] Ctrl+Shift+5
+	[x] Ctrl+Shift+6
+	[x] Ctrl+Shift+7
+	[x] Ctrl+Shift+8
+	[x] Ctrl+Shift+9
+	[x] Ctrl+Shift+0
+	[x] Ctrl+Shift+-
+	[x] Ctrl+Shift+=
+
+	[x] Ctrl+Shift+q
+	[ ] Ctrl+Shift+w @{ workspace:close-window }
+	[x] Ctrl+Shift+e
+	[x] Ctrl+Shift+r
+	[ ] Ctrl+Shift+t @{ workspace:undo-close-pane }
+	[x] Ctrl+Shift+y
+	[x] Ctrl+Shift+u
+	[x] Ctrl+Shift+i
+	[x] Ctrl+Shift+o
+	[x] Ctrl+Shift+p
+	[x] Ctrl+Shift+[
+	[x] Ctrl+Shift+]
+	[x] Ctrl+Shift+\\
+
+	[x] Ctrl+Shift+a
+	[x] Ctrl+Shift+s
+	[x] Ctrl+Shift+d
+	[ ] Ctrl+Shift+f @{ global-search:open }
+	[x] Ctrl+Shift+g
+	[x] Ctrl+Shift+h
+	[x] Ctrl+Shift+j
+	[x] Ctrl+Shift+k
+	[x] Ctrl+Shift+l
+	[x] Ctrl+Shift+;
+	[x] Ctrl+Shift+'
+
+	[x] Ctrl+Shift+z
+	[x] Ctrl+Shift+x
+	[x] Ctrl+Shift+c
+	[x] Ctrl+Shift+v
+	[x] Ctrl+Shift+b
+	[ ] Ctrl+Shift+n @{ file-explorer:new-file-in-new-pane }
+	[x] Ctrl+Shift+m
+	[x] Ctrl+Shift+,
+	[x] Ctrl+Shift+.
+	[x] Ctrl+Shift+/
+
+	[x] Ctrl+Shift+Insert
+	[x] Ctrl+Shift+Delete
+	[x] Ctrl+Shift+Home
+	[x] Ctrl+Shift+End
+	[x] Ctrl+Shift+PageUp
+	[x] Ctrl+Shift+PageDown
+
+	[x] Ctrl+Shift+ArrowUp
+	[x] Ctrl+Shift+ArrowDown
+	[x] Ctrl+Shift+ArrowLeft
+	[x] Ctrl+Shift+ArrowRight
+
+	[x] Ctrl+Shift+Escape
+	[x] Ctrl+Shift+Backspace
+	[x] Ctrl+Shift+Enter
+	[ ] Ctrl+Shift+Tab @{ workspace:previous-tab }
+	[x] Ctrl+Shift+Space
+	[x] Ctrl+Shift+Cancel
+	[x] Ctrl+Shift+Pause
+
+	[x] Ctrl+Shift++
+	[x] Ctrl+Shift+-
+	[x] Ctrl+Shift+*
+	[x] Ctrl+Shift+/
+	[x] Ctrl+Shift+Numpad0
+	[x] Ctrl+Shift+Numpad1
+	[x] Ctrl+Shift+Numpad2
+	[x] Ctrl+Shift+Numpad3
+	[x] Ctrl+Shift+Numpad4
+	[x] Ctrl+Shift+Numpad5
+	[x] Ctrl+Shift+Numpad6
+	[x] Ctrl+Shift+Numpad7
+	[x] Ctrl+Shift+Numpad8
+	[x] Ctrl+Shift+Numpad9
+
+// +--------------------------------------------------------------+
+// |                        Alt+ Bindings                        |
+// +--------------------------------------------------------------+
+	[x] Alt+F1
+	[x] Alt+F2
+	[x] Alt+F3
+	[x] Alt+F4
+	[x] Alt+F5
+	[x] Alt+F6
+	[x] Alt+F7
+	[x] Alt+F8
+	[x] Alt+F9
+	[x] Alt+F10
+	[x] Alt+F11
+	[x] Alt+F12
+
+	[x] Alt+`
+	[x] Alt+1
+	[x] Alt+2
+	[x] Alt+3
+	[x] Alt+4
+	[x] Alt+5
+	[x] Alt+6
+	[x] Alt+7
+	[x] Alt+8
+	[x] Alt+9
+	[x] Alt+0
+	[x] Alt+-
+	[x] Alt+=
+
+	[x] Alt+q
+	[x] Alt+w
+	[x] Alt+e
+	[x] Alt+r
+	[x] Alt+t
+	[x] Alt+y
+	[x] Alt+u
+	[x] Alt+i
+	[x] Alt+o
+	[x] Alt+p
+	[x] Alt+[
+	[x] Alt+]
+	[x] Alt+\\
+
+	[x] Alt+a
+	[x] Alt+s
+	[x] Alt+d
+	[x] Alt+f
+	[x] Alt+g
+	[x] Alt+h
+	[x] Alt+j
+	[x] Alt+k
+	[x] Alt+l
+	[x] Alt+;
+	[x] Alt+'
+
+	[x] Alt+z
+	[x] Alt+x
+	[x] Alt+c
+	[x] Alt+v
+	[x] Alt+b
+	[x] Alt+n
+	[x] Alt+m
+	[x] Alt+,
+	[x] Alt+.
+	[x] Alt+/
+
+	[x] Alt+Insert
+	[x] Alt+Delete
+	[x] Alt+Home
+	[x] Alt+End
+	[x] Alt+PageUp
+	[x] Alt+PageDown
+
+	[x] Alt+ArrowUp
+	[x] Alt+ArrowDown
+	[x] Alt+ArrowLeft
+	[x] Alt+ArrowRight
+
+	[x] Alt+Escape
+	[x] Alt+Backspace
+	[ ] Alt+Enter @{ editor:follow-link }
+	[x] Alt+Tab
+	[x] Alt+Space
+	[x] Alt+Cancel
+	[x] Alt+Pause
+
+	[x] Alt++
+	[x] Alt+-
+	[x] Alt+*
+	[x] Alt+/
+	[x] Alt+Numpad0
+	[x] Alt+Numpad1
+	[x] Alt+Numpad2
+	[x] Alt+Numpad3
+	[x] Alt+Numpad4
+	[x] Alt+Numpad5
+	[x] Alt+Numpad6
+	[x] Alt+Numpad7
+	[x] Alt+Numpad8
+	[x] Alt+Numpad9
+
+// +--------------------------------------------------------------+
+// |                        Alt+Shift+ Bindings                        |
+// +--------------------------------------------------------------+
+	[x] Alt+Shift+F1
+	[x] Alt+Shift+F2
+	[x] Alt+Shift+F3
+	[x] Alt+Shift+F4
+	[x] Alt+Shift+F5
+	[x] Alt+Shift+F6
+	[x] Alt+Shift+F7
+	[x] Alt+Shift+F8
+	[x] Alt+Shift+F9
+	[x] Alt+Shift+F10
+	[x] Alt+Shift+F11
+	[x] Alt+Shift+F12
+
+	[x] Alt+Shift+`
+	[x] Alt+Shift+1
+	[x] Alt+Shift+2
+	[x] Alt+Shift+3
+	[x] Alt+Shift+4
+	[x] Alt+Shift+5
+	[x] Alt+Shift+6
+	[x] Alt+Shift+7
+	[x] Alt+Shift+8
+	[x] Alt+Shift+9
+	[x] Alt+Shift+0
+	[x] Alt+Shift+-
+	[x] Alt+Shift+=
+
+	[x] Alt+Shift+q
+	[x] Alt+Shift+w
+	[x] Alt+Shift+e
+	[x] Alt+Shift+r
+	[x] Alt+Shift+t
+	[x] Alt+Shift+y
+	[x] Alt+Shift+u
+	[x] Alt+Shift+i
+	[x] Alt+Shift+o
+	[x] Alt+Shift+p
+	[x] Alt+Shift+[
+	[x] Alt+Shift+]
+	[x] Alt+Shift+\\
+
+	[x] Alt+Shift+a
+	[x] Alt+Shift+s
+	[x] Alt+Shift+d
+	[x] Alt+Shift+f
+	[x] Alt+Shift+g
+	[x] Alt+Shift+h
+	[x] Alt+Shift+j
+	[x] Alt+Shift+k
+	[x] Alt+Shift+l
+	[x] Alt+Shift+;
+	[x] Alt+Shift+'
+
+	[x] Alt+Shift+z
+	[x] Alt+Shift+x
+	[x] Alt+Shift+c
+	[x] Alt+Shift+v
+	[x] Alt+Shift+b
+	[x] Alt+Shift+n
+	[x] Alt+Shift+m
+	[x] Alt+Shift+,
+	[x] Alt+Shift+.
+	[x] Alt+Shift+/
+
+	[x] Alt+Shift+Insert
+	[x] Alt+Shift+Delete
+	[x] Alt+Shift+Home
+	[x] Alt+Shift+End
+	[x] Alt+Shift+PageUp
+	[x] Alt+Shift+PageDown
+
+	[x] Alt+Shift+ArrowUp
+	[x] Alt+Shift+ArrowDown
+	[x] Alt+Shift+ArrowLeft
+	[x] Alt+Shift+ArrowRight
+
+	[x] Alt+Shift+Escape
+	[x] Alt+Shift+Backspace
+	[x] Alt+Shift+Enter
+	[x] Alt+Shift+Tab
+	[x] Alt+Shift+Space
+	[x] Alt+Shift+Cancel
+	[x] Alt+Shift+Pause
+
+	[x] Alt+Shift++
+	[x] Alt+Shift+-
+	[x] Alt+Shift+*
+	[x] Alt+Shift+/
+	[x] Alt+Shift+Numpad0
+	[x] Alt+Shift+Numpad1
+	[x] Alt+Shift+Numpad2
+	[x] Alt+Shift+Numpad3
+	[x] Alt+Shift+Numpad4
+	[x] Alt+Shift+Numpad5
+	[x] Alt+Shift+Numpad6
+	[x] Alt+Shift+Numpad7
+	[x] Alt+Shift+Numpad8
+	[x] Alt+Shift+Numpad9
+
+// +--------------------------------------------------------------+
+// |                        Ctrl+Alt+ Bindings                        |
+// +--------------------------------------------------------------+
+	[x] Ctrl+Alt+F1
+	[x] Ctrl+Alt+F2
+	[x] Ctrl+Alt+F3
+	[x] Ctrl+Alt+F4
+	[x] Ctrl+Alt+F5
+	[x] Ctrl+Alt+F6
+	[x] Ctrl+Alt+F7
+	[x] Ctrl+Alt+F8
+	[x] Ctrl+Alt+F9
+	[x] Ctrl+Alt+F10
+	[x] Ctrl+Alt+F11
+	[x] Ctrl+Alt+F12
+
+	[x] Ctrl+Alt+`
+	[x] Ctrl+Alt+1
+	[x] Ctrl+Alt+2
+	[x] Ctrl+Alt+3
+	[x] Ctrl+Alt+4
+	[x] Ctrl+Alt+5
+	[x] Ctrl+Alt+6
+	[x] Ctrl+Alt+7
+	[x] Ctrl+Alt+8
+	[x] Ctrl+Alt+9
+	[x] Ctrl+Alt+0
+	[x] Ctrl+Alt+-
+	[x] Ctrl+Alt+=
+
+	[x] Ctrl+Alt+q
+	[x] Ctrl+Alt+w
+	[x] Ctrl+Alt+e
+	[x] Ctrl+Alt+r
+	[x] Ctrl+Alt+t
+	[x] Ctrl+Alt+y
+	[x] Ctrl+Alt+u
+	[x] Ctrl+Alt+i
+	[x] Ctrl+Alt+o
+	[x] Ctrl+Alt+p
+	[x] Ctrl+Alt+[
+	[x] Ctrl+Alt+]
+	[x] Ctrl+Alt+\\
+
+	[x] Ctrl+Alt+a
+	[x] Ctrl+Alt+s
+	[x] Ctrl+Alt+d
+	[x] Ctrl+Alt+f
+	[x] Ctrl+Alt+g
+	[x] Ctrl+Alt+h
+	[x] Ctrl+Alt+j
+	[x] Ctrl+Alt+k
+	[x] Ctrl+Alt+l
+	[x] Ctrl+Alt+;
+	[x] Ctrl+Alt+'
+
+	[x] Ctrl+Alt+z
+	[x] Ctrl+Alt+x
+	[x] Ctrl+Alt+c
+	[x] Ctrl+Alt+v
+	[x] Ctrl+Alt+b
+	[x] Ctrl+Alt+n
+	[x] Ctrl+Alt+m
+	[x] Ctrl+Alt+,
+	[x] Ctrl+Alt+.
+	[x] Ctrl+Alt+/
+
+	[x] Ctrl+Alt+Insert
+	[x] Ctrl+Alt+Delete
+	[x] Ctrl+Alt+Home
+	[x] Ctrl+Alt+End
+	[x] Ctrl+Alt+PageUp
+	[x] Ctrl+Alt+PageDown
+
+	[x] Ctrl+Alt+ArrowUp
+	[x] Ctrl+Alt+ArrowDown
+	[ ] Ctrl+Alt+ArrowLeft @{ app:go-back }
+	[ ] Ctrl+Alt+ArrowRight @{ app:go-forward }
+
+	[x] Ctrl+Alt+Escape
+	[x] Ctrl+Alt+Backspace
+	[ ] Ctrl+Alt+Enter @{ editor:open-link-in-new-split }
+	[x] Ctrl+Alt+Tab
+	[x] Ctrl+Alt+Space
+	[x] Ctrl+Alt+Cancel
+	[x] Ctrl+Alt+Pause
+
+	[x] Ctrl+Alt++
+	[x] Ctrl+Alt+-
+	[x] Ctrl+Alt+*
+	[x] Ctrl+Alt+/
+	[x] Ctrl+Alt+Numpad0
+	[x] Ctrl+Alt+Numpad1
+	[x] Ctrl+Alt+Numpad2
+	[x] Ctrl+Alt+Numpad3
+	[x] Ctrl+Alt+Numpad4
+	[x] Ctrl+Alt+Numpad5
+	[x] Ctrl+Alt+Numpad6
+	[x] Ctrl+Alt+Numpad7
+	[x] Ctrl+Alt+Numpad8
+	[x] Ctrl+Alt+Numpad9
+
+// +--------------------------------------------------------------+
+// |                        Ctrl+Alt+Shift+ Bindings                        |
+// +--------------------------------------------------------------+
+	[x] Ctrl+Alt+Shift+F1
+	[x] Ctrl+Alt+Shift+F2
+	[x] Ctrl+Alt+Shift+F3
+	[x] Ctrl+Alt+Shift+F4
+	[x] Ctrl+Alt+Shift+F5
+	[x] Ctrl+Alt+Shift+F6
+	[x] Ctrl+Alt+Shift+F7
+	[x] Ctrl+Alt+Shift+F8
+	[x] Ctrl+Alt+Shift+F9
+	[x] Ctrl+Alt+Shift+F10
+	[x] Ctrl+Alt+Shift+F11
+	[x] Ctrl+Alt+Shift+F12
+
+	[x] Ctrl+Alt+Shift+`
+	[x] Ctrl+Alt+Shift+1
+	[x] Ctrl+Alt+Shift+2
+	[x] Ctrl+Alt+Shift+3
+	[x] Ctrl+Alt+Shift+4
+	[x] Ctrl+Alt+Shift+5
+	[x] Ctrl+Alt+Shift+6
+	[x] Ctrl+Alt+Shift+7
+	[x] Ctrl+Alt+Shift+8
+	[x] Ctrl+Alt+Shift+9
+	[x] Ctrl+Alt+Shift+0
+	[x] Ctrl+Alt+Shift+-
+	[x] Ctrl+Alt+Shift+=
+
+	[x] Ctrl+Alt+Shift+q
+	[x] Ctrl+Alt+Shift+w
+	[x] Ctrl+Alt+Shift+e
+	[x] Ctrl+Alt+Shift+r
+	[x] Ctrl+Alt+Shift+t
+	[x] Ctrl+Alt+Shift+y
+	[x] Ctrl+Alt+Shift+u
+	[x] Ctrl+Alt+Shift+i
+	[x] Ctrl+Alt+Shift+o
+	[x] Ctrl+Alt+Shift+p
+	[x] Ctrl+Alt+Shift+[
+	[x] Ctrl+Alt+Shift+]
+	[x] Ctrl+Alt+Shift+\\
+
+	[x] Ctrl+Alt+Shift+a
+	[x] Ctrl+Alt+Shift+s
+	[x] Ctrl+Alt+Shift+d
+	[x] Ctrl+Alt+Shift+f
+	[x] Ctrl+Alt+Shift+g
+	[x] Ctrl+Alt+Shift+h
+	[x] Ctrl+Alt+Shift+j
+	[x] Ctrl+Alt+Shift+k
+	[x] Ctrl+Alt+Shift+l
+	[x] Ctrl+Alt+Shift+;
+	[x] Ctrl+Alt+Shift+'
+
+	[x] Ctrl+Alt+Shift+z
+	[x] Ctrl+Alt+Shift+x
+	[x] Ctrl+Alt+Shift+c
+	[x] Ctrl+Alt+Shift+v
+	[x] Ctrl+Alt+Shift+b
+	[x] Ctrl+Alt+Shift+n
+	[x] Ctrl+Alt+Shift+m
+	[x] Ctrl+Alt+Shift+,
+	[x] Ctrl+Alt+Shift+.
+	[x] Ctrl+Alt+Shift+/
+
+	[x] Ctrl+Alt+Shift+Insert
+	[x] Ctrl+Alt+Shift+Delete
+	[x] Ctrl+Alt+Shift+Home
+	[x] Ctrl+Alt+Shift+End
+	[x] Ctrl+Alt+Shift+PageUp
+	[x] Ctrl+Alt+Shift+PageDown
+
+	[x] Ctrl+Alt+Shift+ArrowUp
+	[x] Ctrl+Alt+Shift+ArrowDown
+	[x] Ctrl+Alt+Shift+ArrowLeft
+	[x] Ctrl+Alt+Shift+ArrowRight
+
+	[x] Ctrl+Alt+Shift+Escape
+	[x] Ctrl+Alt+Shift+Backspace
+	[ ] Ctrl+Alt+Shift+Enter @{ editor:open-link-in-new-window }
+	[x] Ctrl+Alt+Shift+Tab
+	[x] Ctrl+Alt+Shift+Space
+	[x] Ctrl+Alt+Shift+Cancel
+	[x] Ctrl+Alt+Shift+Pause
+
+	[x] Ctrl+Alt+Shift++
+	[x] Ctrl+Alt+Shift+-
+	[x] Ctrl+Alt+Shift+*
+	[x] Ctrl+Alt+Shift+/
+	[x] Ctrl+Alt+Shift+Numpad0
+	[x] Ctrl+Alt+Shift+Numpad1
+	[x] Ctrl+Alt+Shift+Numpad2
+	[x] Ctrl+Alt+Shift+Numpad3
+	[x] Ctrl+Alt+Shift+Numpad4
+	[x] Ctrl+Alt+Shift+Numpad5
+	[x] Ctrl+Alt+Shift+Numpad6
+	[x] Ctrl+Alt+Shift+Numpad7
+	[x] Ctrl+Alt+Shift+Numpad8
+	[x] Ctrl+Alt+Shift+Numpad9
