@@ -18,7 +18,7 @@
 // |                       Shift+ Bindings                        |
 // +--------------------------------------------------------------+
 	[x] Shift+F1
-	[x] Shift+F2
+	[!] Shift+F2 @{ editor:rename-heading }
 	[x] Shift+F3
 	[x] Shift+F4
 	[x] Shift+F5
@@ -96,55 +96,55 @@
 	[x] Ctrl+F11
 	[x] Ctrl+F12
 
-	[x] Ctrl+`
-	[ ] Ctrl+1 @{ workspace:goto-tab-1 }
-	[ ] Ctrl+2 @{ workspace:goto-tab-2 }
-	[ ] Ctrl+3 @{ workspace:goto-tab-3 }
-	[ ] Ctrl+4 @{ workspace:goto-tab-4 }
-	[ ] Ctrl+5 @{ workspace:goto-tab-5 }
-	[ ] Ctrl+6 @{ workspace:goto-tab-6 }
-	[ ] Ctrl+7 @{ workspace:goto-tab-7 }
-	[ ] Ctrl+8 @{ workspace:goto-tab-8 }
-	[ ] Ctrl+9 @{ workspace:goto-last-tab }
+	[!] Ctrl+` @{ editor:insert-codeblock }
+	[!] Ctrl+1 @{ editor:set-heading-1 } //(Used to be workspace:goto-tab-1)
+	[!] Ctrl+2 @{ editor:set-heading-2 } //(Used to be workspace:goto-tab-2)
+	[!] Ctrl+3 @{ editor:set-heading-3 } //(Used to be workspace:goto-tab-3)
+	[!] Ctrl+4 @{ editor:set-heading-4 } //(Used to be workspace:goto-tab-4)
+	[!] Ctrl+5 @{ editor:set-heading-5 } //(Used to be workspace:goto-tab-5)
+	[!] Ctrl+6 @{ editor:set-heading-6 } //(Used to be workspace:goto-tab-6)
+	[!] Ctrl+7 //(Used to be workspace:goto-tab-7)
+	[!] Ctrl+8 //(Used to be workspace:goto-tab-8)
+	[!] Ctrl+9 //(Used to be workspace:goto-last-tab)
 	( ) Ctrl+0 Reset Zoom
 	( ) Ctrl+- Zoom Out
 	( ) Ctrl+= Zoom In
 
-	[x] Ctrl+q
+	[!] Ctrl+q @{ backlink:open-backlinks }
 	[ ] Ctrl+w @{ workspace:close }
-	[ ] Ctrl+e @{ markdown:toggle-preview }
+	[!] Ctrl+e @{ workspace:undo-close-pane } //(Used to be on Ctrl+Shift+t, used to be markdown:toggle-preview)
 	[x] Ctrl+r
-	[ ] Ctrl+t @{ workspace:new-tab }
+	[!] Ctrl+t @{ editor:toggle-italics } //(Used to be on Ctrl+i, used to be workspace:new-tab)
 	( ) Ctrl+y Redo
-	[x] Ctrl+u
-	[ ] Ctrl+i @{ editor:toggle-italics }
-	[ ] Ctrl+o @{ switcher:open }
-	[ ] Ctrl+p @{ command-palette:open }
+	[!] Ctrl+u @{ editor:toggle-bullet-list }
+	[!] Ctrl+i @{ editor:fold-more } //(Used to be editor:toggle-italics)
+	[!] Ctrl+o @{ editor:fold-less } //(Used to be switcher:open)
+	[!] Ctrl+p @{ switcher:open } //(Used to be on ctrl+o, used to be command-palette:open)
 	( ) Ctrl+[ Decrease Indent
 	( ) Ctrl+] Increase Indent
-	[x] Ctrl+\\
+	[!] Ctrl+\\ @{ workspace:split-vertical }
 
 	( ) Ctrl+a Select All
 	[ ] Ctrl+s @{ editor:save-file }
-	[ ] Ctrl+d @{ editor:delete-paragraph }
+	[!] Ctrl+d //(Used to be editor:delete-paragraph)
 	[ ] Ctrl+f @{ editor:open-search }
-	[ ] Ctrl+g @{ graph:open }
-	[ ] Ctrl+h @{ editor:open-search-replace }
-	[x] Ctrl+j
+	[ ] Ctrl+g //(Used to be graph:open)
+	[!] Ctrl+h @{ editor:insert-horizontal-rule } //(Used to be editor:open-search-replace)
+	[!] Ctrl+j @{ editor:toggle-blockquote }
 	[ ] Ctrl+k @{ editor:insert-link }
-	[ ] Ctrl+l @{ editor:toggle-checklist-status }
+	[!] Ctrl+l //(Used to be editor:toggle-checklist-status)
 	[ ] Ctrl+; @{ markdown:add-metadata-property }
-	[x] Ctrl+'
+	[!] Ctrl+' @{ app:open-settings } //(Used to be on Ctrl+,)
 
 	( ) Ctrl+z Undo
 	( ) Ctrl+x Cut
 	( ) Ctrl+c Copy
 	( ) Ctrl+v Paste
 	[ ] Ctrl+b @{ editor:toggle-bold }
-	[ ] Ctrl+n @{ file-explorer:new-file }
-	[x] Ctrl+m
-	[ ] Ctrl+, @{ app:open-settings }
-	[x] Ctrl+.
+	[!] Ctrl+n @{ workspace:new-tab } //(Used to be file-explorer:new-file)
+	[!] Ctrl+m @{ bookmarks:bookmark-current-view }
+	[!] Ctrl+, @{ app:go-back } //(Used to be on Ctrl+Alt+ArrowLeft, used to be app:open-settings)
+	[!] Ctrl+. @{ app:go-forward } //(Used to be on Ctrl+Alt+ArrowRight)
 	[ ] Ctrl+/ @{ editor:toggle-comments }
 
 	[x] Ctrl+Insert
@@ -212,16 +212,16 @@
 	[x] Ctrl+Shift+-
 	[x] Ctrl+Shift+=
 
-	[x] Ctrl+Shift+q
+	[!] Ctrl+Shift+q @{ outgoing-links:open }
 	[ ] Ctrl+Shift+w @{ workspace:close-window }
 	[x] Ctrl+Shift+e
-	[x] Ctrl+Shift+r
-	[ ] Ctrl+Shift+t @{ workspace:undo-close-pane }
+	[!] Ctrl+Shift+r @{ editor:delete-paragraph } //(Used to be on Ctrl+d)
+	[!] Ctrl+Shift+t //(Used to be workspace:undo-close-pane)
 	[x] Ctrl+Shift+y
 	[x] Ctrl+Shift+u
 	[x] Ctrl+Shift+i
 	[x] Ctrl+Shift+o
-	[x] Ctrl+Shift+p
+	[!] Ctrl+Shift+p @{ markdown:toggle-preview } //(Used to be on Ctrl+e)
 	[x] Ctrl+Shift+[
 	[x] Ctrl+Shift+]
 	[x] Ctrl+Shift+\\
@@ -231,20 +231,20 @@
 	[x] Ctrl+Shift+d
 	[ ] Ctrl+Shift+f @{ global-search:open }
 	[x] Ctrl+Shift+g
-	[x] Ctrl+Shift+h
+	[!] Ctrl+Shift+h @{ editor:toggle-highlight }
 	[x] Ctrl+Shift+j
 	[x] Ctrl+Shift+k
 	[x] Ctrl+Shift+l
 	[x] Ctrl+Shift+;
-	[x] Ctrl+Shift+'
+	[!] Ctrl+Shift+' @{ app:show-debug-info } 
 
 	( ) Ctrl+Shift+z Redo
 	[x] Ctrl+Shift+x
 	[x] Ctrl+Shift+c
 	[x] Ctrl+Shift+v
 	[x] Ctrl+Shift+b
-	[ ] Ctrl+Shift+n @{ file-explorer:new-file-in-new-pane }
-	[x] Ctrl+Shift+m
+	[!] Ctrl+Shift+n @{ file-explorer:new-file } //(Used to be on Ctrl+n, used to be file-explorer:new-file-in-new-pane)
+	[!] Ctrl+Shift+m @{ bookmarks:open }
 	[x] Ctrl+Shift+,
 	[x] Ctrl+Shift+.
 	[x] Ctrl+Shift+/
@@ -330,7 +330,7 @@
 
 	[x] Alt+a
 	[x] Alt+s
-	[x] Alt+d
+	[!] Alt+d @{ outline:open }
 	[x] Alt+f
 	[x] Alt+g
 	[x] Alt+h
@@ -341,7 +341,7 @@
 	[x] Alt+'
 
 	[x] Alt+z
-	[x] Alt+x
+	[!] Alt+x @{ editor:cycle-list-checklist }
 	[x] Alt+c
 	[x] Alt+v
 	[x] Alt+b
@@ -443,7 +443,7 @@
 	[x] Alt+Shift+'
 
 	[x] Alt+Shift+z
-	[x] Alt+Shift+x
+	[!] Alt+Shift+x @{ editor:toggle-checklist-status } //(Used to be on Ctrl+l)
 	[x] Alt+Shift+c
 	[x] Alt+Shift+v
 	[x] Alt+Shift+b
@@ -460,8 +460,8 @@
 	[x] Alt+Shift+PageUp
 	[x] Alt+Shift+PageDown
 
-	[x] Alt+Shift+ArrowUp
-	[x] Alt+Shift+ArrowDown
+	[!] Alt+Shift+ArrowUp @{ editor:add-cursor-above }
+	[!] Alt+Shift+ArrowDown @{ editor:add-cursor-below }
 	[x] Alt+Shift+ArrowLeft
 	[x] Alt+Shift+ArrowRight
 
@@ -519,23 +519,23 @@
 	[x] Ctrl+Alt+=
 
 	[x] Ctrl+Alt+q
-	[x] Ctrl+Alt+w
+	[!] Ctrl+Alt+w @{ app:open-vault }
 	[x] Ctrl+Alt+e
 	[x] Ctrl+Alt+r
 	[x] Ctrl+Alt+t
 	[x] Ctrl+Alt+y
 	[x] Ctrl+Alt+u
-	[x] Ctrl+Alt+i
-	[x] Ctrl+Alt+o
-	[x] Ctrl+Alt+p
+	[!] Ctrl+Alt+i @{ editor:fold-all }
+	[!] Ctrl+Alt+o @{ editor:unfold-all }
+	[!] Ctrl+Alt+p @{ command-palette:open } //(used to be on Ctrl+e)
 	[x] Ctrl+Alt+[
 	[x] Ctrl+Alt+]
 	[x] Ctrl+Alt+\\
 
-	[x] Ctrl+Alt+a
-	[x] Ctrl+Alt+s
+	[!] Ctrl+Alt+a @{ open-with-default-app:open }
+	[!] Ctrl+Alt+s @{ app:toggle-left-sidebar }
 	[x] Ctrl+Alt+d
-	[x] Ctrl+Alt+f
+	[!] Ctrl+Alt+f @{ editor:open-search-replace } //(Used to be on Ctrl+h)
 	[x] Ctrl+Alt+g
 	[x] Ctrl+Alt+h
 	[x] Ctrl+Alt+j
@@ -544,13 +544,13 @@
 	[x] Ctrl+Alt+;
 	[x] Ctrl+Alt+'
 
-	[x] Ctrl+Alt+z
-	[x] Ctrl+Alt+x
+	[!] Ctrl+Alt+z @{ workspace:next-tab }
+	[!] Ctrl+Alt+x @{ workspace:previous-tab }
 	[x] Ctrl+Alt+c
 	[x] Ctrl+Alt+v
 	[x] Ctrl+Alt+b
 	[x] Ctrl+Alt+n
-	[x] Ctrl+Alt+m
+	[!] Ctrl+Alt+m @{ bookmarks:bookmark-current-section }
 	[x] Ctrl+Alt+,
 	[x] Ctrl+Alt+.
 	[x] Ctrl+Alt+/
@@ -564,8 +564,8 @@
 
 	[x] Ctrl+Alt+ArrowUp
 	[x] Ctrl+Alt+ArrowDown
-	[ ] Ctrl+Alt+ArrowLeft @{ app:go-back }
-	[ ] Ctrl+Alt+ArrowRight @{ app:go-forward }
+	[!] Ctrl+Alt+ArrowLeft //(Used to be app:go-back)
+	[!] Ctrl+Alt+ArrowRight //(Used to be app:go-forward)
 
 	[x] Ctrl+Alt+Escape
 	[x] Ctrl+Alt+Backspace
@@ -623,7 +623,7 @@
 	[x] Ctrl+Alt+Shift+q
 	[x] Ctrl+Alt+Shift+w
 	[x] Ctrl+Alt+Shift+e
-	[x] Ctrl+Alt+Shift+r
+	[!] Ctrl+Alt+Shift+r @{ app:delete-file }
 	[x] Ctrl+Alt+Shift+t
 	[x] Ctrl+Alt+Shift+y
 	[x] Ctrl+Alt+Shift+u
@@ -634,7 +634,7 @@
 	[x] Ctrl+Alt+Shift+]
 	[x] Ctrl+Alt+Shift+\\
 
-	[x] Ctrl+Alt+Shift+a
+	[!] Ctrl+Alt+Shift+a @{ open-with-default-app:show }
 	[x] Ctrl+Alt+Shift+s
 	[x] Ctrl+Alt+Shift+d
 	[x] Ctrl+Alt+Shift+f
@@ -646,8 +646,8 @@
 	[x] Ctrl+Alt+Shift+;
 	[x] Ctrl+Alt+Shift+'
 
-	[x] Ctrl+Alt+Shift+z
-	[x] Ctrl+Alt+Shift+x
+	[!] Ctrl+Alt+Shift+z @{ editor:focus-left }
+	[!] Ctrl+Alt+Shift+x @{ editor:focus-right }
 	[x] Ctrl+Alt+Shift+c
 	[x] Ctrl+Alt+Shift+v
 	[x] Ctrl+Alt+Shift+b
@@ -666,8 +666,8 @@
 
 	[x] Ctrl+Alt+Shift+ArrowUp
 	[x] Ctrl+Alt+Shift+ArrowDown
-	[x] Ctrl+Alt+Shift+ArrowLeft
-	[x] Ctrl+Alt+Shift+ArrowRight
+	[!] Ctrl+Alt+Shift+ArrowLeft @{ editor:focus-left }
+	[!] Ctrl+Alt+Shift+ArrowRight @{ editor:focus-right }
 
 	[x] Ctrl+Alt+Shift+Escape
 	[x] Ctrl+Alt+Shift+Backspace
