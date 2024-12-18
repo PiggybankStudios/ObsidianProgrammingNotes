@@ -96,7 +96,7 @@
 	[x] Ctrl+F11
 	[x] Ctrl+F12
 
-	[!] Ctrl+` @{ editor:toggle-code }
+	[!] Ctrl+` @{ editor:insert-codeblock }
 	[!] Ctrl+1 @{ editor:set-heading-1 } //(Used to be workspace:goto-tab-1)
 	[!] Ctrl+2 @{ editor:set-heading-2 } //(Used to be workspace:goto-tab-2)
 	[!] Ctrl+3 @{ editor:set-heading-3 } //(Used to be workspace:goto-tab-3)
@@ -198,7 +198,7 @@
 	[x] Ctrl+Shift+F11
 	[x] Ctrl+Shift+F12
 
-	[!] Ctrl+Shift+` @{ editor:insert-codeblock }
+	[x] Ctrl+Shift+`
 	[x] Ctrl+Shift+1
 	[x] Ctrl+Shift+2
 	[x] Ctrl+Shift+3
