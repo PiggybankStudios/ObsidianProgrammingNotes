@@ -6,7 +6,7 @@
 	[x] F3
 	[x] F4
 	[x] F5
-	[x] F6
+	[!] F6 @{ editor:toggle-spellcheck }
 	[x] F7
 	[x] F8
 	[x] F9
@@ -18,7 +18,7 @@
 // |                       Shift+ Bindings                        |
 // +--------------------------------------------------------------+
 	[x] Shift+F1
-	[!] Shift+F2 @{ editor:rename-heading }
+	[x] Shift+F2
 	[x] Shift+F3
 	[x] Shift+F4
 	[x] Shift+F5
@@ -96,7 +96,7 @@
 	[x] Ctrl+F11
 	[x] Ctrl+F12
 
-	[!] Ctrl+` @{ editor:insert-codeblock }
+	[!] Ctrl+` @{ editor:toggle-code }
 	[!] Ctrl+1 @{ editor:set-heading-1 } //(Used to be workspace:goto-tab-1)
 	[!] Ctrl+2 @{ editor:set-heading-2 } //(Used to be workspace:goto-tab-2)
 	[!] Ctrl+3 @{ editor:set-heading-3 } //(Used to be workspace:goto-tab-3)
@@ -113,10 +113,10 @@
 	[!] Ctrl+q @{ backlink:open-backlinks }
 	[ ] Ctrl+w @{ workspace:close }
 	[!] Ctrl+e @{ workspace:undo-close-pane } //(Used to be on Ctrl+Shift+t, used to be markdown:toggle-preview)
-	[x] Ctrl+r
+	[!] Ctrl+r @{ editor:delete-paragraph } //(Used to be on Ctrl+d)
 	[!] Ctrl+t @{ editor:toggle-italics } //(Used to be on Ctrl+i, used to be workspace:new-tab)
 	( ) Ctrl+y Redo
-	[!] Ctrl+u @{ editor:toggle-bullet-list }
+	[!] Ctrl+u @{ obsidian-text-format:uppercase }
 	[!] Ctrl+i @{ editor:fold-more } //(Used to be editor:toggle-italics)
 	[!] Ctrl+o @{ editor:fold-less } //(Used to be switcher:open)
 	[!] Ctrl+p @{ switcher:open } //(Used to be on ctrl+o, used to be command-palette:open)
@@ -128,12 +128,12 @@
 	[ ] Ctrl+s @{ editor:save-file }
 	[!] Ctrl+d //(Used to be editor:delete-paragraph)
 	[ ] Ctrl+f @{ editor:open-search }
-	[ ] Ctrl+g //(Used to be graph:open)
+	[!] Ctrl+g @{ obsidian-textgenerator-plugin:generate-text } //(Used to be graph:open)
 	[!] Ctrl+h @{ editor:insert-horizontal-rule } //(Used to be editor:open-search-replace)
 	[!] Ctrl+j @{ editor:toggle-blockquote }
 	[ ] Ctrl+k @{ editor:insert-link }
 	[!] Ctrl+l //(Used to be editor:toggle-checklist-status)
-	[ ] Ctrl+; @{ markdown:add-metadata-property }
+	[!] Ctrl+; @{ editor:toggle-source } //(Used to be markdown:add-metadata-property)
 	[!] Ctrl+' @{ app:open-settings } //(Used to be on Ctrl+,)
 
 	( ) Ctrl+z Undo
@@ -141,7 +141,7 @@
 	( ) Ctrl+c Copy
 	( ) Ctrl+v Paste
 	[ ] Ctrl+b @{ editor:toggle-bold }
-	[!] Ctrl+n @{ workspace:new-tab } //(Used to be file-explorer:new-file)
+	[!] Ctrl+n @{ workspace:new-tab } //(Used to be on Ctrl+t, used to be file-explorer:new-file)
 	[!] Ctrl+m @{ bookmarks:bookmark-current-view }
 	[!] Ctrl+, @{ app:go-back } //(Used to be on Ctrl+Alt+ArrowLeft, used to be app:open-settings)
 	[!] Ctrl+. @{ app:go-forward } //(Used to be on Ctrl+Alt+ArrowRight)
@@ -198,7 +198,7 @@
 	[x] Ctrl+Shift+F11
 	[x] Ctrl+Shift+F12
 
-	[x] Ctrl+Shift+`
+	[!] Ctrl+Shift+` @{ editor:insert-codeblock }
 	[x] Ctrl+Shift+1
 	[x] Ctrl+Shift+2
 	[x] Ctrl+Shift+3
@@ -215,10 +215,10 @@
 	[!] Ctrl+Shift+q @{ outgoing-links:open }
 	[ ] Ctrl+Shift+w @{ workspace:close-window }
 	[x] Ctrl+Shift+e
-	[!] Ctrl+Shift+r @{ editor:delete-paragraph } //(Used to be on Ctrl+d)
+	[x] Ctrl+Shift+r
 	[!] Ctrl+Shift+t //(Used to be workspace:undo-close-pane)
 	[x] Ctrl+Shift+y
-	[x] Ctrl+Shift+u
+	[!] Ctrl+Shift+u @{ obsidian-text-format:lowercase }
 	[x] Ctrl+Shift+i
 	[x] Ctrl+Shift+o
 	[!] Ctrl+Shift+p @{ markdown:toggle-preview } //(Used to be on Ctrl+e)
@@ -230,12 +230,12 @@
 	[x] Ctrl+Shift+s
 	[x] Ctrl+Shift+d
 	[ ] Ctrl+Shift+f @{ global-search:open }
-	[x] Ctrl+Shift+g
+	[!] Ctrl+Shift+g @{ obsidian-textgenerator-plugin:generate-text-with-metadata }
 	[!] Ctrl+Shift+h @{ editor:toggle-highlight }
 	[x] Ctrl+Shift+j
 	[x] Ctrl+Shift+k
 	[x] Ctrl+Shift+l
-	[x] Ctrl+Shift+;
+	[!] Ctrl+Shift+; @{ markdown:add-metadata-property }
 	[!] Ctrl+Shift+' @{ app:show-debug-info } 
 
 	( ) Ctrl+Shift+z Redo
@@ -320,7 +320,7 @@
 	[x] Alt+r
 	[x] Alt+t
 	[x] Alt+y
-	[x] Alt+u
+	[!] Alt+u @{ workspace:copy-url }
 	[x] Alt+i
 	[x] Alt+o
 	[x] Alt+p
@@ -331,20 +331,20 @@
 	[x] Alt+a
 	[x] Alt+s
 	[!] Alt+d @{ outline:open }
-	[x] Alt+f
+	[!] Alt+f @{ file-explorer:open }
 	[x] Alt+g
 	[x] Alt+h
 	[x] Alt+j
 	[x] Alt+k
 	[x] Alt+l
-	[x] Alt+;
+	[!] Alt+; @{ obsidian-emoji-toolbar:emoji-picker:open-picker }
 	[x] Alt+'
 
 	[x] Alt+z
 	[!] Alt+x @{ editor:cycle-list-checklist }
 	[x] Alt+c
 	[x] Alt+v
-	[x] Alt+b
+	[!] Alt+b @{ editor:toggle-bullet-list }
 	[x] Alt+n
 	[x] Alt+m
 	[x] Alt+,
@@ -515,16 +515,16 @@
 	[x] Ctrl+Alt+8
 	[x] Ctrl+Alt+9
 	[x] Ctrl+Alt+0
-	[x] Ctrl+Alt+-
+	[!] Ctrl+Alt+- @{ editor:toggle-strikethrough }
 	[x] Ctrl+Alt+=
 
 	[x] Ctrl+Alt+q
 	[!] Ctrl+Alt+w @{ app:open-vault }
 	[x] Ctrl+Alt+e
 	[x] Ctrl+Alt+r
-	[x] Ctrl+Alt+t
+	[!] Ctrl+Alt+t @{ insert-current-time }
 	[x] Ctrl+Alt+y
-	[x] Ctrl+Alt+u
+	[!] Ctrl+Alt+u @{ obsidian-text-format:cycle-case }
 	[!] Ctrl+Alt+i @{ editor:fold-all }
 	[!] Ctrl+Alt+o @{ editor:unfold-all }
 	[!] Ctrl+Alt+p @{ command-palette:open } //(used to be on Ctrl+e)
@@ -534,7 +534,7 @@
 
 	[!] Ctrl+Alt+a @{ open-with-default-app:open }
 	[!] Ctrl+Alt+s @{ app:toggle-left-sidebar }
-	[x] Ctrl+Alt+d
+	[!] Ctrl+Alt+d @{ insert-current-date }
 	[!] Ctrl+Alt+f @{ editor:open-search-replace } //(Used to be on Ctrl+h)
 	[x] Ctrl+Alt+g
 	[x] Ctrl+Alt+h
@@ -562,8 +562,8 @@
 	[x] Ctrl+Alt+PageUp
 	[x] Ctrl+Alt+PageDown
 
-	[x] Ctrl+Alt+ArrowUp
-	[x] Ctrl+Alt+ArrowDown
+	[!] Ctrl+Alt+ArrowUp @{ editor:swap-line-up }
+	[!] Ctrl+Alt+ArrowDown @{ editor:swap-line-down }
 	[!] Ctrl+Alt+ArrowLeft //(Used to be app:go-back)
 	[!] Ctrl+Alt+ArrowRight //(Used to be app:go-forward)
 
@@ -635,7 +635,7 @@
 	[x] Ctrl+Alt+Shift+\\
 
 	[!] Ctrl+Alt+Shift+a @{ open-with-default-app:show }
-	[x] Ctrl+Alt+Shift+s
+	[!] Ctrl+Alt+Shift+s @{ app:toggle-right-sidebar }
 	[x] Ctrl+Alt+Shift+d
 	[x] Ctrl+Alt+Shift+f
 	[x] Ctrl+Alt+Shift+g

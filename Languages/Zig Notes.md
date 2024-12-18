@@ -5,7 +5,7 @@
 * https://ziglang.org/learn/build-system/
 * https://andrewkelley.me/
 ## TODO List
-- [ ] a
+- [ ] 
 ## Naming Conventions
 * **Basic Types** = `u8`, `i32`, `f64`, `bool`, etc.
 * **Structs** = `UpperCamelCase`
@@ -34,10 +34,9 @@
 - `[*:0]u8`: A null-terminated pntr of unknown length. **TODO:** Can we calculate length easily through some std func?
 - `*const []u8`: A const pointer to a slice of `u8`. The result of doing `&` on an array of `u8`. Can coerce to `[]const u8`
 - `[5:0]u8`: A null-terminated array of length 5. Can access comptime `.len` and `.ptr`
-
-* To initialize a null-terminated array of bytes you have to omit the type on the left of the `=` and use `[_:0]u8` before curly bracket init `{ 1, 2 }`
+- To initialize a null-terminated array of bytes you have to omit the type on the left of the `=` and use `[_:0]u8` before curly bracket init `{ 1, 2 }`
 	* `const str = [_:0]u8{ 1, 2 };`
-* To turn an array into a slice, you must have const after the `[]` and you must do `&` operator on array
+- To turn an array into a slice, you must have const after the `[]` and you must do `&` operator on array
 	* `const array: [5]u8 = .{1, 2, 3, 4, 5};`
 	* `const slice: []const u8 = &array;`
-* Array lengths must be **comptime** known
+- Array lengths must be **comptime** known

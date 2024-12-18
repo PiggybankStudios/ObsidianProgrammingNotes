@@ -1,2 +1,5 @@
 *.sublime-workspace
 .obsidian/workspace.json
+.space/
+.obsidian/plugins/
+.obsidian/text-generator.json
