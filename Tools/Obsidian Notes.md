@@ -12,6 +12,7 @@
 - [ ] `Ctrl+;` = **Show Selected Hex Value(s) as Color**
 - [ ] `Alt+A` = **Align Text Using Spaces (Multicursor)**
 - [ ] `Ctrl+Enter`/`Ctrl+Shift+Enter` = **New-Line Above/Below Current Line**
+- [ ] `Alt+Q/W/E/R`/`Alt+Shift+QWER` = **Change Naming Convention**
 ## Hotkeys I Need to Learn
 - [ ] `Ctrl+Shift+H` = **Toggle Highlight**
 - [ ] `Ctrl+J` = **Toggle Quote**

@@ -6,11 +6,20 @@
 * https://andrewkelley.me/
 * https://ziglang.org/documentation/master/#Builtin-Functions
 ## TODO List
+- [ ] **How do we handle multiple files in zig?**
+	- We can `@import("file.zig")`, but then it's entire contents go in a const variable, like a namespace. No way to put everything directly in this file's namespace
+	- We can unwrap inner namespaces for each file, like `const GameState = Game.GameState;` so if things are getting especially annoying to type out we can shorten things. But we have to do this shortening for every single file
+	- Only `pub` functions are exposed when `@import`ing a file. Can we make two files "friends" where they share access to non-public types?
+	- Seems like we can `@import` a file and not get unused errors if we don't use it
+	- https://www.reddit.com/r/Zig/comments/143oofw/shortening_the_imports/
+	- If we put public functions and things directly in the file, the file itself can act like a "struct"?
+	- If a top-level files @imports other files, when we import that top-level, can it be like the "index" into the library?
 - [ ] Make a global structure to hold our state
 - [ ] Get a shared library working with **C/C++** and **Zig**
 - [ ] Figure out Vectors and Rectangles in Zig
-- [ ] Follow Vulkan example to get single triangle rendering in GLFW window
-- [ ] Get input from GLFW
+- [ ] Follow Vulkan example to get single triangle rendering in GLFW window https://github.com/slimsag/mach-glfw-vulkan-example
+- [ ] Get keyboard and mouse input from GLFW
+- [ ] Checkout Mason Ramaley's GLFW wrapper? https://github.com/Games-by-Mason/glfw-zig
 ## Random Notes
 - [x] Zig Version: zig-windows-x86_64-**0.14.0-dev.2424**+7cd2c1ce8 downloaded Dec 9th 2024
 - Zig Version: zig-windows-x86_64-**0.13.0** downloaded Dec 14th 2024
@@ -36,10 +45,21 @@
 * **Builtins** = `@camelCase(...)` except the following: `@FieldType`, `@This`, `@Type`, `@TypeOf`, `@Vector`
 * **Globals** = ?
 * **Constants** = ? (as in very obvious values that are given a name, like Pi, not any variable with `const` keyword)
+* **Imported Constants** = `const UpperCamelCase = @import(...);` (i.e. same as **Structs**)
 * **Variables** = `camelCase` (optional unwrapped variables have `_leadingUnderscore`)
 * **Struct Members** = `camelCase`
 * **Enums** = `camelCase`?
 * **Test Names** = `"lowercase_with_underscores"` (we could allow spaces, but debug output includes module name and namespace with periods)
+* **init**, **create**, **destroy**, **deinit**
+	* `create`/`destroy` is used to indicate a `T: type` is part of the allocation call in `Allocator`. When inside our own structure they often mean combined allocation+init or deinit+free in one function
+	* `init`/`deinit` inside our own structs indicate initialization of fields only, not allocation (unless inner fields need allocation/deallocation)
+* **File Names** = `lowercase_with_underscores.zig` (because Windows file system doesn't treat capitalization as important)
+* **Argument Ordering**
+	1. **self** (For member functions)
+	2. **allocator** (if needed)
+	3. **comptime T: type** (generic functions)
+	4. **directObject** (the main thing being operated on)
+	5. ...
 ## Useful Functions/Types in `std`
 - `std.debug.captureStackTrace(...) std.builtin.StackTrace`:  can be used to capture the stack trace, and then printed later with `std.debug.dumpStackTrace(trace)`
 - `std.debug.print(format, args)`
