@@ -1,3 +1,17 @@
+## Hotkeys I Want
+- [ ] `Ctrl+Space` = **Center view on cursor**
+- [ ] `Alt+D` = **Browse headers in file in modal way**
+- [ ] `Ctrl+A` = **Select Line (Paragraph)** (`Ctrl+Shift+A` = **Select Entire File**)
+- [ ] `Ctrl+Alt+Up/Down` = **Jump to Next/Prev Header**
+- [ ] `Ctrl+D` = **Multiselect Next Instance of Selected**
+- [ ] `Alt+S` = **Jump to Next Instance of Selected**
+- [ ] `?` = **Search file, Excluding Markdown Syntax**
+- [ ] `Ctrl+G` = **Google Search Selected Text**
+- [ ] `Ctrl+Alt+G` = **Open Git Bash in Project Folder** (`Ctrl+M` = **Open Sublime Merge**)
+- [ ] `Ctrl+F3`/`Ctrl+Shift+F3` = **Convert to/from Hexadecimal**
+- [ ] `Ctrl+;` = **Show Selected Hex Value(s) as Color**
+- [ ] `Alt+A` = **Align Text Using Spaces (Multicursor)**
+- [ ] `Ctrl+Enter`/`Ctrl+Shift+Enter` = **New-Line Above/Below Current Line**
 ## Hotkeys I Need to Learn
 - [ ] `Ctrl+Shift+H` = **Toggle Highlight**
 - [ ] `Ctrl+J` = **Toggle Quote**
@@ -7,7 +21,6 @@
 - [ ] `Ctrl+Alt+-` = **Toggle Strikethrough**
 - [ ] `Alt+F` = **Show File Tree**
 - [ ] `Ctrl+M` = **Bookmark section** (`Ctrl+Shift+M` = **View Bookmarks**)
-
 ## Hotkeys Ricky Should Use
 - [ ] `Ctrl+P`= **Command Palette**
 - [ ] `Ctrl+D` = **Delete Paragraph**
