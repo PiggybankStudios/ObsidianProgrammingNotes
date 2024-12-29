@@ -1,3 +1,5 @@
+## Notes
+- [ ] Aligning images: https://forum.obsidian.md/t/align-image/78050
 ## Hotkeys I Want
 - [ ] `Ctrl+Space` = **Center view on cursor**
 - [ ] `Alt+D` = **Browse headers in file in modal way**
@@ -13,6 +15,7 @@
 - [ ] `Alt+A` = **Align Text Using Spaces (Multicursor)**
 - [ ] `Ctrl+Enter`/`Ctrl+Shift+Enter` = **New-Line Above/Below Current Line**
 - [ ] `Alt+Q/W/E/R`/`Alt+Shift+QWER` = **Change Naming Convention**
+- [ ] `Ctrl+Q`? = **Remove All Cursors**
 ## Hotkeys I Need to Learn
 - [ ] `Ctrl+Shift+H` = **Toggle Highlight**
 - [ ] `Ctrl+J` = **Toggle Quote**

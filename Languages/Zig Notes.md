@@ -14,6 +14,8 @@
 	- https://www.reddit.com/r/Zig/comments/143oofw/shortening_the_imports/
 	- If we put public functions and things directly in the file, the file itself can act like a "struct"?
 	- If a top-level files @imports other files, when we import that top-level, can it be like the "index" into the library?
+	- Can we use `exe.root_module.addAnonymousImport`??
+	- Maybe `usingnamespace` keyword can help us organize a library at the top level? https://ziglang.org/documentation/master/#usingnamespace
 - [ ] Make a global structure to hold our state
 - [ ] Get a shared library working with **C/C++** and **Zig**
 - [ ] Figure out Vectors and Rectangles in Zig
@@ -38,6 +40,8 @@
 - Use `zig build run` to make the `run` step execute
 - Add `--summary all` to zig invocation to get a summary of the steps in the build graph
 - https://github.com/ziglang/zig/blob/master/doc/build.zig.zon.md
+- Initializing an array of something with a particular comptime variable length can be done like `items: [item_count]Item = [1]Item{Item{}} ** item_count`
+- Non-nullable pointer types can be assigned to `null` on the line they are declared??
 ## Naming Conventions
 * **Basic Types** = `u8`, `i32`, `f64`, `bool`, etc.
 * **Structs** = `UpperCamelCase`
