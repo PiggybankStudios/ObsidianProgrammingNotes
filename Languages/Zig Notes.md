@@ -5,6 +5,8 @@
 * https://ziglang.org/learn/build-system/
 * https://andrewkelley.me/
 * https://ziglang.org/documentation/master/#Builtin-Functions
+* List of Zig Games: https://github.com/ValorZard/awesome-zig-gamedev
+* https://machengine.org/v0.4/pkg/mach-glfw/
 ## TODO List
 - [ ] **How do we handle multiple files in zig?**
 	- We can `@import("file.zig")`, but then it's entire contents go in a const variable, like a namespace. No way to put everything directly in this file's namespace
