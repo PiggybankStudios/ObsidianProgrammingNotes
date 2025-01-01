@@ -1,0 +1,59 @@
+## Notes
+- [ ] Compiler Version: **v18.1.8**
+- [ ] Install location: `C:/Program Files/LLVM/bin/clang.exe`
+- [ ] `clang -dM -E -x c NUL`: List all predefined macros for Clang
+- [ ] `__clang__`, `__clang_major__`, and `__clang_minor__` are defined by Clang
+## CLI Options
+- [ ] `-o <file>`: Write output to `<file>`
+- [ ] `-g`: Generate source-level debug information
+- [ ] `-D <macro>=<value>`: Define `<macro>` to `<value>` (or 1 if `<value>` omitted)
+- [ ] `-U <macro>`: Undefine macro `<macro>`
+- [ ] `-I <dir>`: Add directory to the end of the list of include search paths
+- [ ] `-L <dir>`: Add directory to library search path
+- [ ] `--target=<value>`: Generate code for the given target
+- [ ] `-W<warning>`: Enable the specified warning
+- [ ] `-Wa,<arg>`: Pass the comma separated arguments in `<arg>` to the assembler
+- [ ] `-Wl,<arg>`: Pass the comma separated arguments in `<arg>` to the linker
+- [ ] `-Wp,<arg>`: Pass the comma separated arguments in `<arg>` to the preprocessor
+- [ ] `-C`: Include comments in preprocessed output
+- [ ] `-c`: Only run preprocess, compile, and assemble steps (aka, compile without link)
+- [ ] `-E`: Only run the preprocessor
+- [ ] `-S`: Only run preprocess and compilation steps
+- [ ] `-P`: Disable linemarker output in `-E` mode
+- [ ] `-dD`: Print macro definitions in `-E` mode in addition to normal output
+- [ ] `-dI`: Print include directives in `-E` mode in addition to normal output
+- [ ] `-dM`: Print macro definitions in `-E` mode instead of normal output
+- [ ] `-CC`: Include comments from within macros in preprocessed output
+- [ ] `-F <value>`: Add directory to framework include search path
+- [ ] `-gdwarf`: Generate source-level debug information with the default dwarf version
+- [ ] `-gembed-source`: Embed source text in DWARF debug sections
+- [ ] `-H`: Show header includes and nesting depth
+- [ ] `-std=<value>`: Language standard to compile for
+- [ ] `-stdlib=<value>`: C++ standard library to use
+- [ ] `-nostdinc++`: Disable standard `#include` directories for the C++ standard library
+- [ ] `-ObjC++`: Treat source input files as Objective-C++ inputs
+- [ ] `-ObjC`: Treat source input files as Objective-C inputs
+- [ ] `-object-file-name=<file>`: Set the output `<file>` for debug infos
+- [ ] `-pedantic`: Warn on language extensions
+- [ ] `--precompile`: Only precompile the input
+- [ ] `-pthread`: Support POSIX threads in generated code
+- [ ] `-Qn`: Do not emit metadata containing compiler name and version
+- [ ] `-rtlib=<value>`: Compiler runtime library to use
+- [ ] `-T <script>`: Specify `<script>` as linker script
+- [ ] `--version`: Print version information
+- [ ] `-Wdeprecated`: Enable warnings for deprecated constructs and define `__DEPRECATED`
+- [ ] `-working-directory <value>`: Resolve file paths relative to the specified directory
+- [ ] `-x <language>`: Treat subsequent input files as having type `<language>`
+- [ ] `-fdiagnostics-absolute-paths`: Print absolute paths in diagnostics
+---
+- [ ] `-MMD`: Write a depfile containing user headers
+- [ ] `-M`: Like `-MD`, but also implies `-E` and writes to stdout by default
+- [ ] `-MD`: Write a depfile containing user and system headers
+- [ ] `-MF <file>`: Write depfile output from `-MMD`, `-MD`, `-MM`, or `-M` to `<file>`
+- [ ] `-MG`: Add missing headers to depfile
+- [ ] `-MJ <value>`: Write a compilation database entry per input
+- [ ] `-MM`: Like `-MMD`, but also implies `-E` and writes to stdout by default
+- [ ] `-MP`: Create phony target for each dependency (other than main file)
+- [ ] `-MQ <value>`: Specify name of main file output to quote in depfile
+- [ ] `-MT <value>`: Specify name of main file output in depfile
+- [ ] `-MV`: Use NMake/Jom format for the depfile

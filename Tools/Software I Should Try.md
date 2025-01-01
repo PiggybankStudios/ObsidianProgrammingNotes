@@ -48,3 +48,13 @@
 - [ ] **Substack** [Link](https://substack.com/)
       ![[Software I Should Try - SubstackLogo.png]]
 	- Social Media platform focused on allowing people to write and read newsletters (and payment structures, etc. related to that)
+---
+- [ ] **objfromraw** [Link](https://git.mr4th.com/mr4th-public/objfromraw-binaries) (or [objembed](https://github.com/mcrbt/objembed))
+      ![[Software I Should Try - objfromraw.png]]
+	- Convert raw text (shader code) into an .obj file to be injected into the program at link time
+- [ ] **WhiteBox** [Link](https://whitebox.systems/) [Itch Link](https://azmr.itch.io/whitebox)
+      ![[Software I Should Try - WhiteboxLogo.png]]
+	- WhiteBox is a software development tool that compiles runs and “debugs” your C(++) code live to report its execution patterns and data transforms.
+---
+- [ ] **/fsanitize=fuzzer** [Link](https://learn.microsoft.com/en-us/cpp/build/reference/fsanitize?view=msvc-170)
+	- The Fuzzer in MSVC that allows verifying code by walking it using generated inputs

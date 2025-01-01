@@ -16,6 +16,7 @@
 - [ ] `Ctrl+Enter`/`Ctrl+Shift+Enter` = **New-Line Above/Below Current Line**
 - [ ] `Alt+Q/W/E/R`/`Alt+Shift+QWER` = **Change Naming Convention**
 - [ ] `Ctrl+Q`? = **Remove All Cursors**
+- [ ] `?`: Select all code in a code selection
 ## Hotkeys I Need to Learn
 - [ ] `Ctrl+Shift+H` = **Toggle Highlight**
 - [ ] `Ctrl+J` = **Toggle Quote**
