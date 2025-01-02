@@ -1,8 +1,10 @@
 ## Notes
-- [ ] Compiler Version: **v18.1.8**
+- [ ] Compiler Version: **v18.1.8** (WSL **v10.0.0-4ubuntu1**)
 - [ ] Install location: `C:/Program Files/LLVM/bin/clang.exe`
 - [ ] `clang -dM -E -x c NUL`: List all predefined macros for Clang
 - [ ] `__clang__`, `__clang_major__`, and `__clang_minor__` are defined by Clang
+- [ ] [Pre-defined macros](https://sourceforge.net/p/predef/wiki/Compilers/) 
+- [ ] [Warning Options](https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html)
 ## CLI Options
 - [ ] `-o <file>`: Write output to `<file>`
 - [ ] `-g`: Generate source-level debug information
