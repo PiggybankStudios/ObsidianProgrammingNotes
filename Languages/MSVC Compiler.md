@@ -3,6 +3,8 @@
 - [ ] Desktop Compiler version: **v19.37.32824**
 - [ ] Install Location: `C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe`
 - [ ] C23 features required `/std:clatest` CLI option
+- [ ] [Multithreading on Windows](https://learn.microsoft.com/en-us/cpp/parallel/multithreading-with-c-and-win32?view=msvc-170) 
+- [ ] 
 ## CLI Options [Link](https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options-listed-alphabetically?view=msvc-170)
 - [ ] `/P` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/p-preprocess-to-a-file?view=msvc-170): Preprocess the input file(s) and output the result to a .i file(s) with the same name as the input (use with `/C` to preserve comments)
 - [ ] `/C` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/c-preserve-comments-during-preprocessing?view=msvc-170): Preserve comments through the preprocessor, requires `/E`, `/P`, or `/EP` options to be present
@@ -13,3 +15,4 @@
 - [ ] `/Fo` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/fo-object-file-name?view=msvc-170): Set the output object file path
 - [ ] `/std:c11/c17/clatest` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/std-specify-language-standard-version?view=msvc-170): Enable supported C and C++ language features from the specified version of the C or C++ language standard.
 - [ ] `/we<n>`[Link](https://learn.microsoft.com/en-us/cpp/build/reference/compiler-option-warning-level?view=msvc-170): Treat the specified warning as an error.|
+- [ ] `/experimental:c11atomics` [Blog Post](https://devblogs.microsoft.com/cppblog/c11-atomics-in-visual-studio-2022-version-17-5-preview-2/): Enables partial support for the C11 atomic types feature

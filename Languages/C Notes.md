@@ -17,18 +17,18 @@
 - [ ] Memory Management, Arenas
 - [ ] Strings and File Paths
 - [ ] VarArray equivalent
-## C89 Features/Restrictions
+## C89 Features
 - [ ] 
-## C99 Features/Restrictions
+## C99 Features
 - [ ] 
-## C11 Features/Restrictions [Link](https://en.cppreference.com/w/c/11)
+## C11 Features [Link](https://en.cppreference.com/w/c/11) (C17 is purely bug-fixes and clarifications to C11)
 - [ ] [MSVC C11 and C17 Support](https://devblogs.microsoft.com/cppblog/c11-and-c17-standard-support-arriving-in-msvc/)
 - [ ] `_Static_assert(expression, message) ` NOTE: C11 requires a message, C23 added support for omitting it, and changed to `static_assert` name
-## C23 Features/Restrictions
-- [ ] https://en.cppreference.com/w/c/compiler_support/23
-- [ ] [`__has_include`](https://en.cppreference.com/w/c/preprocessor/include) in preprocessor conditionals
-- [ ] [`typeof` and `typeof_unqual`](https://en.cppreference.com/w/c/language/typeof)
-- [ ] [`__VA_OPT__`](https://en.cppreference.com/w/c/preprocessor/replace#Function-like_macros)
+- [ ] Removed `gets()`
+- [ ] `_Atomic(int)` Atomic types (include `stdatomic.h` for convenient names) [Link](https://en.cppreference.com/w/c/language/atomic) **(MSVC requires `/experimental:c11atomics` flag and still sets `__STDC_NO_ATOMICS__`)**
+- [ ] `_Thread_local` (`thread_local` in C23) qualifier (Works on both compilers!)
+- [ ] `_Generic(type, list)` Allows an expansion based on type of the first argument to any number of code snippets
+## C23 Features [Compiler Support](https://en.cppreference.com/w/c/compiler_support/23)
 - [ ] `[[no_discard]]` added to force caller to store the return value (Actually supported on MSVC despite the cppreference page!)
 - [ ] `[[maybe_unused]]`: Basically the same as our `UNUSED(variable)` macro (We don't care)
 - [ ] `[[deprecated]]`: Don't care much
@@ -45,14 +45,17 @@
 - [ ] Support for `#warning` preprocessor keyword **(Not supported by MSVC)**
 - [ ] `_BitInt(N)` and `unsigned _BitInt(N)` Bit-precise integer types **(Not supported by MSVC)**
 - [ ] `[[noreturn]] void Function() { ... exit(...); }` can be used to annotate functions that don't return (and suffixes for their integer constants)
-### `#if __has_include("name.h")` can be used to guard an `#include` statement behind whether the file exists or not
+### `#if __has_include("name.h")` can be used to guard an `#include` statement behind whether the file exists or not [Link](https://en.cppreference.com/w/c/preprocessor/include)
 - [ ] Identifiers now conform to *Unicode UAX #31* which gets rid of a bunch of problem codepoints and brings it more in line with other languages (don't care)
 - [ ] `= {}` Empty initialization is now supported **(Not supported by MSVC, but `{0}` syntax is!)**
-- [ ] `typeof` and `typeof_unqual` to get the type of a variable or expression
+- [ ] `typeof` and `typeof_unqual` to get the type of a variable or expression [Link](https://en.cppreference.com/w/c/language/typeof)
 - [ ] Keyword naming conventions `alignas`, `alignof`, `bool`, `static_assert`, `thread_local`
 - [ ] Predefined `true` and `false` (Not supported by MSVC, but `stdbool.h` does just fine)
 - [ ] `[[unsequenced]]` and `[[reproducible]]` can be used to markup a function [Link](https://en.cppreference.com/w/c/language/attributes/unsequenced) (Don't care much)
 - [ ] Relax requirements for variadic parameter list [Link](https://open-std.org/JTC1/SC22/WG14/www/docs/n2975.pdf) (I don't think I care?)
 - [ ] Type inference in object definitions [Link](https://open-std.org/JTC1/SC22/WG14/www/docs/n3007.htm) (Maybe I care? But not super important until we check on `_Generic`s)
 - [ ] `#embed` Finds a file and replaces the `#embed` macro with an integer list of values based on the contents of the file **(Only supported in Clang 19!)**
-- [ ] 
+- [ ] Enum types are not always `int` anymore, they can therefore support values outside `[INT_MAX, INT_MIN]` range (don't care too much, didn't test)
+- [ ] `typedef enum : u8` type specified enums are now supported **(Not supported by MSVC)**
+- [ ] `__VA_OPT__(,) __VA_ARGS__` Allows for specifying a leading separator if `__VA_ARGS__` is not empty **(Not supported by MSVC in Desktop version, maybe newer version?)** [Link](https://en.cppreference.com/w/c/preprocessor/replace#Function-like_macros)
+- [ ] `nullptr` keyword added **(Not supported by MSVC)**
