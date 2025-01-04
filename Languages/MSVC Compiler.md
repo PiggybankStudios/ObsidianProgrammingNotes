@@ -4,6 +4,7 @@
 - [ ] Install Location: `C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe`
 - [ ] C23 features required `/std:clatest` CLI option
 - [ ] [Multithreading on Windows](https://learn.microsoft.com/en-us/cpp/parallel/multithreading-with-c-and-win32?view=msvc-170) 
+- [ ] Still can't suppress the file name printout to stderr when using MSVC compiler [Link](https://developercommunity.visualstudio.com/t/allow-having-clexe-not-print-the-compiled-source-f/717761) 
 - [ ] 
 ## CLI Options [Link](https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options-listed-alphabetically?view=msvc-170)
 - [ ] `/P` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/p-preprocess-to-a-file?view=msvc-170): Preprocess the input file(s) and output the result to a .i file(s) with the same name as the input (use with `/C` to preserve comments)

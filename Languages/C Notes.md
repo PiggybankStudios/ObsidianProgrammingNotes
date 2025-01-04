@@ -29,7 +29,7 @@
 - [ ] `_Thread_local` (`thread_local` in C23) qualifier (Works on both compilers!)
 - [ ] `_Generic(type, list)` Allows an expansion based on type of the first argument to any number of code snippets
 ## C23 Features [Compiler Support](https://en.cppreference.com/w/c/compiler_support/23)
-- [ ] `[[no_discard]]` added to force caller to store the return value (Actually supported on MSVC despite the cppreference page!)
+- [ ] `[[nodiscard]]` added to force caller to store the return value (Actually supported on MSVC despite the cppreference page!)
 - [ ] `[[maybe_unused]]`: Basically the same as our `UNUSED(variable)` macro (We don't care)
 - [ ] `[[deprecated]]`: Don't care much
 - [ ] Attributes in general are added by C23 spec (the 3 things above)
