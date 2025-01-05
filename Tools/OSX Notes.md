@@ -1,0 +1,28 @@
+## Notes
+- [ ] In recent versions of Mac OS Sonoma, you can disable mouse acceleration from the advanced options of the mouse category in Settings
+- [ ] [RedQuits](http://carsten-mielke.com/redquits.html) can be used to make the exit button actually close applications when you close the last window from that application
+- [ ] Task Manager = Activity Monitor
+- [ ] To allow an unverified app to run, after attempting to open go `Settings`->`Privacy&Security`->`Open Anyway`
+- [ ] To "enable accessibility" or whatever find the application that needs access under `Security and Privacy` -> `Privacy` -> `Accessibility`. Unlock the settings in the bottom left and then enable the checkbox next to the application in question
+- [ ] `install_name_tool` changes the install directory for a library or the directory of a dependency of an executable
+- [ ] `otool -L [filename]` will list the install directory for a dll/exe
+- [ ] `.a` is a static library, `.dylib` is a dll, and executables have no file extension
+- [ ] To make a symlink to sublime I did `"ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime`
+- [ ] Frameworks are found in `/System/Library/Frameworks/`
+- [ ] [MacPorts](https://www.macports.org/install.php) is used to install things from the command line. Command is `port`, i.e. `sudo port install clang-18`
+- [ ] If you don't have XCode command line tools installed it will complain: `clang: warning: no such sysroot directory: '/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk' [-Wmissing-sysroot]`
+- [ ] [Native Binaries on Apple Silicon](https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary)
+- [ ] `lipo` is a useful command for inspecting binaries (related to Mach-O universal binary object files) `lip -archs [binary]` to check that a binary has been compiled for both Intel and ARM chips
+- [ ] `~/.zshrc` gets run whenever a zsh terminal instance is created (`~/.bashrc` for bash)
+# Keybindings
+- [ ] `Win+S`: Spotlight a.k.a. quick-launch (originally `Ctrl+Space`)
+- [ ] `Win+Tab`: Mission Control (originally `Ctrl+Alt+Up`)
+- [ ] `Win+Shift+Tab`: Application Windows (originally `Ctrl+Alt+Down`)
+- [ ] `Double Click Titlebar`: Fullscreen window
+- [ ] `Ctrl+Shift+Period`: Show hidden folders/files in Finder
+- [x] `Ctrl+Delete` = Delete file/folder in Finder (`Delete` seems to work just fine now?)
+- [ ] `Ctrl+Alt+Left/Right` = Move left/right a space (used to be `Alt+Shift+Left/Right`?)
+- [ ] `Enter` = Rename File in Finder
+- [ ] `Ctrl+Prntscrn` = Screenshot/Snippet tool
+- [ ] `Ctrl+Left/Right`: Home/End like behavior in native text editing
+- [ ] `Win+Left/Right`: Move by words behavior in native text editing

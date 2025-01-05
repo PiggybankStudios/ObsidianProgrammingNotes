@@ -47,6 +47,7 @@
 - [ ] `-working-directory <value>`: Resolve file paths relative to the specified directory
 - [ ] `-x <language>`: Treat subsequent input files as having type `<language>`
 - [ ] `-fdiagnostics-absolute-paths`: Print absolute paths in diagnostics
+- [ ] `-arch <arch>` [Link](https://man.archlinux.org/man/extra/clang/clang.1.en#arch): Specifies the architecture to build for **(OSX Specific)**
 ---
 - [ ] `-MMD`: Write a depfile containing user headers
 - [ ] `-M`: Like `-MD`, but also implies `-E` and writes to stdout by default

@@ -1,5 +1,13 @@
 ## Notes
 - [ ] Aligning images: https://forum.obsidian.md/t/align-image/78050
+- [ ] **Alt** maps to **Win** key on OSX
+- [ ] Ctrl+Left/Right maps to Home/End so Win+Left/Right is required to move by words, otherwise Ctrl maps to Ctrl like normal
+- [ ] 
+## Community Plugins
+- [ ] Editor Width Slider
+- [ ] Emoji Toolbar
+- [ ] Text Format
+- [ ] Text Generator
 ## Hotkeys I Want
 - [ ] `Ctrl+Space` = **Center view on cursor**
 - [ ] `Alt+D` = **Browse headers in file in modal way**
