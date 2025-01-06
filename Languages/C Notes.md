@@ -5,6 +5,8 @@
 - [ ] MSVC Compiler [Predefined Macros](http://msdn.microsoft.com/en-us/library/b0084kay.aspx) like `_MSC_VER` [Link](https://sourceforge.net/p/predef/wiki/Compilers/#microsoft-visual-c) 
 - [ ] GCC and Clang are actually different compilers, Clang being newer and more fully featured. But gcc.exe installed with MinGW is claiming a "clang" version so idk
 - [ ] `bool` and `true`/`false` work just fine in MSVC as long as `stdbool.h` is included
+- [ ] [UUID Generation](http://graemehill.ca/minimalist-cross-platform-uuid-guid-generation-in-c++/)
+- [ ] 
 ## Plan
 - [ ] Start a new codebase that is strictly C, not C++
 - [ ] Investigate pros/cons of using various C standard versions

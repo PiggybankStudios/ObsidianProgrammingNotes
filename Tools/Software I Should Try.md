@@ -58,3 +58,6 @@
 ---
 - [ ] **/fsanitize=fuzzer** [Link](https://learn.microsoft.com/en-us/cpp/build/reference/fsanitize?view=msvc-170)
 	- The Fuzzer in MSVC that allows verifying code by walking it using generated inputs
+- [ ] **HCC (C SPIR-V Compiler)** [Link](https://github.com/heroseh/hcc)
+      ![[Software I Should Try - HCCLogo.png]]
+	- A compiler written by @hero_dev to compile C to SPIR-V
