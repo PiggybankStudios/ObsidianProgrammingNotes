@@ -17,7 +17,7 @@
       ![[Software I Should Try - AffinityLogo.png]]
 	- Alternative to Adobe products with a 1-time payment structure rather than a subscription
 ---
-- [ ] **raddbg** [Link](https://github.com/EpicGamesExt/raddebugger)
+- [x] **raddbg** [Link](https://github.com/EpicGamesExt/raddebugger)
       ![[Software I Should Try - RadDbgLogo.png]]
 	- Windows debugger built by Ryan at RAD Game Tools, currently in ALPHA
 ---
@@ -37,7 +37,7 @@
       ![[Software I Should Try - MachEngineLogo.png]]
 	- A game engine (optionally framework) written in Zig. Can be used like GLFW/SDL/etc. (a framework) or like a Unity/Unreal/Godot (an engine)
 ---
-- [ ] **C23** [cppreference](https://en.cppreference.com/w/c/23) [Wikipedia](https://en.wikipedia.org/wiki/C23_(C_standard_revision)) [Whats on the Menu](https://thephd.dev/c23-is-coming-here-is-what-is-on-the-menu)
+- [x] **C23** [cppreference](https://en.cppreference.com/w/c/23) [Wikipedia](https://en.wikipedia.org/wiki/C23_(C_standard_revision)) [Whats on the Menu](https://thephd.dev/c23-is-coming-here-is-what-is-on-the-menu)
       ![[Software I Should Try - C23.png]]
 	- New Standard for C language released in 2023
 ---
@@ -45,7 +45,7 @@
       ![[Software I Should Try - ExifTool.png]]
 	- Read, Write and Edit Meta Information
 ---
-- [ ] **Substack** [Link](https://substack.com/)
+- [x] **Substack** [Link](https://substack.com/)
       ![[Software I Should Try - SubstackLogo.png]]
 	- Social Media platform focused on allowing people to write and read newsletters (and payment structures, etc. related to that)
 ---
@@ -58,6 +58,23 @@
 ---
 - [ ] **/fsanitize=fuzzer** [Link](https://learn.microsoft.com/en-us/cpp/build/reference/fsanitize?view=msvc-170)
 	- The Fuzzer in MSVC that allows verifying code by walking it using generated inputs
+---
 - [ ] **HCC (C SPIR-V Compiler)** [Link](https://github.com/heroseh/hcc)
       ![[Software I Should Try - HCCLogo.png]]
 	- A compiler written by @hero_dev to compile C to SPIR-V
+---
+- [ ] **single_file_libs** [Link](https://github.com/nothings/single_file_libs) [C++ List](https://github.com/p-ranav/awesome-hpp) [clib](https://github.com/clibs/clib/wiki/Packages) [ccan](https://ccodearchive.net/list.html) 
+      ![[Software I Should Try - AwesomeHeaderOnlyCppLibrariesLogo.png]]
+	- Single-file public-domain/open source libraries with minimal dependencies
+	- [Hedley](https://nemequ.github.io/hedley/) Hedley is a single C/C++ header you can include in your project to enable compiler-specific features while retaining compatibility with all compilers. It contains dozens of macros to help make your code easier to use, harder to misuse, safer, faster, and more portable.
+	- [Vulkan Memory Allocator](https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator)
+	- [fft](https://github.com/wareya/fft) Fast Fourier Transform
+---
+- [ ] **ScalableText** [Link](https://github.com/alektron/ScalableText?tab=readme-ov-file)
+      ![[Software I Should Try - ScalableText.png]]
+	- Minimal implementation of a text renderer based on the method described by Evan Wallace (@evanw) in [his article](https://medium.com/@evanwallace/easy-scalable-text-rendering-on-the-gpu-c3f4d782c5ac) 
+---
+- [ ] **refterm** [Link](https://github.com/cmuratori/refterm)
+      ![[Software I Should Try - refterm.png]]
+	- refterm is a reference renderer for monospace terminal displays. It was designed to demonstrate that even in the worst-case scenario - extremely slow Unicode parsing with Uniscribe and extremely slow glyph generation with DirectWrite - it is still straightforward to achieve reasonable frame rates and reasonable throughput by being sensible.
+---

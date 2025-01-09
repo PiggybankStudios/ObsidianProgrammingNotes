@@ -5,7 +5,7 @@
 - [ ] C23 features required `/std:clatest` CLI option
 - [ ] [Multithreading on Windows](https://learn.microsoft.com/en-us/cpp/parallel/multithreading-with-c-and-win32?view=msvc-170) 
 - [ ] Still can't suppress the file name printout to stderr when using MSVC compiler [Link](https://developercommunity.visualstudio.com/t/allow-having-clexe-not-print-the-compiled-source-f/717761) 
-- [ ] 
+- [ ] You can `#define WIN32_LEAN_AND_MEAN` before `#include <windows.h>` to remove some of the unneeded things
 ## CLI Options [Link](https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options-listed-alphabetically?view=msvc-170)
 - [ ] `/P` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/p-preprocess-to-a-file?view=msvc-170): Preprocess the input file(s) and output the result to a .i file(s) with the same name as the input (use with `/C` to preserve comments)
 - [ ] `/C` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/c-preserve-comments-during-preprocessing?view=msvc-170): Preserve comments through the preprocessor, requires `/E`, `/P`, or `/EP` options to be present
