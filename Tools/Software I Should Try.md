@@ -78,3 +78,26 @@
       ![[Software I Should Try - refterm.png]]
 	- refterm is a reference renderer for monospace terminal displays. It was designed to demonstrate that even in the worst-case scenario - extremely slow Unicode parsing with Uniscribe and extremely slow glyph generation with DirectWrite - it is still straightforward to achieve reasonable frame rates and reasonable throughput by being sensible.
 ---
+- [x] **sokol** [Link](https://github.com/floooh/sokol) [Online Examples](https://floooh.github.io/sokol-html5/)
+      ![[Software I Should Try - SokolLogo.png]]
+	- Simple [STB-style](https://github.com/nothings/stb/blob/master/docs/stb_howto.txt) cross-platform libraries for C and C++, written in C.
+---
+- [ ] **cimgui** [LInk](https://github.com/cimgui/cimgui)
+	- c-api for [imgui]([https://github.com/ocornut/imgui](https://github.com/ocornut/imgui)) Look at: [https://github.com/cimgui](https://github.com/cimgui) for other widgets
+---
+- [ ] **SQLite** [Link](https://www.sqlite.org/)
+      ![[Software I Should Try - SQLiteLogo.png]]
+	- SQLite is a C-language library that implements a [small](https://www.sqlite.org/footprint.html), [fast](https://www.sqlite.org/fasterthanfs.html), [self-contained](https://www.sqlite.org/selfcontained.html), [high-reliability](https://www.sqlite.org/hirely.html), [full-featured](https://www.sqlite.org/fullsql.html), SQL database engine
+---
+- [ ] **PhysX** [Link](https://github.com/NVIDIA-Omniverse/PhysX)
+	- This repository contains source releases of the PhysX, Flow, and Blast SDKs used in NVIDIA Omniverse.
+	- [Open Source Physics Engines](https://www.reddit.com/r/gamedev/comments/qu1y2y/most_popular_c_opensource_physics_engines/)
+	- [Rapier Physics Engine for Rust](https://rapier.rs/)
+	- [Newton Dynamics](http://newtondynamics.com/forum/newton.php)
+	- [Open Dynamics Engine (ODE)](http://www.ode.org/)
+---
+- [ ] **deno** TODO: Link
+	- Node package manager successor
+---
+- [ ] **Swift UI** TODO: Link
+	- Really good declarative UI thing in Swift

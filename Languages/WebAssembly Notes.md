@@ -1,0 +1,109 @@
+## Notes
+- [ ] `long double` is an allowed type in WASM32 but casting that `long double` to `double` results in an import for `__trunctfdf2` being generated. We're just not going to use long doubles for now...
+- [ ] `C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vcruntime.h`
+- [ ] `Math.h` Notes
+	- [ ] https://gcc.gnu.org/onlinedocs/gcc/Other-Builtins.html
+	- [ ] Outside strict ISO C mode (`-ansi`, `-std=c90`, `-std=c99` or `-std=c11`), the functions (below) may be handled as built-in functions. All these functions have corresponding versions prefixed with `__builtin_`, which may be used even in strict C90 mode. 
+		- `_exit`     `ffsl`             `j0f`       `pow10f`          `signbitl`     `strdup`      `ynl`
+		- `alloca`    `ffs`              `j0l`       `pow10l`          `signbitd32`   `strfmon`     `yn`
+		- `bcmp`      `fprintf_unlocked` `j0`        `pow10`           `signbitd64`   `strncasecmp`
+		- `bzero`     `fputs_unlocked`   `j1f`       `printf_unlocked` `signbitd128`  `strndup`
+		- `dcgettext` `gammaf`           `j1l`       `rindex`          `significandf` `strnlen`
+		- `dgettext`  `gammal`           `j1`        `roundeven`       `significandl` `toascii`
+		- `dremf`     `gamma`            `jnf`       `roundevenf`      `significand`  `y0f`
+		- `dreml`     `gammaf_r`         `jnl`       `roundevenl`      `sincosf`      `y0l`
+		- `drem`      `gammal_r`         `jn`        `scalbf`          `sincosl`      `y0`
+		- `exp10f`    `gamma_r`          `lgammaf_r` `scalbl`          `sincos`       `y1f`
+		- `exp10l`    `gettext`          `lgammal_r` `scalb`           `stpcpy`       `y1l`
+		- `exp10`     `index`            `lgamma_r`  `signbit`         `stpncpy`      `y1`
+		- `ffsll`     `isascii`          `mempcpy`   `signbitf`        `strcasecmp`   `ynf`
+	- [ ] The ISO C99 functions (below) are handled as built-in functions except in strict ISO C90 mode (`-ansi` or `-std=c90`).
+		- `_Exit`     `catanhl`   `cpow`     `exp2`     `llrintl`     `remainderl`
+		- `acoshf`    `catanh`    `cprojf`   `expm1f`   `llrint`      `remainder`
+		- `acoshl`    `catanl`    `cprojl`   `expm1l`   `llroundf`    `remquof`
+		- `acosh`     `catan`     `cproj`    `expm1`    `llroundl`    `remquol`
+		- `asinhf`    `cbrtf`     `crealf`   `fdimf`    `llround`     `remquo`
+		- `asinhl`    `cbrtl`     `creall`   `fdiml`    `log1pf`      `rintf`
+		- `asinh`     `cbrt`      `creal`    `fdim`     `log1pl`      `rintl`
+		- `atanhf`    `ccosf`     `csinf`    `fmaf`     `log1p`       `rint`
+		- `atanhl`    `ccoshf`    `csinhf`   `fmal`     `log2f`       `roundf`
+		- `atanh`     `ccoshl`    `csinhl`   `fmaxf`    `log2l`       `roundl`
+		- `cabsf`     `ccosh`     `csinh`    `fmaxl`    `log2`        `round`
+		- `cabsl`     `ccosl`     `csinl`    `fmax`     `logbf`       `scalblnf`
+		- `cabs`      `ccos`      `csin`     `fma`      `logbl`       `scalblnl`
+		- `cacosf`    `cexpf`     `csqrtf`   `fminf`    `logb`        `scalbln`
+		- `cacoshf`   `cexpl`     `csqrtl`   `fminl`    `lrintf`      `scalbnf`
+		- `cacoshl`   `cexp`      `csqrt`    `fmin`     `lrintl`      `scalbnl`
+		- `cacosh`    `cimagf`    `ctanf`    `hypotf`   `lrint`       `scalbn`
+		- `cacosl`    `cimagl`    `ctanhf`   `hypotl`   `lroundf`     `snprintf`
+		- `cacos`     `cimag`     `ctanhl`   `hypot`    `lroundl`     `tgammaf`
+		- `cargf`     `clogf`     `ctanh`    `ilogbf`   `lround`      `tgammal`
+		- `cargl`     `clogl`     `ctanl`    `ilogbl`   `nearbyintf`  `tgamma`
+		- `carg`      `clog`      `ctan`     `ilogb`    `nearbyintl`  `truncf`
+		- `casinf`    `conjf`     `erfcf`    `imaxabs`  `nearbyint`   `truncl`
+		- `casinhf`   `conjl`     `erfcl`    `isblank`  `nextafterf`  `trunc`
+		- `casinhl`   `conj`      `erfc`     `iswblank` `nextafterl`  `vfscanf`
+		- `casinh`    `copysignf` `erff`     `lgammaf`  `nextafter`   `vscanf`
+		- `casinl`    `copysignl` `erfl`     `lgammal`  `nexttowardf` `vsnprintf`
+		- `casin`     `copysign`  `erf`      `lgamma`   `nexttowardl` `vsscanf`
+		- `catanf`    `cpowf`     `exp2f`    `llabs`    `nexttoward`
+		- `catanhf`   `cpowl`     `exp2l`    `llrintf`  `remainderf`
+	- [ ] There are also built-in versions of the ISO C99 functions (below) that are recognized in any mode since ISO C90 reserves these names for the purpose to which ISO C99 puts them. All these functions have corresponding versions prefixed with `__builtin_`.
+		- `acosf`  `coshf`  `frexpf` `powl`
+		- `acosl`  `coshl`  `frexpl` `sinf`
+		- `asinf`  `cosl`   `ldexpf` `sinhf`
+		- `asinl`  `expf`   `ldexpl` `sinhl`
+		- `atan2f` `expl`   `log10f` `sinl`
+		- `atan2l` `fabsf`  `log10l` `sqrtf`
+		- `atanf`  `fabsl`  `logf`   `sqrtl`
+		- `atanl`  `floorf` `logl`   `tanf`
+		- `ceilf`  `floorl` `modfl`  `tanhf`
+		- `ceill`  `fmodf`  `modff`  `tanhl`
+		- `cosf`   `fmodl`  `powf`   `tanl`
+	- [ ] There are also built-in functions (below) corresponding to the TS 18661-3 functions `fabsfn`, `fabsfnx`, `copysignfn` and `copysignfnx`, for supported types `_Floatn` and `_Floatnx`. 
+		- `__builtin_fabsfn`
+		- `__builtin_fabsfnx`
+		- `__builtin_copysignfn`
+		- `__builtin_copysignfnx`
+	- [ ] The ISO C90 functions (below) are all recognized as built-in functions unless `-fno-builtin` is specified (or `-fno-builtin-function` is specified for an individual function). All of these functions have corresponding versions prefixed with `__builtin_`. 
+		- `abort`   `frexp`    `log`      `sscanf`  `vsprintf`
+		- `abs`     `fscanf`   `malloc`   `strcat`
+		- `acos`    `isalnum`  `memchr`   `strchr`
+		- `asin`    `isalpha`  `memcmp`   `strcmp`
+		- `atan2`   `iscntrl`  `memcpy`   `strcpy`
+		- `atan`    `isdigit`  `memset`   `strcspn`
+		- `calloc`  `isgraph`  `modf`     `strlen`
+		- `ceil`    `islower`  `pow`      `strncat`
+		- `cosh`    `isprint`  `printf`   `strncmp`
+		- `cos`     `ispunct`  `putchar`  `strncpy`
+		- `exit`    `isspace`  `puts`     `strpbrk`
+		- `exp`     `isupper`  `realloc`  `strrchr`
+		- `fabs`    `isxdigit` `scanf`    `strspn`
+		- `floor`   `tolower`  `sinh`     `strstr`
+		- `fmod`    `toupper`  `sin`      `tanh`
+		- `fprintf` `labs`     `snprintf` `tan`
+		- `fputs`   `ldexp`    `sprintf`  `vfprintf`
+		- `free`    `log10`    `sqrt`     `vprintf`
+- [ ] 
+## Links
+- [ ] [SourceMaps Specification](https://sourcemaps.info/spec.html)
+- [ ] [Example repository](https://github.com/PetterS/clang-wasm) for compiling to wasm with clang
+- [ ] [Wasm explorer](https://mbebenita.github.io/WasmExplorer/)
+- [ ] [Compiling C to WebAssembly and Running it Without Emscripten](https://depth-first.com/articles/2019/10/16/compiling-c-to-webassembly-and-running-it-without-emscripten/)
+- [ ] 
+## Clang WebAssembly Compiler Options
+```bash
+	-matomics, -mno-atomics
+	-mbulk-memory, -mno-bulk-memory
+	-mexception-handling, -mno-exception-handling
+	-mextended-const, -mno-extended-const
+	-mmultimemory, -mno-multimemory
+	-mmultivalue, -mno-multivalue
+	-mmutable-globals, -mno-mutable-globals
+	-mnontrapping-fptoint, -mno-nontrapping-fptoint
+	-mreference-types, -mno-reference-types
+	-mrelaxed-simd, -mno-relaxed-simd
+	-msign-ext, -mno-sign-ext
+	-msimd128, -mno-simd128
+	-mtail-call, -mno-tail-call
+```
