@@ -101,3 +101,24 @@
 ---
 - [ ] **Swift UI** TODO: Link
 	- Really good declarative UI thing in Swift
+---
+- [ ] **Spall** [Link](https://gravitymoth.com/spall/) [Handmade Network](https://spall.handmade.network/) [Itch.io](https://gravitymoth.itch.io/spall) [Github](https://github.com/colrdavidson/spall-web)
+      ![[Software I Should Try - SpallBanner.png]]
+	- An trace/profile viewer made by Colin built to WASM (written in Odin)
+	- Bought from Itch.io for $75 on Jan 18th 2025
+---
+- [ ] **cr** [Link](https://github.com/fungos/cr)
+	- Hot-Reloading solution for C (written in C++?)
+---
+- [ ] **Retro Emojis** (Used to be called **Retro Typer)** [Gitub](https://github.com/EyrisCrafts/retro_emojis)
+	- Program used for searching for emoji and GIFs (Similar to Win+Semicolon), works on MacOS and Windows
+---
+- [ ] **Cute Framework** [Link](https://randygaul.github.io/cute_framework/#/) [Github](https://github.com/RandyGaul/cute_framework/)
+      ![[Software I Should Try - CuteFrameworkLogo.png]]
+	- Foundational layer for almost any 2D game, 100% free and open source, Works nearly everwhere (Desktops, Mobile, Web, and more…)
+	- By RandyGaul
+---
+- [ ] **Mini-PhysFS** [Github](https://github.com/edubart/miniphysfs) [Original Github](https://github.com/icculus/physfs)
+	- This is the PhysFS contained in a single header to be bundled in C/C++ applications with ease. [PhysFS](https://icculus.org/physfs/) is a library to provide abstract access to various archives.
+- [x] **miniz.c** [Github](https://github.com/richgel999/miniz)
+	- MIT licensed single header include library for creating and reading .zip files

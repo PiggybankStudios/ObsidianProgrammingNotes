@@ -5,6 +5,8 @@
 - [ ] Retro programming video game with stylized fantasy programming languages
 - [ ] 
 ## Tool Ideas
+- [ ] **Emoji or Unicode explorer application**
+- [ ] A very simple video editor with keyboard controls (like VIM style bindings)
 - [ ] Make an android app that modulates the vibration of my phone whenever it's using a lot of CPU power
 - [ ] Redo ConstPort, with better support for many different text sources
 - [ ] Debug console overlay single header include library

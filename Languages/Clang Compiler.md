@@ -5,6 +5,8 @@
 - [ ] `__clang__`, `__clang_major__`, and `__clang_minor__` are defined by Clang
 - [ ] [Pre-defined macros](https://sourceforge.net/p/predef/wiki/Compilers/) 
 - [ ] [Warning Options](https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html)
+- [ ] Check a compiled binary's required libraries with `objdump -p program_name | grep NEEDED` (also works for `RPATH`)
+- [ ] 
 ## CLI Options
 - [ ] `-o <file>`: Write output to `<file>`
 - [ ] `-g`: Generate source-level debug information
@@ -60,3 +62,7 @@
 - [ ] `-MQ <value>`: Specify name of main file output to quote in depfile
 - [ ] `-MT <value>`: Specify name of main file output in depfile
 - [ ] `-MV`: Use NMake/Jom format for the depfile
+---
+- [ ] `-finstrument-functions`: Generate calls to instrument function entry and exit
+- [ ] `-finstrument-functions-entry-bare`: Instrument function entry only, after inlining, without arguments to the instrumentation call
+- [ ] `-finstrument-functions-after-inlining`: Like `-finstrument-functions`, but insert the calls after inlining
