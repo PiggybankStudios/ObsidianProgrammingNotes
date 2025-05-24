@@ -6,6 +6,8 @@
 - [ ] [Pre-defined macros](https://sourceforge.net/p/predef/wiki/Compilers/) 
 - [ ] [Warning Options](https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html)
 - [ ] Check a compiled binary's required libraries with `objdump -p program_name | grep NEEDED` (also works for `RPATH`)
+- [ ] NOTE: The order of libraries and source files on the command line matters! If you link against a library BEFORE your source file that uses functions from that library, it will end up failing to link. **You must add libraries AFTER the things that use stuff from them!**
+- [ ] [RPATH Wikipedia](https://en.wikipedia.org/wiki/Rpath) [StackOverflow answer](https://stackoverflow.com/questions/39978762/linux-executable-cant-find-shared-library-in-same-folder)
 - [ ] 
 ## CLI Options
 - [ ] `-o <file>`: Write output to `<file>`
@@ -30,6 +32,7 @@
 - [ ] `-CC`: Include comments from within macros in preprocessed output
 - [ ] `-F <value>`: Add directory to framework include search path
 - [ ] `-gdwarf`: Generate source-level debug information with the default dwarf version
+- [ ] `-gsplit-dwarf`: Put the debug information into it's own `.dwo` file
 - [ ] `-gembed-source`: Embed source text in DWARF debug sections
 - [ ] `-H`: Show header includes and nesting depth
 - [ ] `-std=<value>`: Language standard to compile for

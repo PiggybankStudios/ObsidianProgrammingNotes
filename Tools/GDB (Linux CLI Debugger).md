@@ -1,0 +1,40 @@
+## Notes
+- [ ] Main Project Page [Link](https://sourceware.org/gdb/)
+- [ ] Online Documentation [Link](https://sourceware.org/gdb/current/onlinedocs/gdb)
+- [ ] Bug Reporting [Link](https://www.gnu.org/software/gdb/bugs/)
+- [ ] Wiki [Link](https://sourceware.org/gdb/wiki/)
+- [ ] FAQ [Link](https://sourceware.org/gdb/wiki/FAQ)
+- [ ] [Invoking GDB](https://sourceware.org/gdb/current/onlinedocs/gdb#Invocation): `gdb {executable} {core/PID}` or `gdb -p [PID]` or `dbg --args [executable] {arguments}` or `gdb -q` or `gdb -help`
+- [ ] [LLDB Debugger](https://lldb.llvm.org/) and [GDB to LLDB cheatsheat](https://lldb.llvm.org/use/map.html)
+- [ ] ["Nice tutorial to get you started"](http://www.unknownroad.com/rtfm/gdbtut/gdbtoc.html)
+- [ ] 
+## Commands [Link](https://sourceware.org/gdb/current/onlinedocs/gdb#Commands)
+- *Any command can be abbreviated to first N characters as long as those characters are unambiguous with another command. `Tab` can also be used to complete command names or sometimes arguments*
+- *Comments are denoted with `#` symbol*
+- [ ] `help {cmd}`: Prints out the help page for gdb (also can be used to test abbreviations of commands)
+- [ ] `Enter`: Repeat previous command (sometimes the output of the prev command is pageinated and return will continue to next page, like `more`)
+- [ ] `Ctrl+O`: Copies previous command into input to be edited?
+- [ ] `quit`: Close GDB
+- [ ] `set [command] [variable] [value]`: Change the configuration variables for a particular command, for example `set print elements 10`
+- [ ] `with [variable] [value] -- {command...}`: Change a configuration variable for the duration of a command. Omitting command will run previous command with the setting.
+- [ ] `run {> stdio_file}`: Run the program
+- [ ] `tty [tty]`: Sets the default output tty for run commands. Really this is alias for `set inferior-tty [tty]`, you can use `show` to read the current value
+- [ ] `bt`/`backtrace`/`where`: Print the backtrace (useful for segfault scenarios?)
+- [ ] `strace`: Print the stack trace
+- [ ] `show configuration`: Prints configuration details
+- [ ] `step {N}`/`s`: Step some number of instructions/lines
+- [ ] `list`: Display the source code around the current line that the program is paused on (use `frame` to select which stack frame you want to view)
+- [ ] `x`: ?
+- [ ] `print` [Options](https://sourceware.org/gdb/current/onlinedocs/gdb#print-options): ?
+- [ ] `set logging enabled [on/off]`: Enable logging of GDB command outputs to a file, by default `gdb.txt`
+- [ ] `info terminal`: Display information about terminal modes that the program is using (i.e. stdio related options)
+- [ ] `info threads`: Print information about all the threads
+- [ ] `info variables`: Print information about all static and global variables
+- [ ] `info locals`: Print information about all local variables in the stack frame
+- [ ] `info args`: Print information about the arguments to the current function
+- [ ] `thread [thread_id]`: Change to a particular thread
+- [ ] `kill` [Link](https://sourceware.org/gdb/current/onlinedocs/gdb.html/Kill-Process.html): Kill the child process in which your program is running under GDB
+- [ ] `break [function/linespec/address] [thread] [if condition]`: Add a breakpoint to a particular function. Use `info break` to see existing breakpoints.
+- [ ] `delete [breakpoint_num]`: Remove a breakpoint (uses number as seen in `info break`)
+- [ ] `frame [number]`: Select a particular stack frame
+- [ ] 

@@ -6,6 +6,7 @@
 - [ ] GCC and Clang are actually different compilers, Clang being newer and more fully featured. But gcc.exe installed with MinGW is claiming a "clang" version so idk
 - [ ] `bool` and `true`/`false` work just fine in MSVC as long as `stdbool.h` is included
 - [ ] [UUID Generation](http://graemehill.ca/minimalist-cross-platform-uuid-guid-generation-in-c++/)
+- [ ] [Mixing C and C++ Code](https://isocpp.org/wiki/faq/mixing-c-and-cpp)
 - [ ] 
 ## Plan
 - [ ] Start a new codebase that is strictly C, not C++

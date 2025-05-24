@@ -1,0 +1,56 @@
+## General Notes
+- [ ] **UE Version**: 5.4.4 (downloaded March 23rd 2025) Installed in `F:\Programs\UE` 35.7GB - 198,509 files - 42,447 folders
+      ![[Unreal Engine 5.4.4 Install WizTree Visualization.png]]
+- [ ] Getting Access to UE Github: [Link](https://www.unrealengine.com/en-US/ue-on-github) [Github](https://github.com/EpicGames/UnrealEngine)
+- [ ] [Smart Pointer Types](https://dev.epicgames.com/documentation/en-us/unreal-engine/smart-pointers-in-unreal-engine) (Doesn't work with `UObject` which is tracked by a separate system)
+	- [ ] **Shared Pointer `TSharedPtr`**: Keeps the object alive, deletes object when all shared pointers are destroyed
+	- [ ] **Shared Reference `TSharedRef`**: Guarantees non-null value, similar to Shared Pointer otherwise
+	- [ ] **Weak Pointer `TWeakPtr`**: Doesn't guarantee object is alive, the object can become null at any moment. But you can get a Shared Reference from a WeakReference and then free it to guarantee it stays alive for some temporary block
+	- [ ] **Unique Pointer `TUniquePtr`**: Manages the lifetime of an object, no other smart pointer can reference it
+- [ ] [Low-Level Memory Tracker (LLM)](https://dev.epicgames.com/documentation/en-us/unreal-engine/using-the-low-level-memory-tracker-in-unreal-engine) `LowLevelMemoryTracker.h`
+	- [ ] *Default Tracker* shows all memory allocation made by the engine (like through `FMemory.Malloc` e.g `OnLowLevelAlloc`), see `stat LLM` and `stat LLMFULL`
+	- [ ] *Platform Tracker* is lower level and tracks allocations made internal to OS level functions like `Binned2` (it's a strict subset of the Default Tracker)
+	- [ ] All allocations are assigned a **single** group
+	- [ ] "tag-scope" macros specify areas where any allocation within will be assigned to a specified group like `LLM_SCOPE_BYTAG` (`LLM_DECLARE_TAG` and `LLM_DEFINE_TAG`)
+	- [ ] [Unreal Insights](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-insights-in-unreal-engine) Is the go-to profiler for UE
+	- [ ] LLM is completely compiled out in *Test* and *Shipped* builds
+- [ ] `PlayerStart` spawns a `DefaultPawn` at game start?
+- [ ] *HLOD* = Hierarchical Level of Detail
+- [ ] 
+## Tutorials
+- [x] [Unreal Engine C++ Tutorial: Plugins](https://www.youtube.com/watch?v=mgFrFdzb7hg)
+- [ ] [Unreal Motion Graphics (UMG)](https://dev.epicgames.com/documentation/en-us/unreal-engine/umg-ui-designer-quick-start-guide-in-unreal-engine)
+- [ ] 
+## Hotkeys
+- [ ] **Q/W/E/R** - Select/Translate/Rotate/Scale Tool
+- [ ] **Alt+P** - Play Game
+- [ ] **Escape** - Stop Game
+- [ ] **F8** - Toggle Play/Editor Focus
+- [ ] **Shift+F1** - Stop mouse capture while playing
+- [ ] **Ctrl+Space** - Open Content Drawer
+- [ ] **Ctrl+P** - Open Asset Dialog (much faster than using Content Drawer)
+- [ ] **F4** - Focus Content Drawer Path Textbox
+- [ ] **Tilde** - Focus Console input
+- [ ] **Alt+Tilde** - Open Output Log Drawer
+- [ ] **Right Click + WASD/E/Q/Ctrl/Space** - First Person Fly Cam controls in Perspective viewport
+- [ ] **H** - Hide Selected (doesn't work on Folders)
+- [ ] **Shift+H** - Show Selected (doesn't work on Folders)
+- [ ] **Ctrl+H** - Show All Hidden
+- [ ] **Ctrl+Tilde** - Toggle between World and Object Gizmo Coordinates
+- [ ] **Ctrl+Shift+P** - "Pilot" the selected actor(s)
+- [ ] **Alt+1/2/3/4/5/6...** - Change to Wireframe/Unlit/Lit/Light Detail/etc. view modes in main panel
+- [ ] **F** - Frame Selected Actor (Also added **Numpad Period** which moves to raycast location under mouse)
+- [ ] **Ctrl+LeftClick/RightClick/BothClick** - Move/Rotate/Scale selected object along X/Y/Z axis without finding/clicking on the gizmo
+- [ ] **Shift+LeftClick/RightClick (on Property)** - Copy/Paste property value (or category!) in Details Panel
+## Console Commands
+- [ ] `stat LLM` and `stat LLMFULL` - commands show allocations made in the "Default Tracker" (aka `FMemory.Malloc`)
+- [ ] `open [URL]` - Opens a particular map, or connects to a server at a particular address
+- [ ] 
+## Plugins
+- [ ] **Fab** [Link](https://www.fab.com/) - Download plugins inside the Editor
+- [ ] **Quixel Bridge** [Link](https://quixel.com/) - Download high quality scanned assets, aka "Megascans"
+- [ ] 
+## Classes
+- [ ] `APawn` <- `AActor` <- `UObject` <- `UObjectBaseUtility` <- `UObjectBase`
+    Possession <- Placeable/Components <- Designated Union (UClass) <- Utility Funcs <- Low Level Implementation
+- [ ] 

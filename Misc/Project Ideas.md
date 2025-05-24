@@ -6,6 +6,7 @@
 - [ ] 
 ## Tool Ideas
 - [ ] **Emoji or Unicode explorer application**
+	- [ ] Possibly a better application for adding custom glyphs to a font (like we do at Bungie)
 - [ ] A very simple video editor with keyboard controls (like VIM style bindings)
 - [ ] Make an android app that modulates the vibration of my phone whenever it's using a lot of CPU power
 - [ ] Redo ConstPort, with better support for many different text sources
@@ -31,6 +32,9 @@
 - [ ] A better installer creation utility than NSIS?
 - [ ] a way to write notes about someone while only briefly using your phone, ie they tell you something they like, 4-5 button presses later you have a stub that can help you remember that and a way to come back later and fill it out more completely
 - [ ] Handmade Rectangle (extension to handmade math for rectangles 3D AABBs and also OBBs)
+- [ ] GIF editor with support for perfect loop finding, re-encoder, details viewer, cropping, etc.
+- [ ] Native desktop OpenStreetMaps viewer/editor with support for easily managing downloaded maps, granularity, etc. Editing features should allow full customization of data while also making it easy to keep up to date with online versions of the maps (i.e. track changes from official data)
+- [ ] Graph editor with good keyboard controls and some plugin system for auto-layout and data presentation
 - [ ] 
 ## Miscellaneous
 - [ ] Add comments to the Pigglen codebase that tell a story so it is fun to read

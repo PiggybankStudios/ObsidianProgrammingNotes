@@ -6,14 +6,71 @@
 - [ ] [Multithreading on Windows](https://learn.microsoft.com/en-us/cpp/parallel/multithreading-with-c-and-win32?view=msvc-170) 
 - [ ] Still can't suppress the file name printout to stderr when using MSVC compiler [Link](https://developercommunity.visualstudio.com/t/allow-having-clexe-not-print-the-compiled-source-f/717761) 
 - [ ] You can `#define WIN32_LEAN_AND_MEAN` before `#include <windows.h>` to remove some of the unneeded things
+- [ ] Run `DUMPBIN [file.obj/exe/lib/exp/dll]` to get information about a binary file on Windows
+	- [ ] `/dependents`: List dependencies for the binary
+	- [ ] `/exports`: Lists all the exported functions/globals
+	- [ ] `/imports`: Lists all the imported functions/globals (very useful on main .exe to see which functions are being pulled in from which dlls)
+	- [ ] `/headers`: Lists all the "headers"
+	- [ ] `/relocations`: Lists all "relocations"
+	- [ ] `/pdbpath[:verbose]`: Lists the .pdb file that would be used with the binary. (add `:verbose` to have it output the paths that were searched when it can't find a .pdb that is expected)
+	- [ ] `/nologo`: Suppress the copywrite logo
+- [ ] 
 ## CLI Options [Link](https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options-listed-alphabetically?view=msvc-170)
 - [ ] `/P` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/p-preprocess-to-a-file?view=msvc-170): Preprocess the input file(s) and output the result to a .i file(s) with the same name as the input (use with `/C` to preserve comments)
+- [ ] `/c` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/c-compile-without-linking?view=msvc-170): Compiles without linking. Prevents the automatic call to `LINK`.
 - [ ] `/C` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/c-preserve-comments-during-preprocessing?view=msvc-170): Preserve comments through the preprocessor, requires `/E`, `/P`, or `/EP` options to be present
 - [ ] `/PD`: Print all macro definitions to stdout (probably want to use `>` to save result to a file)
 - [ ] `/FA`/`/Fa` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/fa-fa-listing-file?view=msvc-170): Output/Configure a listing file containing assembler code
 - [ ] `/Fm` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/fm-name-mapfile?view=msvc-170): Output a map file with a specified name, containing information about where each section of the assembly code was placed during the linking process
 - [ ] `/Fe` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/fe-name-exe-file?view=msvc-170): Set the output exe file path
 - [ ] `/Fo` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/fo-object-file-name?view=msvc-170): Set the output object file path
+- [ ] `/Fp` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/fp-name-dot-pch-file?view=msvc-170): Provides a path name for a precompiled header instead of using the default path name.
+- [ ] `/Fd` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/fd-program-database-file-name?view=msvc-170): Specifies a file name for the program database (PDB) file created by `/Z7`, `/Zi`, `/ZI`
+- [ ] `/FC` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/fc-full-path-of-source-code-file-in-diagnostics?view=msvc-170): Full path for error messages
 - [ ] `/std:c11/c17/clatest` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/std-specify-language-standard-version?view=msvc-170): Enable supported C and C++ language features from the specified version of the C or C++ language standard.
 - [ ] `/we<n>`[Link](https://learn.microsoft.com/en-us/cpp/build/reference/compiler-option-warning-level?view=msvc-170): Treat the specified warning as an error.|
+- [ ] `/W0`/`/W1`/`/W2`/`/W3`/`/W4`/`/Wall` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/compiler-option-warning-level?view=msvc-170): Specifies how the compiler generates warnings for a given compilation.
+- [ ] `/WX(-)`: Treat all warnings as errors
 - [ ] `/experimental:c11atomics` [Blog Post](https://devblogs.microsoft.com/cppblog/c11-atomics-in-visual-studio-2022-version-17-5-preview-2/): Enables partial support for the C11 atomic types feature
+- [ ] `/Zi` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/z7-zi-zi-debug-information-format?view=msvc-170): Generate debug information and store it in a .pdb file
+- [ ] `/ZI` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/z7-zi-zi-debug-information-format?view=msvc-170): Similar to `/Zi` but it produces a .pdb file in the format that supports _Edit and Continue_ feature
+- [ ] `/Zc:wchar_t` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/zc-wchar-t-wchar-t-is-native-type?view=msvc-170): Parse `wchar_t` as built-in type according to the C++ standard
+- [ ] `/Zc:inline` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/zc-inline-remove-unreferenced-comdat?view=msvc-170): Removes unreferenced data or functions that are COMDATs, or that only have internal linkage.
+- [ ] `/Zc:forScope` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/zc-forscope-force-conformance-in-for-loop-scope?view=msvc-170): Used to implement standard C++ behavior for [for](https://learn.microsoft.com/en-us/cpp/cpp/for-statement-cpp?view=msvc-170) loops with Microsoft extensions
+- [ ] `/D "DEFINE_NAME=value"` [Link](): Defines a preprocessing symbol for a source file (TODO: `_UNICODE`, `UNICODE`, `_LIB`, `_DEBUG`?)
+- [ ] `/JMC` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/jmc?view=msvc-170): Specifies compiler support for native _Just My Code_ debugging in the Visual Studio debugger.
+- [ ] `/nologo` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/nologo-suppress-startup-banner-c-cpp?view=msvc-170): Suppresses the display of the copyright banner when the compiler starts up and display of informational messages during compiling.
+- [ ] `/permissive-` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/permissive-standards-conformance?view=msvc-170): Specify standards conformance mode to the compiler. Use this option to help you identify and fix conformance issues in your code, to make it both more correct and more portable.
+- [ ] `/ifcOutput "file_or_dir_path"` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/ifc-output?view=msvc-170): This switch tells the compiler where to output built _`.ifc`_ files.
+- [ ] `/Od` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/od-disable-debug?view=msvc-170): Turns off all optimizations in the program and speeds compilation.
+- [ ] `/O1`/`/O2` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/o1-o2-minimize-size-maximize-speed?view=msvc-170): Selects a predefined set of options that affect the size and speed of generated code.
+- [ ] `/Ob` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/ob-inline-function-expansion?view=msvc-170): Controls inline expansion of functions. By default, when optimizing, expansion occurs at the compiler's discretion on all functions, often referred to as _auto-inlining_.
+- [ ] `/Os`/`/Ot` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/os-ot-favor-small-code-favor-fast-code?view=msvc-170): Specify whether to favor size (**`/Os`**) or speed (**`/Ot`**) when optimizing code.
+- [ ] `/Ox` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/ox-full-optimization?view=msvc-170): Enables a combination of optimizations that favor speed. (i.e. a subset of things enabled by `/O2`)
+- [ ] `/EHa(-)`/`/EHs(-)`/`/EHc(-)`/`/EHr(-)` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/eh-exception-handling-model?view=msvc-170): Specifies the exception handling model support generated by the compiler. `/EHa`: Enables standard C++ stack unwinding for both async and standard, `/EHs`: Enables standard C++ stack unwinding for _only_ standard, `/EHc`: extern "C" functions don't through C++ exceptions, `/EHr`: Tells the compiler to always generate runtime termination checks for all **`noexcept`** functions.
+- [ ] `/MD`/`/MT`/`/MDd`/`/MTd` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/md-mt-ld-use-run-time-library?view=msvc-170): Indicates whether a multithreaded module is a DLL and specifies retail or debug versions of the runtime library.
+- [ ] `/sdl` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/sdl-enable-additional-security-checks?view=msvc-170): Enables recommended Security Development Lifecycle (SDL) checks.
+- [ ] `/Yu` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/yu-use-precompiled-header-file?view=msvc-170): Instructs the compiler to use an existing precompiled header (_`.pch`_) file in the current compilation.
+- [ ] `/MP` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/mp-build-with-multiple-processes?view=msvc-170): Multithreaded compilation, aka causes the compiler to create one or more copies of itself, each in a separate process.
+- [ ] `/GS` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/gs-buffer-security-check?view=msvc-170): Detects some buffer overruns that overwrite a function's return address, exception handler address, or certain types of parameters
+- [ ] `/Gm-` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/gm-enable-minimal-rebuild?view=msvc-170): Disable Minimal Rebuild (which is deprecated)
+- [ ] `/fp:fast/precise/contract/except/strict` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/fp-specify-floating-point-behavior?view=msvc-170): Specifies how the compiler treats floating-point expressions, optimizations, and exceptions
+- [ ] `/errorReport:none/prompt/queue/send` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/errorreport-report-internal-compiler-errors?view=msvc-170): Changes how an ICE works. An internal compiler error (ICE) results when the compiler can't process a source code file
+- [ ] `/GF` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/gf-eliminate-duplicate-strings?view=msvc-170): Enables "string pooling": the compiler to create a single copy of identical strings in the program image and in memory during execution
+- [ ] `/GR` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/gr-enable-run-time-type-information?view=msvc-170): Enables Run-Time Type Information (RTTI)
+- [ ] `/RTC1` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-170): Enable fast runtime checks (Equivalent to `/RTCsu`)
+- [ ] `/RTCc` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-170): Convert to smaller type checks at run-time
+- [ ] `/RTCs` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-170): Enable stack frame runtime checks
+- [ ] `/RTCu` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-170): Enables uninitialized local usage checks
+- [ ] `/Gd`, `/Gr`, `/Gz`, `/Gv` [Link](https://learn.microsoft.com/en-us/cpp/build/reference/gd-gr-gv-gz-calling-convention?view=msvc-170): These options determine the order in which function arguments are pushed onto the stack, whether the caller function or called function removes the arguments from the stack at the end of the call, and the name-decorating convention that the compiler uses to identify individual functions.
+	- `/Gd`: specifies the [`__cdecl`](https://learn.microsoft.com/en-us/cpp/cpp/cdecl?view=msvc-170) calling convention for all functions except C++ member functions
+	- `/Gr`: Specifies the `__fastcall` calling convention for all functions except C++ member functions and functions named `main`
+	- `/Gz`: Specifies the `__stdcall` calling convention for all functions except C++ member functions and functions named `main`
+	- `/Gv`: Specifies the `__vectorcall` calling convention for all functions except C++ member functions, functions named `main` and functions with a `vararg` variable argument list
+## Linker Options
+- [ ] `/OUT:"C:\gamedev\projects\Test1\x64\Debug\StaticLib1.lib"`: ?
+- [ ] `/MACHINE:X64`: ?
+- [ ] `/NOLOGO`: ?
+- [ ] `-incremental:no`: ?
+## Ripped from Static Library VS Project
+- [ ] `/diagnostics:column`: ?
