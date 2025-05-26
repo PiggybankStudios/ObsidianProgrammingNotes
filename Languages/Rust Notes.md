@@ -61,6 +61,17 @@ match enum_value
 	- Possible values: `asm`, `llvm-bc`, `llvm-ir`, `obj`, `metadata`, `link`, `dep-info`, `mir`
 - [ ] `--print [type]`: Compiler debug information to print to stdout
 	- Possible values: `crate-name`, `file-names`, `sysroot`, `target-libdir`, `cfg`, `calling-conventions`, `target-list`, `target-cpus`, `target-features`, `relocation-models`, `code-models`, `tls-models`, `target-spec-json`, `all-target-specs-json`, `native-static-libs`, `stack-protector-strategies`, `link-args`, `deployment-target`
+- [ ] s
+## Cargo CLI Options
+- [ ] `cargo new [folder_name]`: Creates a folder in this current directory and adds a Cargo.toml, src folder, main.rs, and a .gitignore file (also can use `cargo init` to make a cargo project in the current directory)
+- [ ] `cargo [run/build] {--release}`: In the folder with the Cargo.toml, this compiles the application (if needed), and runs it if `run` is used
+- [ ] 
+## Useful Crates
+- [ ] [serde](https://crates.io/crates/serde) A generic serialization/deserialization framework
+	- [serde_json](https://crates.io/crates/serde_json)
+- [ ] [glfw](https://crates.io/crates/glfw) GLFW3 bindings and idiomatic wrapper for Rust
+	- [glfw-passthrough](https://crates.io/crates/glfw-passthrough)?
+- [ ] [egui](https://crates.io/crates/egui) An easy-to-use immediate mode GUI that runs on both web and native [Github](https://github.com/emilk/egui) [Web Demo](https://www.egui.rs/#demo)
 - [ ] 
 ## Rust in Python pip Packages [Book on Amazon](https://www.amazon.com/Speed-Your-Python-Rust-performance/dp/180181144X) [Github](https://github.com/PacktPublishing/Speed-up-your-Python-with-Rust)
 - [ ] Software covered in the book: Python 3, Rust, Docker, Py03, Redis, PostgreSQL
@@ -104,4 +115,7 @@ class Animal(Enum):
 - [ ] We can use `#[derive(Copy, Clone)]` on a struct to automatically implement the Copy and Clone traits. Especially useful for stuff like `struct Vector2<T> {...}` where the members are all copyable/clonable types
 - [ ] When doing curly bracket initialization of a type, we cannot use `<Type>` to declare template types. We have to declare them on the left-hand side of the assignment `let x: Vector2<i64> = Vector2{x: 1, y: 2};`
 - [ ] The last line in a function is implicitly treated as the return value **if it does not have an ending semicolon!**
+- [ ] Cargo does a lot of things: Building, Running, Package Downloading, Testing, Documentation Generation, etc.
+- [ ] All Cargo output is put into the `target/` folder next to the `Cargo.toml` (except for `Cargo.lock` file? Should we include this in the repository?)
+- [ ] Distribution of crates is often done through [Crates.io](https://crates.io/)
 - [ ] 

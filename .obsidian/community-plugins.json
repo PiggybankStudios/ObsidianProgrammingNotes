@@ -1,6 +1,7 @@
 [
-  "obsidian-textgenerator-plugin",
-  "obsidian-text-format",
+  "editor-width-slider",
   "obsidian-emoji-toolbar",
-  "editor-width-slider"
+  "obsidian-text-format",
+  "obsidian-textgenerator-plugin",
+  "search-on-internet"
 ]
