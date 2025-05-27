@@ -24,7 +24,7 @@
 - [ ] Format strings in Rust can contain `{}` to indicate automatic formatting of the next argument
 - [ ] Disable dead code warning with `#[allow(dead_code)]`, allow unused imports with `#[allow(unused_imports)]`
 - [ ] Call constructor for a struct `let mut map = HashMap::new();`
-- [ ] Import a type: `use std::collections::HashMap;`
+- [ ] Import a type: `use std::collections::HashMap;` or multiple types `use serde_json::{json, Value};`. Add ` as NewName` after any type to rename it
 - [ ] Switch on enum type: (all values of enum must be handled in a `match`)
 ```rust
 match enum_value
@@ -40,6 +40,10 @@ match enum_value
 - [ ] `Result` works like `Option` but with `Ok` or `Err`. `match` and `.unwrap()` both work on `Result`
 - [ ] `.expect("Error message")` works like `.unwrap()` but throws a panic if the result an `Err`. Also can use `.is_err()`
 - [ ] Throw an error: `panic!("Error message");`
+- [ ] Documentation comments can be added inside `///` comment blocks before a function/type/etc. Documentation comments are in markdown syntax, so `# Header` and `[Name](link)` and code-block syntax with three backticks or backticks around something inline all work. Use `//!` comment blocks at the top of the `mod.rs` file to documentation the module.
+- [ ] `pub` keyword is required before something can be used anywhere outside it's file
+- [ ] `super::` can be used in namespace paths to go up a module
+- [ ] Initialize a struct with it's name followed by curly brackets: `let stock = Stock{ price: 42.3, name: "Google" };`. The struct member names are optional, even after one member has been named. All members are required to be specified?
 - [ ] 
 ## Rust Compiler CLI Options `rustc` [Link](https://doc.rust-lang.org/rustc/command-line-arguments.html)
 - [ ] `-g` / `-C debuginfo=2`: Generate debug symbols
@@ -61,17 +65,19 @@ match enum_value
 	- Possible values: `asm`, `llvm-bc`, `llvm-ir`, `obj`, `metadata`, `link`, `dep-info`, `mir`
 - [ ] `--print [type]`: Compiler debug information to print to stdout
 	- Possible values: `crate-name`, `file-names`, `sysroot`, `target-libdir`, `cfg`, `calling-conventions`, `target-list`, `target-cpus`, `target-features`, `relocation-models`, `code-models`, `tls-models`, `target-spec-json`, `all-target-specs-json`, `native-static-libs`, `stack-protector-strategies`, `link-args`, `deployment-target`
-- [ ] s
+- [ ] 
 ## Cargo CLI Options
 - [ ] `cargo new [folder_name]`: Creates a folder in this current directory and adds a Cargo.toml, src folder, main.rs, and a .gitignore file (also can use `cargo init` to make a cargo project in the current directory)
 - [ ] `cargo [run/build] {--release}`: In the folder with the Cargo.toml, this compiles the application (if needed), and runs it if `run` is used
+- [ ] `cargo doc {--open}` (`cargo d`): Generates documentation from the documentation comment blocks in the code. Generated website goes into `target/doc/[binary_name]/index.html`
 - [ ] 
 ## Useful Crates
 - [ ] [serde](https://crates.io/crates/serde) A generic serialization/deserialization framework
-	- [serde_json](https://crates.io/crates/serde_json)
+	- [serde_json](https://crates.io/crates/serde_json) [Github](https://github.com/serde-rs/json)
 - [ ] [glfw](https://crates.io/crates/glfw) GLFW3 bindings and idiomatic wrapper for Rust
 	- [glfw-passthrough](https://crates.io/crates/glfw-passthrough)?
 - [ ] [egui](https://crates.io/crates/egui) An easy-to-use immediate mode GUI that runs on both web and native [Github](https://github.com/emilk/egui) [Web Demo](https://www.egui.rs/#demo)
+- [ ] [chrono](https://crates.io/crates/chrono) Date and time library for Rust
 - [ ] 
 ## Rust in Python pip Packages [Book on Amazon](https://www.amazon.com/Speed-Your-Python-Rust-performance/dp/180181144X) [Github](https://github.com/PacktPublishing/Speed-up-your-Python-with-Rust)
 - [ ] Software covered in the book: Python 3, Rust, Docker, Py03, Redis, PostgreSQL
@@ -118,4 +124,6 @@ class Animal(Enum):
 - [ ] Cargo does a lot of things: Building, Running, Package Downloading, Testing, Documentation Generation, etc.
 - [ ] All Cargo output is put into the `target/` folder next to the `Cargo.toml` (except for `Cargo.lock` file? Should we include this in the repository?)
 - [ ] Distribution of crates is often done through [Crates.io](https://crates.io/)
+- [ ] Each folder in a Rust source tree is a "module" with a `mod.rs` being the main file, other files can be exposed with `pub use self::file_name;` lines in the `mod.rs`
+- [ ] You can declare multiple modules in a single file using `mod name { ... }`
 - [ ] 
