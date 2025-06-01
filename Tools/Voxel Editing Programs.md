@@ -68,8 +68,6 @@
 - [ ] asdasd
 # Makers Empire 3D
 - [ ] asdasd
-# MagicaVoxel
-- [ ] asdasd
 # Grid
 - [ ] asdasd
 # Goxel

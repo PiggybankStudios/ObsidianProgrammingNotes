@@ -24,7 +24,7 @@
 - [ ] Format strings in Rust can contain `{}` to indicate automatic formatting of the next argument
 - [ ] Disable dead code warning with `#[allow(dead_code)]`, allow unused imports with `#[allow(unused_imports)]`
 - [ ] Call constructor for a struct `let mut map = HashMap::new();`
-- [ ] Import a type: `use std::collections::HashMap;` or multiple types `use serde_json::{json, Value};`. Add ` as NewName` after any type to rename it
+- [ ] Import a type: `use std::collections::HashMap;` or multiple types `use serde_json::{json, Value};`. Add ` as NewName` after any type to rename it. Import all types in a module like `use std::str::*;`
 - [ ] Switch on enum type: (all values of enum must be handled in a `match`)
 ```rust
 match enum_value
@@ -44,6 +44,8 @@ match enum_value
 - [ ] `pub` keyword is required before something can be used anywhere outside it's file
 - [ ] `super::` can be used in namespace paths to go up a module
 - [ ] Initialize a struct with it's name followed by curly brackets: `let stock = Stock{ price: 42.3, name: "Google" };`. The struct member names are optional, even after one member has been named. All members are required to be specified?
+- [ ] Multi-line string literal: `r##"String with new lines"##`
+- [ ] Ternary conditional is done with an inline `if {} else {}` statement, like `println!("{}", if bool_var {"True"} else {"False"});`
 - [ ] 
 ## Rust Compiler CLI Options `rustc` [Link](https://doc.rust-lang.org/rustc/command-line-arguments.html)
 - [ ] `-g` / `-C debuginfo=2`: Generate debug symbols
@@ -66,10 +68,19 @@ match enum_value
 - [ ] `--print [type]`: Compiler debug information to print to stdout
 	- Possible values: `crate-name`, `file-names`, `sysroot`, `target-libdir`, `cfg`, `calling-conventions`, `target-list`, `target-cpus`, `target-features`, `relocation-models`, `code-models`, `tls-models`, `target-spec-json`, `all-target-specs-json`, `native-static-libs`, `stack-protector-strategies`, `link-args`, `deployment-target`
 - [ ] 
+## Rustup CLI Options [Link](https://rust-lang.github.io/rustup/)
+- [ ] `rustup component add [component_name]`
+- [ ] `rustup self update`
 ## Cargo CLI Options
 - [ ] `cargo new [folder_name]`: Creates a folder in this current directory and adds a Cargo.toml, src folder, main.rs, and a .gitignore file (also can use `cargo init` to make a cargo project in the current directory)
 - [ ] `cargo [run/build] {--release}`: In the folder with the Cargo.toml, this compiles the application (if needed), and runs it if `run` is used
+	- `-C [path]`: Change to a path before building/running. Allows you to build/run without CWD being in the project folder
 - [ ] `cargo doc {--open}` (`cargo d`): Generates documentation from the documentation comment blocks in the code. Generated website goes into `target/doc/[binary_name]/index.html`
+- [ ] `cargo tree`: Displays all cargo dependencies in a tree-like structure
+	- `-d`: Show dependencies that have more than 1 version being pulled in
+	- `-i [crate]`: Show an inverse tree starting from the given crate name
+- [ ] `cargo install [command_name]`: Install a Cargo extension, for example `cargo-download` [LInk](https://github.com/Xion/cargo-download)
+- [ ] `cargo download [crate_name] -x`: Download and extract a particular crate from crates.io into a new folder (Not a default cargo command, must install `cargo download`)
 - [ ] 
 ## Useful Crates
 - [ ] [serde](https://crates.io/crates/serde) A generic serialization/deserialization framework
@@ -78,6 +89,8 @@ match enum_value
 	- [glfw-passthrough](https://crates.io/crates/glfw-passthrough)?
 - [ ] [egui](https://crates.io/crates/egui) An easy-to-use immediate mode GUI that runs on both web and native [Github](https://github.com/emilk/egui) [Web Demo](https://www.egui.rs/#demo)
 - [ ] [chrono](https://crates.io/crates/chrono) Date and time library for Rust
+- [ ] [rand](https://crates.io/crates/rand): Random number generators and other randomness functionality
+- [ ] [eframe](https://crates.io/crates/eframe) [Github](https://github.com/emilk/eframe_template/): 
 - [ ] 
 ## Rust in Python pip Packages [Book on Amazon](https://www.amazon.com/Speed-Your-Python-Rust-performance/dp/180181144X) [Github](https://github.com/PacktPublishing/Speed-up-your-Python-with-Rust)
 - [ ] Software covered in the book: Python 3, Rust, Docker, Py03, Redis, PostgreSQL
@@ -126,4 +139,8 @@ class Animal(Enum):
 - [ ] Distribution of crates is often done through [Crates.io](https://crates.io/)
 - [ ] Each folder in a Rust source tree is a "module" with a `mod.rs` being the main file, other files can be exposed with `pub use self::file_name;` lines in the `mod.rs`
 - [ ] You can declare multiple modules in a single file using `mod name { ... }`
+- [ ] eframe + egui pulls in a total of 119 dependencies:
+	- `ab_glyph, ab_glyph_rasterizer, accesskit, accesskit_consumer, accesskit_windows, accesskit_winit, adler2, ahash, arboard, arrayvec, autocfg, bitflags, bytemuck, bytemuck_derive, byteorder-lite, cfg-if, cfg_aliases, clipboard-win, crc32fast, cursor-icon, displaydoc, document-features, dpi, ecolor, eframe, egui, egui-winit, egui_glow, emath, epaint, epaint_default_fonts, error-code, fdeflate, flate2, foldhash, form_urlencoded, gl_generator, glow, glutin, glutin-winit, glutin_egl_sys, glutin_wgl_sys, hashbrown, icu_collections, icu_locale_core, icu_normalizer, icu_normalizer_data, icu_properties, icu_properties_data, icu_provider, idna, idna_adapter, image, immutable-chunkmap, khronos_api, libloading, litemap, litrs, lock_api, log, memoffset, miniz_oxide, nohash-hasher, num-traits, once_cell, owned_ttf_parser, parking_lot, parking_lot_core, paste, percent-encoding, pin-project-lite, png, potential_utf, proc-macro2, profiling, quote, raw-window-handle, RustPort, scopeguard, simd-adler32, smallvec, smol_str, stable_deref_trait, static_assertions, syn, synstructure, tinystr, tracing, tracing-core, ttf-parser, unicode-ident, unicode-segmentation, url, utf8_iter, version_check, web-time, webbrowser, winapi, windows, windows-core, windows-implement, windows-interface, windows-result, windows-strings, windows-sys, windows-targets, windows_x86_64_msvc, winit, writeable, xml-rs, yoke, yoke-derive, zerocopy, zerofrom, zerofrom-derive, zerotrie, zerovec, zerovec-derive`
+- [ ] Crates can have named **"features"** which are off by default. These features can be enabled by the dependee and various dependencies can then be brought in based on the faeture being enabled.
+- [ ] Dependencies can be classified as **"dev-dependencies"** and **"build-dependencies"**
 - [ ] 

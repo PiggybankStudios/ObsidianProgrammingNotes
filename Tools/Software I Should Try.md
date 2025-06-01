@@ -53,7 +53,7 @@
       ![[Software I Should Try - WhiteboxLogo.png]]
 	- WhiteBox is a software development tool that compiles runs and “debugs” your C(++) code live to report its execution patterns and data transforms.
 ---
-- [ ] **/fsanitize=fuzzer** [Link](https://learn.microsoft.com/en-us/cpp/build/reference/fsanitize?view=msvc-170)
+- [x] **/fsanitize=fuzzer** [Link](https://learn.microsoft.com/en-us/cpp/build/reference/fsanitize?view=msvc-170)
 	- The Fuzzer in MSVC that allows verifying code by walking it using generated inputs
 ---
 - [ ] **HCC (C SPIR-V Compiler)** [Link](https://github.com/heroseh/hcc)
@@ -174,3 +174,6 @@
 - [ ] **Valgrind** [Website](https://valgrind.org/) 
 - [ ] **set_vc_vars.py** (Plugin for Sublime) [Github](https://github.com/STealthy-and-haSTy/SublimeScraps/blob/master/plugins/set_vc_vars.py) [StackOverflow](https://stackoverflow.com/questions/39881091/how-to-run-sublimetext-with-visual-studio-environment-enabled/)
 - [ ] **gource** [Link](https://gource.io/) Commit visualization over time
+- [ ] **Netwide Assembler (NASM)** [Link](https://www.nasm.us/)
+- [ ] **Can I Use `___`?** [Link](https://caniuse.com/)
+- [ ] 

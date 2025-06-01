@@ -1,0 +1,122 @@
+# Notes
+- [ ] [Table of Contents](https://www.computerenhance.com/p/table-of-contents)
+- [ ] [Netwide Assembler](https://www.nasm.us/)
+- [ ] 
+# Chapters
+- **Prologue: The Five Multipliers** 7 parts
+	- [x] 1. Welcome to the Performance-Aware Programming Series
+	- [x] 2. Waste
+	- [x] 3. Instructions Per Clock
+	- [x] 4. Single Instruction, Multiple Data
+	- [x] 5. Caching
+	- [x] 6. Multithreading
+	- [x] 7. Python Revisited
+- **Interlude** 2 Parts
+	- [ ] 1. The Haversine Distance Problem
+	- [ ] 2. "Clean" Code, Horrible Performance
+- **Part 1: Reading ASM** 15 parts
+	- [x] 1. Instruction Decoding on the 8086
+		- Another user's Rust-based homework solution: [Link](https://github.com/jmfrank63/inst-decoding-8086) [Or Link](https://github.com/Pixel-Hellmin/sim_8086) [Or Link](https://github.com/jpmckinney/computer_enhance/blob/main/src/main.rs) [Or Link](https://gist.github.com/flippingbitss/c4eacf789e526fb500fae8c116fefcc0) [Or Link](https://gist.github.com/anshap1719/67406464006c4772f9055507b9fbeaad) [Or Link](https://gist.github.com/r1sc/d807eeb00d9065c122c92bc9a212252a)
+		- 8086 Manual converted to text with OCR: [Link](https://codeberg.org/bolt/8086-Users-Manual)
+		- Good post related from alt.lang.asm: [Link](https://gist.github.com/seanjensengrey/f971c20d05d4d0efc0781f2f3c0353da)
+		- MOV is turing complete: [The MoVfuscator Turning mov into a soul crushing RE nightmare](https://www.youtube.com/watch?v=R7EEoWg6Ekk)
+	- [x] 2. Decoding Multiple Instructions and Suffixes
+		- Rust homework solutions: [Nicolas Vidal](https://github.com/NicolasVidal/rust_computer_enhance_exercises) [photobaric](https://gist.github.com/hzuo/e274212ab1fc066889ff13759c9fde70) [Demitry](https://gist.github.com/LDVSOFT/9dadb14ecb91682d6b8447a0f928b1cb) [James McKinney](https://github.com/jpmckinney/computer_enhance/blob/main/src/main.rs) 
+		- How are we supposed to handle signed 8-bit DISP values? Should we fill the high order byte with 1 or 0 depending on highest bit in the 8-bit value?
+	- [ ] 3. Opcode Patterns in 8086 Arithmetic
+	- [ ] 4. 8086 Decoder Code Review
+	- [ ] 5. Using the Reference Decoder as a Shared Library
+	- [ ] 6. Simulating Non-memory MOVs
+	- [ ] 7. Simulating ADD, SUB, and CMP
+	- [ ] 8. Simulating Conditional Jumps
+	- [ ] 9. Simulating Memory
+	- [ ] 10. Simulating Real Programs
+	- [ ] 11. Other Common Instructions
+	- [ ] 12. The Stack
+	- [ ] 13. Estimating Cycles
+	- [ ] 14. From 8086 to x64
+	- [ ] 15. 8086 Simulation Code Review
+- **Part 2: Basic Profiling** 10 parts
+	- [ ] 1. Generating Haversine Input JSON
+	- [ ] 2. Writing a Simple Haversine Distance Processor
+	- [ ] 3. Initial Haversine Processor Code Review
+	- [ ] 4. Introduction to RDTSC
+	- [ ] 5. How does QueryPerformanceCounter measure time?
+	- [ ] 6. Instrumentation-Based Profiling
+	- [ ] 7. Profiling Nested Blocks
+	- [ ] 8. Profiling Recursive Blocks
+	- [ ] 9. A First Look at Profiling Overhead
+	- [ ] 10. Comparing the Overhead of RDTSC and QueryPerformanceCounter
+- **Part 3: Moving Data** 25 parts (* can be skipped)
+	- [ ] 1. Measuring Data Throughput
+	- [ ] 2. Repetition Testing
+	- [ ] 3. Monitoring OS Performance Counters
+	- [ ] 4. Page Faults
+		- [ ] a. Probing OS Page Fault Behavior*
+		- [ ] b. Four-Level Paging*
+		- [ ] c. Analyzing Page Fault Anomalies*
+		- [ ] d. Powerful Page Mapping Techniques*
+		- [ ] e. Faster Reads with Large Page Allocations
+		- [ ] f. Memory-Mapped Files*
+	- [ ] 5. Inspecting Loop Assembly
+	- [ ] 6. Intuiting Legacy Throughput
+	- [ ] 7. Analyzing Dependency Chains
+	- [ ] 8. Linking Directly to ASM for Experimentation
+	- [ ] 9. CPU Front End Basics
+	- [ ] 10. Branch Prediction
+	- [ ] 11. Code Alignment
+	- [ ] 12. The RAT and the Register File
+	- [ ] 13. Execution Ports and the Scheduler
+	- [ ] 14. Increasing Read Bandwidth with SIMD Instructions
+	- [ ] 15. Cache Size and Bandwidth Testing
+	- [ ] 16. Non-Power-of-Two Cache Size Testing
+	- [ ] 17. Latency and Throughput, Again
+	- [ ] 18. Unaligned Load Penalties
+	- [ ] 19. Cache Sets and Indexing
+	- [ ] 20. Non-Temporal Stores
+	- [ ] 21. Prefetching
+	- [ ] 22. Prefetching Wrap-up
+		- [ ] a. A Closer Look at the Prefetching Performance Graph*
+	- [ ] 23. 2x Faster File Reads
+	- [ ] 24. Overlapping File Reads with Computation
+	- [ ] 25. Testing Memory-Mapped Files*
+- **Part 4: Computation** 14 parts
+	- [ ] 1. Reference Haversine Code
+	- [ ] 2. Identifying Non-inlined Math Functions
+	- [ ] 3. Determining Input Ranges
+	- [ ] 4. Introduction to SSE Intrinsics
+	- [ ] 5. Function Approximation
+	- [ ] 6. Range Reduction
+	- [ ] 7. Approximation Using Hower-Power Polynomials
+	- [ ] 8. Horner's Rule
+	- [ ] 9. Fused Multiply-Add
+	- [ ] 10. Coefficient Arrays for Polynomial Evaluation
+	- [ ] 11. Approximating Arcsine
+	- [ ] 12. Extending Arcsine to the Full Input Range
+	- [ ] 13. Our Very Own Haversine
+	- [ ] 14. Removing Waste
+- **Halloween Spooktacular Challenge** 17 parts
+	- [ ] Announcing the 2024 Holloween Spooktacular Challenge!
+	- [ ] Day 1: The Challenge
+	- [ ] Day 2: Reboot Your Machine
+	- [ ] Day 3: Trace in Real-Time Mode
+	- [ ] Day 4: Use TraceQueryInformation
+	- [ ] Day 5: Call TraceSetInformation Twice
+	- [ ] Day 6: PMCs Only Work for A Subset of Event Types
+	- [ ] Day 7: Look for PMCs i nthe ExtendedData
+	- [ ] Day 8: Martins Moxeiko's Miniperf
+	- [ ] Day 9: What's Left?
+	- [ ] Day 10: Use TraceEvent
+	- [ ] Day 11: Define Your Own Event UserData
+	- [ ] Day 12: Find Another PMC Event Type
+	- [ ] Day 13: Use SysCallExit to Mark Start Points
+	- [ ] Day 14: Use SysCallEnter to Mark Stop Points
+	- [ ] Day 15: Use GetEventProcessorIndex to Help Track Profile Regions
+	- [ ] Real-time PMCs on Windows with ETW
+- **1994 Internship Interview Series** 5 parts
+	- [ ] The Four Programming Questions from My 1994 Microsoft Internship Interview
+	- [ ] Question 1: Rectangle Copy
+	- [ ] Question 2: String Copy
+	- [ ] Question 3: Flood Fill Detection
+	- [ ] Question 4: Outline a Circle
+
