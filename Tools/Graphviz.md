@@ -1,0 +1,22 @@
+## Notes
+- [ ] [Download Page](https://graphviz.org/download/)
+- [ ] `dot -Tpng -O [file]`
+- [ ] Graphviz Version
+	- Desktop: 8.0.5
+	- Laptop: ?
+- [ ] 
+## dot.exe Options
+- [ ] `--help`/`-?`: Print out the options
+- [ ] `-V`: Print version and exit
+- [ ] `-v`: Enable verbose output
+- [ ] `-T[format]`: Set output format
+- [ ] `-K[engine]`: Set formatting engine
+- [ ] `-l[lib]`: Use external library
+- [ ] `-o[file]`: Set output file path
+- [ ] `-O`: Automatically choose output file name based on input file name
+- [ ] `-y`: Invert y coordinate in output (doesn't do much for my simple test on cargo dependencies graph)
+- [ ] `-x`: Reduce graph
+- [ ] `-Lg`: Don't use grid
+- [ ] `-LO`: Use old attractive force
+- [ ] `--focus [package]`: Focus on a particular package (or comma separated list). Only the intermediate packages between top and this package are displayed
+- [ ] 

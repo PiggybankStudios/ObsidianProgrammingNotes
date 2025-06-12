@@ -16,6 +16,7 @@
 	- [ ] LLM is completely compiled out in *Test* and *Shipped* builds
 - [ ] `PlayerStart` spawns a `DefaultPawn` at game start?
 - [ ] *HLOD* = Hierarchical Level of Detail
+- [ ] [Parent Classes in Unreal Engine](https://vrealmatic.com/unreal-engine/classes)
 - [ ] 
 ## Tutorials
 - [x] [Unreal Engine C++ Tutorial: Plugins](https://www.youtube.com/watch?v=mgFrFdzb7hg)
