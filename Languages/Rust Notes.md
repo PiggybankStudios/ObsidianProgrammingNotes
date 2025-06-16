@@ -70,7 +70,8 @@ match vector_var {
 - [ ] Within a package you can gain access to another file by doing `mod file_name;` at the top of your file. You can then have a `use file_name::member;` to bring specific items from that module into this file's namespace. To access files from a folder, they must be publicly exposed in the `mod.rs` file in that folder. Once this is done you simply do `mod folder_name;` and then do things like `use folder_name::file_name::member;`
 - [ ] An enum consists of some number of variants, each variant can be any valid struct type (Tuple, c-like, or Unit). Unit type variants look a lot like C-Like structs. All variants can have an integer "designator" but if the enum contains non-unit-like variants than you must add `#[repr(i32)]` to the enum
 - [ ] Some functions like `parse` use "turbofish" syntax `"10".parse::<i32>()` i.e. the `::<>` part [Link](https://rust.code-maven.com/turbofish) [Website](https://turbo.fish/about) [Reddit Thread](https://www.reddit.com/r/rust/comments/3fimgp/comment/ctozkd0/)
-- [ ] 
+- [ ] You can omit the type of most variables and let Rust infer the type. Inferrence takes more than just the single line into account. Partial inference can be done using `_` in the type annotation like `let myThing: Vec<_> = ...;`
+- [ ] `Vec2::ZERO` and `Vec2::splat(x_and_y)`
 ## Cargo.toml Syntax Notes
 - [ ] `Cargo.toml` is the "manifest" for the package: [Manifest Documentation](https://doc.rust-lang.org/cargo/reference/manifest.html)
 - [ ] Package can contain one or more libraries `[lib]`, binaries `[[bin]]`, examples `[[example]]`, tests `[[test]]`, and benches `[[bench]]`
@@ -149,6 +150,9 @@ match vector_var {
 	- [Cargo DepGraph](https://github.com/jplatte/cargo-depgraph)
 	- 
 - [ ] `cargo install [command_name]`: Install a Cargo extension, for example `cargo-download` [LInk](https://github.com/Xion/cargo-download)
+	- [Creating a Cargo Extension](https://doc.rust-lang.org/book/ch14-05-extending-cargo.html) (Basically any exe in your PATH that is named `cargo-[something]` can be run as if it's a cargo command)
+	- Binaries are installed into `%USERPROFILE%\.cargo\bin\cargo-loc.exe`
+	- `cargo --list`: List all available commands, including ones that were installed with `cargo install`
 - [ ] `cargo add [crate_name]`: Add a crate to your dependencies in a module (automatically looks up latest release and adds that version to your `Cargo.toml` file)
 - [ ] 
 ## Useful Crates [Crates.io](https://crates.io/)
@@ -192,6 +196,7 @@ match vector_var {
 - [ ] `.unwrap()`: ?
 - [ ] `"15".parse::<i32>()`: ?
 - [ ] `.is_err()`: ?
+- [ ] `.collect::<Type>()`: Takes anything that is iteratable and turns it into a desired collection type
 - [ ] 
 ## Rust in Python pip Packages [Book on Amazon](https://www.amazon.com/Speed-Your-Python-Rust-performance/dp/180181144X) [Github](https://github.com/PacktPublishing/Speed-up-your-Python-with-Rust)
 - [ ] Software covered in the book: Python 3, Rust, Docker, Py03, Redis, PostgreSQL
@@ -252,5 +257,14 @@ class Animal(Enum):
 - [ ] Feature options on dependencies allows minimal dependencies (look at cargo tree). Build vs Dev vs Regular dependencies
 - [ ] Some things are only allowed on `nightly` branch?
 - [ ] [Rust libraries with (almost) zero dependencies Reddit Thread](https://www.reddit.com/r/rust/comments/k1h55e/rust_libraries_with_almost_zero_dependencies/)
-- [ ] Language-encouraged documentation, and public hosting does a lot for readability of foreign code
+- [ ] Language-encouraged documentation, and public hosting does a lot for readability of foreign code. Online documentation format can be confusing though
+- [ ] "Turbofish" syntax naming history. Rust is an "online age" language. [Link](https://turbo.fish/about)
+- [ ] CoPilot is not very good at Rust
+- [ ] Casting and `From`, `Into`, `TryFrom`, `TryInto`. Standard library traits used for language features
+- [ ] Rust versions and big historical changes are mentioned all the time
+- [ ] [Are We GUI Yet?](https://areweguiyet.com/) 
+- [ ] [Rust at Clockwork Labs](https://spacetimedb.com/). [Rust in Godot](https://godot-rust.github.io/). [Rust on Playdate](https://devforum.play.date/t/rust-development-thread/3999)
+- [ ] Type inference engine can look at following lines (Also Rust by Example style and grammar)
+![[RustNotes_TyperInference.jpg]]
+- [ ] Working on things without internet. Download and compiling crates
 - [ ] 
