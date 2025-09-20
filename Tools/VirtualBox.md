@@ -1,0 +1,82 @@
+## Notes
+- [ ] [Download](https://www.virtualbox.org/wiki/Downloads)
+- [ ] Version **7.1.10** (Downloaded June 24th 2025)
+- [ ] Installation Directory: `C:/Program Files/Oracle/VirtualBox/` (Couldn't install on `F:` drive for some "security reasons")
+- [ ] To install Guest Additions so shared folders will work
+	- Add Shared Folder to VM settings, mount to `/mnt/[some_name]`
+	- Install packages: `gcc`, `make`, `perl`, `bzip2`, and `tar`
+	- Devices -> Insert Guest Additions CD Image
+	- Run installer from CD
+	- Add yourself to group `vboxsf` so you have security clearance for the shared folder: `sudo adduser [username] vboxsf`
+	- Restart VM
+	- Access folder inside `/mnt/[some_name]`
+- [ ] 
+## VM Instances
+### Ubuntu1 (Desktop)
+- [ ] Ubuntu Desktop **v24.04.2 LTS** Intel/AMD (`ubuntu-24.04.2-desktop-amd64.iso`) [Link](https://ubuntu.com/download/desktop/thank-you?version=24.04.2&architecture=amd64&lts=true)
+- [ ] Virtual Hard Drive: **64GB**
+- [ ] Processors: **4**
+- [ ] RAM: **8GB**
+- [ ] Manually Installed Packages:
+	- `git`, `bzip2`, `clang`, `gcc`, `make`, `perl`, `tar`, `libfontconfig1-dev`, `mesa-common-dev`, `libxi-dev`, `libxcursor-dev`, `libbox2d-dev`, `cmake`, `libwayland-dev`, `libxkbcommon-dev`, `libxrandr-dev`, `libxinerama-dev`
+- [ ] 
+### Ubunutu1 (Laptop)
+- [ ] Ubuntu Desktop **v24.04.2 LTS** Intel/AMD (`ubuntu-24.04.2-desktop-amd64.iso`)
+- [ ] Virtual Hard Drive: **128GB**
+- [ ] Processors: **4**
+- [ ] RAM: **8GB**
+- [ ] Manually Installed Packages:
+	- `git`, `clang`, `libfontconfig1-dev`, `libxi-dev`, `libxcursor-dev`,  `mesa-common-dev`
+- [ ] 
+## VBoxManage CLI Arguments
+- [ ] `internalcommands`: ?
+- [ ] `list [vms|...]`: Lists various things, like all VMs
+- [ ] `showvminfo [name/UID]`: Prints a bunch of info for a particular VM
+- [ ] `startvm [name/UID]`: Starts a particular VM
+- [ ] `registervm`: ?
+- [ ] `unregistervm`: ?
+- [ ] `clonevm`: ?
+- [ ] `movevm`: ?
+- [ ] `encryptvm`: ?
+- [ ] `mediumproperty`: ?
+- [ ] `createmedium`: ?
+- [ ] `modifymedium`: ?
+- [ ] `clonemedium`: ?
+- [ ] `encryptmedium`: ?
+- [ ] `checkmediumpwd`: ?
+- [ ] `createvm`: ?
+- [ ] `modifyvm`: ?
+- [ ] 
+- [ ] `controlvm`: ?
+- [ ] `unattended`: ?
+- [ ] `discardstate`: ?
+- [ ] `adoptstate`: ?
+- [ ] `snapshot`: ?
+- [ ] `closemedium`: ?
+- [ ] `storageattach`: ?
+- [ ] `storagectl`: ?
+- [ ] `showmediuminfo`: ?
+- [ ] `mediumio`: ?
+- [ ] `getextradata`: ?
+- [ ] `setextradata`: ?
+- [ ] `setproperty`: ?
+- [ ] `usbfilter`: ?
+- [ ] `sharedfolder`: ?
+- [ ] `guestproperty`: ?
+- [ ] `guestcontrol`: ?
+- [ ] `metrics`: ?
+- [ ] `import`: ?
+- [ ] `export`: ?
+- [ ] `signova`: ?
+- [ ] `hostonlyif`: ?
+- [ ] `dhcpserver`: ?
+- [ ] `natnetwork`: ?
+- [ ] `extpack`: ?
+- [ ] `bandwidthctl`: ?
+- [ ] `debugvm`: ?
+- [ ] `convertfromraw`: ?
+- [ ] `usbdevsource`: ?
+- [ ] `cloudprofile`: ?
+- [ ] `cloud`: ?
+- [ ] `updatecheck`: ?
+- [ ] `modifynvram`: ?

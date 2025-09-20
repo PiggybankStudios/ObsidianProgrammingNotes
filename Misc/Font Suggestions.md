@@ -1,0 +1,20 @@
+- [ ] Consolas **Windows**
+	- SandwichMaker uses
+- [ ] Georgia **Windows**
+- [ ] Segoe UI **Windows** (Default font on Windows?)
+- [ ] Liberation Mono **Linux?** [FontSquirrel Link](https://www.fontsquirrel.com/fonts/liberation-mono)
+	- Holger uses
+- [ ] Noto (Sans) Mono [Google Sans](https://fonts.google.com/noto/specimen/Noto+Sans+Mono) [FontSquirrel Normal](https://www.fontsquirrel.com/fonts/noto-mono)
+- [ ] Arial **Windows**
+- [ ] Fira Sans/Mono [Mozilla Github](https://github.com/mozilla/Fira) [GoogleFont Sans](https://fonts.google.com/specimen/Fira+Sans) [GoogleFont Mono](https://fonts.google.com/specimen/Fira+Mono)
+	- Josh(w)a and Timothee uses Fira Mono
+	- Sander say's it's "Rust-coded"
+	- 
+- [ ] Fira Code *Good* [Github](https://github.com/tonsky/FiraCode)
+- [ ] ProFont [1001 Fonts](https://www.1001fonts.com/profontwindows-font.html)
+	- Jesse uses
+- [ ] Anonymous Pro [GoogleFont](https://fonts.google.com/specimen/Anonymous+Pro)
+	- Jesse also mentions
+- [ ] Terminus [Sourceforge](https://terminus-font.sourceforge.net/)
+	- Sander uses
+- [ ] Yrsa?

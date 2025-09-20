@@ -1,0 +1,77 @@
+- [ ] [Tutorial](https://cmake.org/cmake/help/latest/guide/tutorial/index.html)
+- [ ] Upper/Lowercase don't matter for commands (but generally lowercase is used?)
+- [ ] New-lines are allowed inside command arguments list
+- [ ] Quotation marks can be places around arguments or omitted if the string doesn't contain spaces or other disallowed characters
+- [ ] 
+# CmakeLists.txt
+### Commands
+- [ ] `cmake_minimum_required(VERSION 4.1.1)` [Link](https://cmake.org/cmake/help/latest/command/cmake_minimum_required.html#command:cmake_minimum_required) : **Must be at beginning of top-level** `CMakeLists.txt`
+- [ ] `project(<NAME> VERSION 1.0.0 DESCRIPTION "String" LANGUAGES C)` [Link](https://cmake.org/cmake/help/latest/command/project.html#command:project): **Must have** (usually near the top). Specifies the project name and properties
+- [ ] `option(<variable> "help text" [value])` [Link](https://cmake.org/cmake/help/latest/command/option.html#command:option): Specify a boolean option that the user can optionally select (default value is `OFF`)
+- [ ] `if/elseif/else/endif(<condition>)` [Link](https://cmake.org/cmake/help/latest/command/if.html#command:if): Conditionally executes commands between the `if()` and `endif()` commands
+- [ ] `add_subdirectory(<source_dir> [binary_dir]...)` [Link](https://cmake.org/cmake/help/latest/command/add_subdirectory.html#command:add_subdirectory): Specify a folder where another `CMakeLists.txt` lives and should be included in the project
+	- [ ] Processing of the other `CMakeLists.txt` will happen immediately when this command is reached
+- [ ] `add_executable(<name> <options>... <sources>...)` [Link](https://cmake.org/cmake/help/latest/command/add_executable.html#command:add_executable): Specify an executable to be built
+	- [ ] Options: `WIN32`, `MACOSX_BUNDLE`, `EXCLUDE_FROM_ALL`
+	- [ ] `<sources>` may use [Generator Syntax](https://cmake.org/cmake/help/latest/manual/cmake-generator-expressions.7.html#manual:cmake-generator-expressions(7)) like `$<...>` (Added in v3.1)
+	- [ ] `<sources>` can be omitted if added later with [`target_sources()`](https://cmake.org/cmake/help/latest/command/target_sources.html#command:target_sources)
+	- [ ] `IMPORTED`: Reference an executable located outside the project (Optionally `GLOBAL`)
+	- [ ] `<name> ALIAS <target>`: Allows you to refer to `<target>` by `<name>`
+	- [ ] See `RUNTIME_OUTPUT_DIRECTORY` for changing where the executable is placed
+	- [ ] See `OUTPUT_NAME` for changing the name of the executable
+- [ ] `add_library(<name> [type] <sources>...)` [Link](https://cmake.org/cmake/help/latest/command/add_library.html#command:add_library): Specify a library to be built
+	- [ ] `type` can be `STATIC`, `SHARED`, `MODULE`, `OBJECT`, `INTERFACE`
+	- [ ] `<sources>` may use [Generator Syntax](https://cmake.org/cmake/help/latest/manual/cmake-generator-expressions.7.html#manual:cmake-generator-expressions(7)) like `$<...>` (Added in v3.1)
+	- [ ] Optional `EXCLUDE_FROM_ALL`
+	- [ ] `IMPORTED`: Reference an executable located outside the project (Optionally `GLOBAL`)
+	- [ ] `<name> ALIAS <target>`: Allows you to refer to `<target>` by `<name>`
+	- [ ] See `POSITION_INDEPENDENT_CODE` for `SHARED` and `MODULE` type libraries
+	- [ ] See `ARCHIVE_OUTPUT_DIRECTORY`, `LIBRARY_OUTPUT_DIRECTORY` and `RUNTIME_OUTPUT_DIRECTORY`
+	- [ ] See `OUTPUT_NAME`
+- [ ] `set(<variable> <value>...)` [Link](https://cmake.org/cmake/help/latest/command/set.html#command:set): ?
+	- [ ] Example: `set(CMAKE_CXX_STANDARD 11)` and `set(CMAKE_CXX_STANDARD_REQUIRED True)`
+- [ ] `configure_file(<input> <output>)` [Link](https://cmake.org/cmake/help/latest/command/configure_file.html#command:configure_file): Copy input file to output location and replace things like `@VAR@` in the file (usually a `.h.in` to a `.h`)
+- [ ] `target_include_directories(<target> PUBLIC <items>...)` [Link](https://cmake.org/cmake/help/latest/command/target_include_directories.html#command:target_include_directories): Specifies the include directories to use when building a given target
+- [ ] `target_link_libraries(<target>... <items>...)` [Link](https://cmake.org/cmake/help/latest/command/target_link_libraries.html#command:target_link_libraries): Specify libraries to use when linking a given target and/or it's dependents
+	- [ ] Does **not** work on an `ALIAS` target!
+	- [ ] Can also be used to define linker flags rather than libraries. Just pass the flag(s) for `<items>`
+	- [ ] Prefix an item with `debug`, `optimized` or `general` to restrict it to only that build type
+- [ ] `target_link_directories(<target> PUBLIC <items>...)` [Link](https://cmake.org/cmake/help/latest/command/target_link_directories.html#command:target_link_directories): Adds directories to be searched when linking to the `<target>`
+- [ ] `target_link_options(<target> PUBLIC <items>...)` [Link](https://cmake.org/cmake/help/latest/command/target_link_options.html#command:target_link_options): ?
+- [ ] `target_compile_definitions(<target> PUBLIC <items>...)` [Link](https://cmake.org/cmake/help/latest/command/target_compile_definitions.html#command:target_compile_definitions): Specify `#defines` to be used when compiling code in the `<target>`
+- [ ] `target_compile_features(<target> PUBLIC <features>...)` [Link](https://cmake.org/cmake/help/latest/command/target_compile_features.html#command:target_compile_features): ?
+- [ ] `target_compile_options(<target> PUBLIC <features>...)` [Link](https://cmake.org/cmake/help/latest/command/target_compile_options.html#command:target_compile_options): ?
+- [ ] `target_precompile_headers(<target> PUBLIC <headers>...)` [Link](https://cmake.org/cmake/help/latest/command/target_precompile_headers.html#command:target_precompile_headers): ?
+- [ ] `find_library(<var_name> <lib_names> [PATHS <paths>...])` [Link](https://cmake.org/cmake/help/latest/command/find_library.html): ?
+- [ ] `function/endfunction(<name> <args>...)` [Link](https://cmake.org/cmake/help/latest/command/function.html#command:function): ?
+- [ ] `macro/endmacro(<name> <args>...)` [Link](https://cmake.org/cmake/help/latest/command/macro.html#command:macro): ?
+- [ ] `try_compile()` [Link](https://cmake.org/cmake/help/latest/command/try_compile.html#command:try_compile "try_compile"): ?
+- [ ] ==TODO:== `cmake_parse_arguments(...)`?
+- [ ] ==TODO:== `include_guard(...)`?
+- [ ] ==TODO:== `message(...)`?
+- [ ] ==TODO:== `foreach(element ${VARIABLE_NAME})`? (maybe with `separate_arguments(VARIABLE_NAME)`?)
+- [ ] ==TODO:== `string(...)`?
+- [ ] 
+### Variables
+- [ ] `CMAKE_CXX_STANDARD` [Link](https://cmake.org/cmake/help/latest/variable/CMAKE_CXX_STANDARD.html#variable:CMAKE_CXX_STANDARD): ?
+- [ ] `CMAKE_CXX_STANDARD_REQUIRED` [Link](https://cmake.org/cmake/help/latest/variable/CMAKE_CXX_STANDARD_REQUIRED.html#variable:CMAKE_CXX_STANDARD_REQUIRED): ?
+- [ ] `CMAKE_TOOLCHAIN_FILE` [Link](https://cmake.org/cmake/help/latest/variable/CMAKE_TOOLCHAIN_FILE.html): Set on the command-line with `-DCMAKE_TOOLCHAIN_FILE=path` to read a particular `.cmake` file early in the build process
+- [ ] `CMAKE_SYSROOT` [Link](https://cmake.org/cmake/help/latest/variable/CMAKE_SYSROOT.html): Path to pass to the compiler in the `--sysroot` flag
+- [ ] `CMAKE_HOST_SYSTEM_NAME`: [Link](https://cmake.org/cmake/help/latest/variable/CMAKE_HOST_SYSTEM_NAME.html): Name of the OS CMake is running on (`Windows`, `Linux`, `Darwin`, etc. Same as result of `uname -s`)
+- [ ] `CMAKE_TRY_COMPILE_PLATFORM_VARIABLES` [Link](https://cmake.org/cmake/help/latest/variable/CMAKE_TRY_COMPILE_PLATFORM_VARIABLES.html): List of variables that the `try_compile()` command source file signature must propagate into the test project in order to target the same platform as the host project.
+- [ ] `CMAKE_ANDROID_RTTI` [Link](https://cmake.org/cmake/help/latest/variable/CMAKE_ANDROID_RTTI.html): Enable Run-Time Type Information (RTTI) when [Cross Compiling for Android with the NDK](https://cmake.org/cmake/help/latest/manual/cmake-toolchains.7.html#cross-compiling-for-android-with-the-ndk) 
+- [ ] `CMAKE_ANDROID_EXCEPTIONS` [Link](https://cmake.org/cmake/help/latest/variable/CMAKE_ANDROID_EXCEPTIONS.html): Enable exceptions when [Cross Compiling for Android with the NDK](https://cmake.org/cmake/help/latest/manual/cmake-toolchains.7.html#cross-compiling-for-android-with-the-ndk) 
+- [ ] `CMAKE_C_COMPILER_LAUNCHER`/`CMAKE_CXX_COMPILER_LAUNCHER` [Link](https://cmake.org/cmake/help/latest/envvar/CMAKE_LANG_COMPILER_LAUNCHER.html): Default compiler launcher to use for the specified language
+- [ ] `CMAKE_ANDROID_STL_TYPE`/`ANDROID_STL_TYPE` [Link](https://cmake.org/cmake/help/latest/variable/CMAKE_ANDROID_STL_TYPE.html): Can be `none`, `system`, `gabi++_static`, `gabi++_shared`, `gnustl_static`, `gnustl_shared`, `stlport_static`, `stlport_shared`
+- [ ] 
+# CLI Arguments
+- [ ] `--version`: Prints the version
+- [ ] `--build`: Compile and link the project (after native solution has been generated)
+- [ ] `-G [target]`: ?
+      Possible Targets:
+	- [ ] `Ninja`: ?
+- [ ] `-DDEFINE=VALUE`: ?
+- [ ] `-H[path]`: ?
+- [ ] `-B[path]`: ?
+- [ ] `-DCMAKE_EXPORT_COMPILE_COMMANDS=ON`: Dumps the compilation commands to `compile_commands.json` in the build output directory
+- [ ] 

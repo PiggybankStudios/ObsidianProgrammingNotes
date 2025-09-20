@@ -577,14 +577,6 @@
       "key": "M"
     }
   ],
-  "obsidian-textgenerator-plugin:generate-text": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "G"
-    }
-  ],
   "obsidian-textgenerator-plugin:generate-text-with-metadata": [
     {
       "modifiers": [
@@ -662,5 +654,14 @@
       ],
       "key": "F"
     }
-  ]
+  ],
+  "search-on-internet:search-on-internet": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "G"
+    }
+  ],
+  "obsidian-textgenerator-plugin:generate-text": []
 }

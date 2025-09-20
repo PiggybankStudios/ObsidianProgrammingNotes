@@ -20,9 +20,10 @@
 - [ ] `run {> stdio_file}`: Run the program
 - [ ] `tty [tty]`: Sets the default output tty for run commands. Really this is alias for `set inferior-tty [tty]`, you can use `show` to read the current value
 - [ ] `bt`/`backtrace`/`where`: Print the backtrace (useful for segfault scenarios?)
-- [ ] `strace`: Print the stack trace
+- [ ] `strace`: Print the stack trace **(WARNING: Sometimes causes internal exceptions in GDB!)**
 - [ ] `show configuration`: Prints configuration details
-- [ ] `step {N}`/`s`: Step some number of instructions/lines
+- [ ] `step {N}`/`s`: Step some number of instructions/lines (INTO)
+- [ ] `next {N}`/`n`: Step some number of instructions/lines (OVER)
 - [ ] `list`: Display the source code around the current line that the program is paused on (use `frame` to select which stack frame you want to view)
 - [ ] `x`: ?
 - [ ] `print` [Options](https://sourceware.org/gdb/current/onlinedocs/gdb#print-options): ?
@@ -37,4 +38,5 @@
 - [ ] `break [function/linespec/address] [thread] [if condition]`: Add a breakpoint to a particular function. Use `info break` to see existing breakpoints.
 - [ ] `delete [breakpoint_num]`: Remove a breakpoint (uses number as seen in `info break`)
 - [ ] `frame [number]`: Select a particular stack frame
+- [ ] `tui e`: **Switch to TUI mode!**
 - [ ] 

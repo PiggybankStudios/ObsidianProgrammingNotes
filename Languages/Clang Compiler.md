@@ -1,5 +1,5 @@
 ## Notes
-- [ ] Compiler Version: **v18.1.8** (WSL **v10.0.0-4ubuntu1**)
+- [ ] Compiler Version: **v18.1.8** (WSL **v10.0.0-4ubuntu1**, Mac-Mini **Homebrew v20.1.7**)
 - [ ] Install location: `C:/Program Files/LLVM/bin/clang.exe`
 - [ ] `clang -dM -E -x c NUL`: List all predefined macros for Clang
 - [ ] `__clang__`, `__clang_major__`, and `__clang_minor__` are defined by Clang
@@ -8,6 +8,7 @@
 - [ ] Check a compiled binary's required libraries with `objdump -p program_name | grep NEEDED` (also works for `RPATH`)
 - [ ] NOTE: The order of libraries and source files on the command line matters! If you link against a library BEFORE your source file that uses functions from that library, it will end up failing to link. **You must add libraries AFTER the things that use stuff from them!**
 - [ ] [RPATH Wikipedia](https://en.wikipedia.org/wiki/Rpath) [StackOverflow answer](https://stackoverflow.com/questions/39978762/linux-executable-cant-find-shared-library-in-same-folder)
+- [ ] Clang does not support include directories that have spaces in them properly, because bash and other shells require quotes in order to group the path into a single argument but clang does not strip the quotes properly. For example `-I "some/path/with spaces"` does not work as an argument to clang when passed from a shell like Bash. In my experience, this seems to work properly when passed through `system(...)` in C and on Windows though. Will have to do some more testing on that to make sure we are passing things properly when calling Clang on Windows.
 - [ ] 
 ## CLI Options
 - [ ] `-o <file>`: Write output to `<file>`
@@ -53,6 +54,8 @@
 - [ ] `-x <language>`: Treat subsequent input files as having type `<language>`
 - [ ] `-fdiagnostics-absolute-paths`: Print absolute paths in diagnostics
 - [ ] `-arch <arch>` [Link](https://man.archlinux.org/man/extra/clang/clang.1.en#arch): Specifies the architecture to build for **(OSX Specific)**
+- [ ] `-shared`: Build a shared library (.so)
+- [ ] `-fPIC`: ?
 ---
 - [ ] `-MMD`: Write a depfile containing user headers
 - [ ] `-M`: Like `-MD`, but also implies `-E` and writes to stdout by default

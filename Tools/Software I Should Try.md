@@ -49,11 +49,11 @@
 - [x] **objfromraw** [Link](https://git.mr4th.com/mr4th-public/objfromraw-binaries) (or [objembed](https://github.com/mcrbt/objembed))
       ![[Software I Should Try - objfromraw.png]]
 	- Convert raw text (shader code) into an .obj file to be injected into the program at link time
-- [ ] **WhiteBox** [Link](https://whitebox.systems/) [Itch Link](https://azmr.itch.io/whitebox)
+- [x] **WhiteBox** [Link](https://whitebox.systems/) [Itch Link](https://azmr.itch.io/whitebox)
       ![[Software I Should Try - WhiteboxLogo.png]]
 	- WhiteBox is a software development tool that compiles runs and “debugs” your C(++) code live to report its execution patterns and data transforms.
 ---
-- [ ] **/fsanitize=fuzzer** [Link](https://learn.microsoft.com/en-us/cpp/build/reference/fsanitize?view=msvc-170)
+- [x] **/fsanitize=fuzzer** [Link](https://learn.microsoft.com/en-us/cpp/build/reference/fsanitize?view=msvc-170)
 	- The Fuzzer in MSVC that allows verifying code by walking it using generated inputs
 ---
 - [ ] **HCC (C SPIR-V Compiler)** [Link](https://github.com/heroseh/hcc)
@@ -84,7 +84,7 @@
 - [x] **cimgui** [LInk](https://github.com/cimgui/cimgui)
 	- c-api for [imgui]([https://github.com/ocornut/imgui](https://github.com/ocornut/imgui)) Look at: [https://github.com/cimgui](https://github.com/cimgui) for other widgets
 ---
-- [ ] **SQLite** [Link](https://www.sqlite.org/)
+- [x] **SQLite** [Link](https://www.sqlite.org/)
       ![[Software I Should Try - SQLiteLogo.png]]
 	- SQLite is a C-language library that implements a [small](https://www.sqlite.org/footprint.html), [fast](https://www.sqlite.org/fasterthanfs.html), [self-contained](https://www.sqlite.org/selfcontained.html), [high-reliability](https://www.sqlite.org/hirely.html), [full-featured](https://www.sqlite.org/fullsql.html), SQL database engine
 ---
@@ -174,3 +174,27 @@
 - [ ] **Valgrind** [Website](https://valgrind.org/) 
 - [ ] **set_vc_vars.py** (Plugin for Sublime) [Github](https://github.com/STealthy-and-haSTy/SublimeScraps/blob/master/plugins/set_vc_vars.py) [StackOverflow](https://stackoverflow.com/questions/39881091/how-to-run-sublimetext-with-visual-studio-environment-enabled/)
 - [ ] **gource** [Link](https://gource.io/) Commit visualization over time
+- [ ] **Netwide Assembler (NASM)** [Link](https://www.nasm.us/)
+- [ ] **Can I Use `___`?** [Link](https://caniuse.com/)
+- [ ] Clinebot
+- [ ] **CrystaX NDK** [Link](https://www.crystax.net/)
+- [ ] **Open Scene Graph (OSG)** [Link](https://github.com/openscenegraph/OpenSceneGraph)
+- [ ] **MyGUI** [Link](http://mygui.info/) [Github](https://github.com/MyGUI/mygui)
+- [ ] **Terracopy**? 
+- [x] Tracy Profiler
+- [ ] Racket - Lisp like language (scheme variant)
+- [ ] **pugixml** [Link](https://pugixml.org/) XML parsing library made by zeux
+- [ ] **Bruno** [Link](https://www.usebruno.com/)
+- [ ] **Typst** [Link](https://typst.app/) LateX-like layout engine that Andrew used for his slides
+- [ ] **Procreate** [Link](https://procreate.com/) iPad/iOS only alternative to Milton
+- [ ] **Krita** [Link](https://krita.org/en/) Free cross-platform alternative to Milton
+- [ ] **nnd** [Link](https://github.com/al13n321/nnd) Debugger that Caleb uses (really nice TUI)
+- [ ] **Clipper2** [Link](https://github.com/AngusJohnson/Clipper2) or [Straight Skeleton Algorithm](https://en.wikipedia.org/wiki/Straight_skeleton)
+- [ ] **CodeMic** [Link](https://codemic.io/) Video+VS Code integration
+- [ ] **Striga** [Link](https://gingerbill.itch.io/striga)
+- [ ] **Mermaid** [Link](https://mermaid.js.org/#/) Javascript-based alternative to Graphviz? (Can be used in Obsidian)
+- [ ] **Mapnik** [Website](https://mapnik.org/) [OSM Page](https://wiki.openstreetmap.org/wiki/Mapnik) [Wiki](https://github.com/mapnik/mapnik/wiki) [Github](https://github.com/mapnik/mapnik) 
+- [ ] **Anti-Grain Geometry** [Link](https://agg.sourceforge.net/antigrain.com/index.html) [SourceForge](https://sourceforge.net/p/agg/svn/HEAD/tree/) (Rendering library used by [Mapnik](https://wiki.openstreetmap.org/wiki/Mapnik))
+- [ ] **Nik4** [Github](https://github.com/Zverik/Nik4)
+- [ ] **Nob** [Github](https://github.com/tsoding/nob.h): Tsoding's "No Build" (build script in C)
+- [ ] 

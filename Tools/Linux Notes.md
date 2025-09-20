@@ -20,6 +20,64 @@
 - [ ] In a bash script (`.sh` file) you can set an environment variable like so: `VARIBLE_NAME="value"` (NOTE: you must use `"` or `'` around your value)
 - [ ] Check which desktop environment is currently running with `echo $DESKTOP_SESSION`
 - [ ] Fonts are stored in `/usr/share/fonts` You can find a font using `fc-match [font_name]` (optionally pass `--format=%{file}`)
+- [ ] List manually installed packages with `apt-mark showmanual`
+- [ ] Create a new user with `sudo adduser robbitay`, give a password Full Name, Room Number, Work Phone, Home Phone, and Other. This also creates a group called `robbitay`. Added user to `sudo` group by doing `sudo usermod -aG sudo robbitay`. List groups for a user by doing `groups robbitay`.
+	- Alternatively there is a file called `/etc/sudoers` that should be edited **only** with `visudo` to add sudo permissions for users.
+- [ ] List logged in users with `w` command (or `who -H`):
+```
+ 22:40:08 up  1:56,  4 users,  load average: 0.06, 0.02, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU  WHAT
+root              NN.NNN.NNN.NN    22:37    1:55m  0.00s  0.03s sshd-session: root [priv]
+root              -                22:37    1:55m  0.00s  0.20s /usr/lib/systemd/systemd --user
+robbitay          NNN.NNN.NNN.NNN  22:28    1:55m  0.00s  0.08s sshd-session: robbitay [priv]
+robbitay          -                22:28    1:55m  0.00s  0.13s /usr/lib/systemd/systemd --user
+```
+- [ ] List information about hard drives and partitions with `lsblk`
+```
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+vda     253:0    0   25G  0 disk
+├─vda1  253:1    0 23.9G  0 part /
+├─vda13 253:13   0 1023M  0 part /boot
+├─vda14 253:14   0    4M  0 part
+└─vda15 253:15   0  106M  0 part /boot/efi
+vdb     253:16   0  482K  1 disk
+```
+- [ ] List RAM information with `free`
+```
+               total        used        free      shared  buff/cache   available
+Mem:          984004      344628      193224        4140      600100      639376
+Swap:              0           0           0
+```
+- [ ] All session command-line history is written to `home/[username]/.bash_history`
+- [ ] See all services status: `service --status-all`
+```
+ [ + ]  apparmor
+ [ + ]  apport
+ [ - ]  console-setup.sh
+ [ + ]  cron
+ [ - ]  cryptdisks
+ [ - ]  cryptdisks-early
+ [ + ]  dbus
+ [ - ]  grub-common
+ [ - ]  iscsid
+ [ - ]  keyboard-setup.sh
+ [ + ]  kmod
+ [ - ]  open-iscsi
+ [ - ]  open-vm-tools
+ [ + ]  plymouth
+ [ + ]  plymouth-log
+ [ + ]  procps
+ [ - ]  rsync
+ [ - ]  screen-cleanup
+ [ + ]  ssh
+ [ + ]  sysstat
+ [ + ]  ufw
+ [ + ]  unattended-upgrades
+ [ - ]  uuidd
+```
+- [ ] List all users with `cat /etc/passwd` (or `cut -d: -f1 /etc/passwd` which splits by `:` and takes index 1 piece from each line)
+- [ ] List all groups with `cat /etc/group` (or `cut -d: -f1 /etc/group`)
+- [ ] List groups for user with `groups [username]`. List users in a group with `getent group [group]` (or just look in `/etc/group`)
 - [ ] 
 ## Linux Mint Information
 - [ ] Linux Mint 22 x86_64

@@ -26,9 +26,11 @@
 - [ ] `Alt+Q/W/E/R`/`Alt+Shift+QWER` = **Change Naming Convention**
 - [ ] `Ctrl+Q`? = **Remove All Cursors**
 - [ ] `?`: Select all code in a code selection
+- [ ] `Ctrl+Shift+I`: **Collapse all sections** (NOTE: it conflicts with hotkey for console toggle in Electron/browsers)
 ## Hotkeys I Need to Learn
 - [ ] `Ctrl+Shift+H` = **Toggle Highlight**
 - [ ] `Ctrl+J` = **Toggle Quote**
+- [ ] `Ctrl+T` = **Toggle Italic**
 - [ ] `Ctrl+Alt+Shift+S` = **Toggle Right Pane**
 - [ ] `Alt+D` = **Open Outline**
 - [ ] `Alt+B` = **Toggle Bullet List**
@@ -38,7 +40,7 @@
 ## Hotkeys Ricky Should Use
 - [ ] `Ctrl+P`= **Command Palette**
 - [ ] `Ctrl+D` = **Delete Paragraph**
-- [ ] `Ctrl+T` = **New Tab**
+- [ ] `Ctrl+N` = **New Tab**
 - [ ] `Ctrl+L` = **Toggle Checkbox Status** (probably want to use Cycle bullet/checkbox instead)
 - [ ] `Ctrl+Tab`/`Ctrl+Shift+Tab` = **Switch tabs right/left** (Highly recommend rebinding to `Ctrl+Alt+Z/X` or `Ctrl+Alt+Left/Right`)
 - [ ] `Ctrl+Shift+T` = **Undo close tab** (Could be bound to `Ctrl+E` if you move toggle preview)
