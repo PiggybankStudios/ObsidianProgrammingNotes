@@ -128,7 +128,7 @@
 	[ ] Ctrl+s @{ editor:save-file }
 	[!] Ctrl+d //(Used to be editor:delete-paragraph)
 	[ ] Ctrl+f @{ editor:open-search }
-	[!] Ctrl+g @{ obsidian-textgenerator-plugin:generate-text } //(Used to be graph:open)
+	[!] Ctrl+g @{ search-on-internet:search-on-internet } //(Used to be graph:open)
 	[!] Ctrl+h @{ editor:insert-horizontal-rule } //(Used to be editor:open-search-replace)
 	[!] Ctrl+j @{ editor:toggle-blockquote }
 	[ ] Ctrl+k @{ editor:insert-link }
