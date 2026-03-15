@@ -38,5 +38,5 @@
 - [ ] `break [function/linespec/address] [thread] [if condition]`: Add a breakpoint to a particular function. Use `info break` to see existing breakpoints.
 - [ ] `delete [breakpoint_num]`: Remove a breakpoint (uses number as seen in `info break`)
 - [ ] `frame [number]`: Select a particular stack frame
-- [ ] `tui e`: **Switch to TUI mode!**
+- [ ] `tui e`: **Switch to TUI mode!** (`tui layout asm`)
 - [ ] 

@@ -2,8 +2,13 @@
 - [ ] Upper/Lowercase don't matter for commands (but generally lowercase is used?)
 - [ ] New-lines are allowed inside command arguments list
 - [ ] Quotation marks can be places around arguments or omitted if the string doesn't contain spaces or other disallowed characters
+- [ ] s
+# CMake CLI Options
+- [ ] `cmake [path_to_source]`: Configure and generate files into the current folder (often you want to make a `build` folder or similar and `cd` into it before running this command). Once a build folder is filled, you can do `cmake [path_to_build]` to rerun cmake
+	- [ ] After initial generation, build options are found in `CMakeCache.txt`. Change these options and rerun cmake with `cmake .` to regenerate the project files with the new options
+- [ ] `-D OPTION=VALUE`: Set a particular option, often value is `ON`/`OFF`. See `CMakeLists.txt` `option(...)` lines for potential options. You can also do something like `cmake -LAH` to list them but this comes along with a TON of built-in options that aren't specific to a project
 - [ ] 
-# CmakeLists.txt
+# CmakeLists.txt Syntax
 ### Commands
 - [ ] `cmake_minimum_required(VERSION 4.1.1)` [Link](https://cmake.org/cmake/help/latest/command/cmake_minimum_required.html#command:cmake_minimum_required) : **Must be at beginning of top-level** `CMakeLists.txt`
 - [ ] `project(<NAME> VERSION 1.0.0 DESCRIPTION "String" LANGUAGES C)` [Link](https://cmake.org/cmake/help/latest/command/project.html#command:project): **Must have** (usually near the top). Specifies the project name and properties

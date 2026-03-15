@@ -1,0 +1,7 @@
+- [ ] No `+=`/`-=`/`++`/`--` operators
+- [ ] `if (something) then ... elseif (something) then ... else ... end`
+- [ ] `while (condition) do ... end`
+- [ ] `nil` instead of `null`
+- [ ] `~=` instead of `!=`
+- [ ] Use `pairs` to loop over dictionaries: `for key,value in pairs(dictionary) do ... end`
+- [ ] 

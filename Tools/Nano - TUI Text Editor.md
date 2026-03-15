@@ -1,0 +1,57 @@
+- [ ] Nano stands for "ANOther text editor", it's inspired by Pico
+- [ ] Hitting **Esc** twice can be used as an alternative to **Ctrl**
+- [ ] `^X` = **Ctrl+X**     `M-X` = **Alt+X**
+- [ ] Configuration can be done in `/etc/nanorc`
+	- [ ] `set autoindent`: Automatically indent new-lines to match previous/next line
+	- [ ] `set casesensitive`: Search case-sensitive by default
+	- [ ] `set indicator`: Display a scrollbar on right-hand side
+	- [ ] `set linenumbers`: Display line numbers
+	- [ ] `# set locking`: Vim-style lock files (disabled this)
+	- [ ] `set mouse`: Enable mouse support (single click moves cursor, double click sets mark)
+	- [ ] `set smarthome`: Indentation aware home key behavior
+	- [ ] `set tabsize 4`: Set the tab size to 4-spaces (default is 8)
+	- [ ] `set wordchars "_"`: Only treat underscore and alphanumeric characters as words (doesn't work like expected?)
+	- [ ] `set zap`: Backspace/Delete will deleted the selection
+	- [ ] `set scrollercolor slate,#222` and `set numbercolor black,gray`: Change the color of line numbers and scrollbar
+- [ ] Status messages appear for 20 keystrokes (can be changed to 1 keystroke with `set quickblank`)
+- [ ] The characters at the top right of the screen indicate:
+	- `I`: Auto-indenting
+	- `M`: Mark
+	- `L`: Hard-wrapping long lines
+	- `R`: Recording
+	- `S`: Soft-wrapping long lines
+- [ ] Syntax highlighting is determined by `.nanorc` files in `/usr/share/nano`
+- [ ] Disable trailing whitespace highlight by commenting out last line in `/usr/share/nano/c.nanorc`
+- [ ] Screenshot:
+![[NanoScreenshotMonokaiTilixMofiedConfig.png]]
+- [ ] 
+# Keybindings
+#### Displayed at the Bottom
+- [ ] **Ctrl+X** or **F2**: Exit
+- [ ] **Ctrl+O** or **F3**: Write file
+- [ ] **Ctrl+G** or **F1**: Help
+- [ ] **Ctrl+R**: Read file
+- [ ] **Ctrl+F/B** or **Ctrl+W/Q**: Forward/Backward Search
+	- *While in Dialog*
+	- [ ] **Alt+C**: Toggle case sensitivity
+	- [ ] **Alt+R**: Toggle regular expression matching
+	- [ ] **Ctrl+R**: Replace
+	- [ ] **Alt+B**: Toggle backwards search
+	- [ ] **Ctrl+P/N**: Recall previous/next search
+	- *After Searching*
+	- [ ] **Alt+F/B**: Next/previous match
+- [ ] **Ctrl+K/U**: Cut/Paste
+- [ ] **Ctrl+/**: Goto line
+- [ ] **Ctrl+C**: Shows the location of the cursor in the file
+- [ ] **Alt+U/E**: Undo/Redo
+- [ ] **Ctrl+J**: Justify
+- [ ] **Alt+]**: Jump to bracket
+- [ ] **Alt+A** or **Double Click**: Set/Unset mark
+#### Not Displayed
+- [ ] **Ctrl+C**: Cancel
+- [ ] **Ctrl+R** or **Insert**: Insert another file into current buffer (or into new buffer)
+- [ ] **Ctrl+W/Q**: Forward search with regular expressions
+- [ ] **Ctrl+Backslash**: Find and replace
+- [ ] **Scroll wheel**: Move cursor up/down lines (or scrolls if `set mouse` is enabled in config)
+- [ ] **Ctrl+L**: Center screen on cursor
+- [ ] 

@@ -42,12 +42,17 @@
 	- [ ] `L fully_qualified_class`: `fully_qualified_class`
 	- [ ] `[ type`: `type[]`
 	- [ ] `( arg_types ) return_type`: Method with `arg_types` and `return_type`
+- [ ] Function signature syntax examples
+	- [ ] `(Ljava/lang/String;)Ljava/lang/Object;`
+	- [ ] `()Ljava/io/File;`
+	- [ ] `()Ljava/lang/String;`
 - [ ] Martins Comment in [Starting with mobile dev the right way](https://discord.com/channels/239737791225790464/1268141449699135550/1268141449699135550) (also see [Build android native app together with Java code](https://discord.com/channels/239737791225790464/1291659542739947530/1291659542739947530))
 > having JNIEnv created for thread comes with implications
    for example, your thread can be interrupted by runtime garbage collector
    if you don't have JNIEnv, then thread does not need to be interrupted
    which can sometimes be important, like for audio thread
-- [ ] In Android emulator you can hold **Ctrl+LeftClick** to simulate 2 touch rotational movements. Or **Ctrl+RightClick** to simulate 2 touch drag movements
+- [ ] In Android emulator you can hold **Ctrl+LeftClick** to simulate 2 touch rotational/zoom movements. Or **Ctrl+RightClick** to simulate 2 touch drag movements
+- [ ] **Right Click** in Android emulator simulators **Back** button press
 - [ ] 
 ---
 # Gradle Notes

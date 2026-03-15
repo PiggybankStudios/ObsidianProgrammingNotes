@@ -1,0 +1,80 @@
+- [ ] [Hytale Modding Quick Start](https://hytalemodding.dev/en/docs/quick-start)
+- [ ] [Hytale Modding Template Github](https://github.com/HytaleModding/plugin-template)
+- [ ] [Modding Strategy Blog Post](https://hytale.com/news/2025/11/hytale-modding-strategy-and-status)
+- [ ] `flatpak run com.hypixel.HytaleLauncher`
+- [ ] Mods installed into:
+	- **Linux:** `~/.var/app/com.hypixel.HytaleLauncher/data/Hytale/UserData/Mods` 
+	- **Windows:** `?`
+- [ ] Download OpenJDK 25 from [Adoptium](https://adoptium.net/) (aka [Eclipse Temurin project](https://projects.eclipse.org/projects/adoptium.temurin))
+	- [ ] On Linux: `sudo apt install openjdk-25-jdk`
+- [ ] Download [Maven](https://maven.apache.org/download.cgi) [Homepage](http://maven.apache.org)
+	- [ ] On Linux: `sudo apt install maven`
+	- [ ] Can then run `mvn` CLI tool like `mvn compile`
+	- [ ] Maven generates a `target` folder with
+	- [ ] Maven "phases": pre-clean, clean, post-clean, validate, initialize, generate-sources, process-sources, generate-resources, process-resources, *compile*, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, *package*, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-site, site, post-site, site-deploy
+	- [ ] 
+- [ ] Hypixel provides last 5 releases of Hytale at [Release Link](https://maven.hytale.com/release) or [Pre-Release Link](https://maven.hytale.com/pre-release) 
+- [ ] Server jar file can be found at `/home/robbitay/.m2/repository/com/hypixel/hytale/Server/[Version]/Server-[Version].jar`
+- [ ] [How to Decompile Hytale Server.jar](https://hytalemodding.dev/en/docs/guides/plugin/browsing-serverjar)
+- [ ] We can use [Vineflower](https://vineflower.org/) to decompile Java jars
+	- [ ] `java -jar vineflower.jar [target.jar]`
+- [ ] Mod configs are saved in the world save like ``~/.var/app/com.hypixel.HytaleLauncher/data/Hytale/UserData/Saves/[save_name]/mods/deos_TravelAnchors/TravelAnchors.json`
+	- [ ] Config changes require a world reload
+- [ ] [List of All Events in Hytale](https://hytalemodding.dev/en/docs/server/events) 
+- [ ] Had to reinstall HytaleLauncher through Flatpak in order to fix a `GLX Visuals` error that was occurring on client startup
+- [ ] 
+
+---
+# Server API Notes
+- [ ] Create some logic to run asynchronously `CompletableFuture.runAsync(() => { ... });` can also do `this.runAsync(context, () -> { ... });` inside `AbstractAsyncCommand`
+- [ ] Localized strings: `Message.translation("id")`
+- [ ] `private final RequiredArg<String> arg1 = this.withRequiredArg("arg1", "description", ArgTypes.STRING);` then in the execute function `this.arg1.get(context)` or `context.get(this.arg1)`
+- [ ] Abstract Command Classes:
+	- in `com/hypixel/hytale/server/core/command/system/basecommands`
+	- [ ] 
+	- [ ] `AbstractCommand` - Gives `CommandContext` to `execute` which produces a `CompletableFuture<Void>`
+	- [ ] `CommandBase` - Is an `AbstractCommand` which has `executeSync` and returns null for `CompletableFuture` in `execute` function
+	- [ ] `AbstractAsyncCommand` - ?
+	- [ ] `AbstractAsyncPlayerCommand` - ?
+	- [ ] `AbstractAsyncWorldCommand` - ?
+	- [ ] `AbstractPlayerCommand` - Is an `AbstractAsyncCommand` which has `execute` that gets `CommandContext`, `Stor<EntityStore>`, `Ref<EntityStore>`, `PlayerRef`, and `World`
+	- [ ] `AbstractTargetEntityCommand` - ?
+	- [ ] `AbstractTargetPlayerCommand` - ?
+	- [ ] `AbstractWorldCommand` - ?
+	- [ ] `AbstractCommandCollection` - Call `this.addSubCommand(...)` in initializer
+- [ ] "References" are like safe pointers to something? You should check `ref.isValid()` before using?
+- [ ] 
+
+---
+# Homeward Torches Mod
+- [ ] Create a new block/item that behaves exactly like a torch
+- [ ] Change the crafting recipe for the new torch
+- [ ] Add metadata on the torch to store a "direction" Vector3
+- [ ] Set the direction based on the players location when placed
+- [ ] Add a particle effect that flows in the saved "direction"
+
+---
+# Cool Mods
+[CurseForge Hytale](https://www.curseforge.com/hytale)
+- [ ] [EyeSpy](https://www.curseforge.com/hytale/mods/eyespy) Basically WAILA
+- [ ] [Simple Claims](https://www.curseforge.com/hytale/mods/simple-claims) [Github](https://github.com/Buuz135/SimpleClaims) 
+- [ ] [BetterMap](https://www.curseforge.com/hytale/mods/bettermap)
+- [ ] [Advanced Item Info](https://www.curseforge.com/hytale/mods/advanced-item-info) Basically NEI/JEI/etc.
+- [ ] [Just Enough Tales](https://www.curseforge.com/hytale/mods/just-enough-tales-jet) 
+- [ ] [Better Item Viewer](https://www.curseforge.com/hytale/mods/better-item-viewer) [Github](https://github.com/DrexHD/BetterItemViewer) 
+- [ ] [VeinMining](https://www.curseforge.com/hytale/mods/veinmining) 
+- [ ] [Miners Helment](https://www.curseforge.com/hytale/mods/miners-helmet) 
+- [ ] [HyTech](https://www.curseforge.com/hytale/mods/hytech) 
+- [ ] [YUNG's HyDungeons](https://www.curseforge.com/hytale/mods/yungs-hydungeons) [Github](https://github.com/YUNG-GANG/YUNGs-HyDungeons) 
+- [ ] [Item Magnet](https://www.curseforge.com/hytale/mods/item-magnet) [Github](https://github.com/jaredlll08/ItemMagnet)
+- [ ] [Macaw's Projects](https://www.curseforge.com/members/sketch_macaw/projects) 
+- [ ] [Wayback Charm](https://www.curseforge.com/hytale/mods/wayback-charm) [Github](https://github.com/Hytale-Mods/WaybackCharm) 
+- [ ] [Grab from Afar](https://www.curseforge.com/hytale/mods/grab-from-far) 
+- [ ] [Gravestones](https://www.curseforge.com/hytale/mods/gravestones) [Github](https://github.com/zurkubusiness/gravestones)
+- [ ] [Cobble Generators](https://www.curseforge.com/hytale/mods/cobble-generators) [Github](https://github.com/Hytale-Mods/CobbleGens) 
+- [ ] [Wayfinder](https://www.curseforge.com/hytale/mods/wayfinder) 
+- [ ] [Healthbar](https://www.curseforge.com/hytale/mods/healthbar) 
+- [ ] [Chronobar HUD](https://www.curseforge.com/hytale/mods/chronobar-hud) 
+- [ ] [Landmark](https://www.curseforge.com/hytale/mods/landmark) [Github](https://github.com/tr7zw/Landmark) 
+- [ ] [Zip Line Plugin](https://www.curseforge.com/hytale/mods/zip-line-plugin) 
+- [ ] 

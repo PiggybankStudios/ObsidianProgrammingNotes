@@ -1,3 +1,6 @@
+[Script and font support in Windows](https://learn.microsoft.com/en-us/globalization/fonts-layout/font-support)
+[Font linking and Fallback](https://learn.microsoft.com/en-us/globalization/fonts-layout/fonts) -> `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink`
+
 - [ ] Consolas **Windows**
 	- SandwichMaker uses
 - [ ] Georgia **Windows**
@@ -18,3 +21,5 @@
 - [ ] Terminus [Sourceforge](https://terminus-font.sourceforge.net/)
 	- Sander uses
 - [ ] Yrsa?
+- [ ] [Monaspace](https://monaspace.githubnext.com/) Ash was looking at this font
+- [ ] 

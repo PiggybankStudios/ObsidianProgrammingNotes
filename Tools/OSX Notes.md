@@ -1,4 +1,10 @@
 ## Notes
+- [ ] Mac Mini Info:
+	- [ ] OS Version: **Sonoma v14.7.2** (NOTE: Tahoe 26.0.1 is available Oct 30th 2025)
+	- [ ] CPU: **Apple M1**
+	- [ ] Year: **2020**
+	- [ ] RAM: **8GB**
+	- [ ] Disk: **500GB**
 - [ ] In recent versions of Mac OS Sonoma, you can disable mouse acceleration from the advanced options of the mouse category in Settings
 - [ ] [RedQuits](http://carsten-mielke.com/redquits.html) can be used to make the exit button actually close applications when you close the last window from that application
 - [ ] Task Manager = Activity Monitor

@@ -1,0 +1,28 @@
+- [ ] Empty initializer called for local class variable on stack by default `ClassA variable;`
+- [ ] `namepsace my_namespace { ... }` and `using namespace my_namespace;`
+- [ ] `static const int CONSTANT = 42;` inside a class can be accessed with `ClassName::CONSTANT`
+- [ ] Child class `class Child : Parent` (to inherit publicly, add `public` keyword before `Parent`)
+- [ ] `using TypeAlias = namespace::Class1;`
+- [ ] `constexpr int square(int x) { return x * x; }` or `constexpr const int result = 1 + 124/15;`
+- [ ] `virtual void func();` in base class, then `virtual void func() override;` or `virtual void func() final;` in derived classes
+- [ ] Prevent copies on object: `MyClass(MyClass&) = delete;` `MyClass& operator=(const MyClass&) = delete;`
+- [ ] Range based for loops: `for (int& x : myArray) { x *= 2; }`
+- [ ] Move constructor? `MyClass(MyClass&& other) : MyClass{std::move(other.variable)} {}`
+- [ ] Calling constructors at variable declaration time:
+	- [ ] `Type var {arg1, arg2};`
+	- [ ] `Type var(arg1, arg2);`
+	- [ ] `Type var = {arg1, arg2};`
+- [ ] `template<...>` can have `class T` or `typename T` or `int constant` inside
+- [ ] Conversion function: `operator bool() const { return x > 10; }`
+- [ ] `decltype(a + b) add(T a, U b) { return a + b; }`
+- [ ] `noexcept` qualifier on functions
+- [ ] `std::unique_ptr<T>` requires `std::move` to make a new variable that points to the data of another variable. Calls deconstructor on scope exit automatically!
+- [ ] `std::shared_ptr<T>` uses reference counting (given move semantics and scopes of all references) to automatically deconstruct when all references have been released. Use `std::make_shared<T>()`
+- [ ] `std::tuple<int, const char*, float> t = std::make_tuple(51, "Test", 3.1415926f);` then `std::get<0>(t);` to get `51`
+- [ ] `std::array`, `std::set`, `std::map`, `std::vector`, `std::unordered_set`, `std::unordered_multiset`, `std::unordered_map`, `std::unordered_multimap`
+- [ ] Generic lambda expressions can be made with `auto` keyword: `auto myFunc = [](auto x) { return x; };`
+- [ ] `auto GenerateId [x = 0] mutable { return x++; }`
+- [ ] `[[deprecated("Use blah instead")]] void myFunction();`
+- [ ] `std::any x {5}` then `x.has_value()` and `int value = std::any_cast<int>(x);` or `std::any_cast<int&>(x) = 105;`
+- [ ] `std::clamp(value, min, max, std::less<> comparator = nullptr)`
+- [ ] 
