@@ -1,0 +1,41 @@
+## Notes
+- [ ] [Protobuf Documentation](https://protobuf.dev/overview/)
+- [ ] [Google's Open Source Blog](https://google-opensource.blogspot.com/2008/07/protocol-buffers-googles-data.html)
+- [ ] [Do's and Dont's of Protobuf](https://protobuf.dev/best-practices/dos-donts/)
+- [ ] [Examples](https://github.com/protocolbuffers/protobuf/tree/main/examples)
+- [ ] [FileOptions](https://github.com/protocolbuffers/protobuf/blob/v27.0/src/google/protobuf/descriptor.proto#L429) 
+- [ ] [Encoding](https://protobuf.dev/programming-guides/encoding/)
+- [ ] Proto2/Proto3 introduce optionality (but must use proto2 syntax if you want to explicitly label things as `required` or `optional`)
+- [ ] Top of file declaration of syntax: `syntax = "proto3";`
+- [ ] Scalar Value Types: `double`, `float`, `int32`, `int64`, `uint32`, `uint64`, `sint32`, `sint64`, `fixed32`, `fixed64`, `sfixed32`, `sfixed64`, `bool`, `string`, `bytes`
+- [ ] Other Field Types: `message`, `enum`, `oneof`, `map`
+- [ ] Message/Service/Enum Names: `TitleCase` Field Names: `lower_snake_case` Enum Values: `UPPER_SNAKE_CASE`
+- [ ] Fields must be marked `required`, `optional`, or `repeated` (But proto3 syntax makes all fields optional by default and [heavily discourages use](https://buf.build/blog/totw-8-never-use-required) of `required`)
+- [ ] `optional` fields generate `protobuf_c_boolean has_[name]` fields before the field itself
+- [ ] `repeated` fields generate `size_t n_[name]` fields before the field itself
+- [ ] `enum` definitions can go **inside** a message definition! In C, this creates `enum MessageName__EnumName` with values like `MESSAGE_NAME__ENUM_NAME__VALUE` and prevents enum value name collision errors
+- [ ] Set a package name with `package name;` at the top of the file (this turns into a namespace?)
+- [ ] How does `extend` work?
+- [ ] Default values for optional fields can be given in proto2 (not proto3): `optional int32 field = 1 [default = -1];`
+- [ ] [Packed Repeated Elements](https://protobuf.dev/programming-guides/encoding/#repeated) `[packed = true/false]` "Starting in Edition 2023, repeated fields of a primitive type (any scalar type that is not string or bytes) are “packed” by default."
+- [ ] Can declare maps like `map<string, int32> attributes = 1;`
+- [ ] 
+## Protobuf-C [Github](https://github.com/protobuf-c/protobuf-c) [Docs](https://protobuf-c.github.io/protobuf-c/)
+- [ ] Had `./configure` and `make` inside WSL because I guess their build system for the protoc plugin only works on Linux?
+- [ ] Can generate `.pb-c.h` and `.pb-c.c` files with `protoc -c_out=. [file.proto]`
+- [ ] The following API is defined for a `TypeName`:
+	- `TYPE_NAME__INIT`
+	- `void type_name__init(message)`
+	- `size_t type_name__get_packed_size(message)`
+	- `size_t type_name__pack(message, out)`
+	- `size_t type_name__pack_to_buffer(message, buffer)`
+	- `TypeName* type_name__unpack(allocator, len, data)`
+	- `void type_name__free_unpacked(message, allocator)`
+	- `typedef TypeName_Closure`
+	- `type_name__descriptor`
+- [ ] How does `option (pb_c_file).c_package = "foo";` work?
+- [ ] 
+## OSM .pbf File Format
+- [ ] [PBF File Format](https://wiki.openstreetmap.org/wiki/PBF_Format)
+- [ ] [osmformat.proto](https://github.com/openstreetmap/OSM-binary/blob/master/osmpbf/osmformat.proto) [fileformat.proto](https://github.com/openstreetmap/OSM-binary/blob/master/osmpbf/fileformat.proto)
+- [ ] 

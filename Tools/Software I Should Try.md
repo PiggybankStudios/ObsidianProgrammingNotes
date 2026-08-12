@@ -49,14 +49,14 @@
 - [x] **objfromraw** [Link](https://git.mr4th.com/mr4th-public/objfromraw-binaries) (or [objembed](https://github.com/mcrbt/objembed))
       ![[Software I Should Try - objfromraw.png]]
 	- Convert raw text (shader code) into an .obj file to be injected into the program at link time
-- [ ] **WhiteBox** [Link](https://whitebox.systems/) [Itch Link](https://azmr.itch.io/whitebox)
+- [x] **WhiteBox** [Link](https://whitebox.systems/) [Itch Link](https://azmr.itch.io/whitebox)
       ![[Software I Should Try - WhiteboxLogo.png]]
 	- WhiteBox is a software development tool that compiles runs and “debugs” your C(++) code live to report its execution patterns and data transforms.
 ---
 - [x] **/fsanitize=fuzzer** [Link](https://learn.microsoft.com/en-us/cpp/build/reference/fsanitize?view=msvc-170)
 	- The Fuzzer in MSVC that allows verifying code by walking it using generated inputs
 ---
-- [ ] **HCC (C SPIR-V Compiler)** [Link](https://github.com/heroseh/hcc)
+- [x] **HCC (C SPIR-V Compiler)** [Link](https://github.com/heroseh/hcc)
       ![[Software I Should Try - HCCLogo.png]]
 	- A compiler written by @hero_dev to compile C to SPIR-V
 ---
@@ -84,7 +84,7 @@
 - [x] **cimgui** [LInk](https://github.com/cimgui/cimgui)
 	- c-api for [imgui]([https://github.com/ocornut/imgui](https://github.com/ocornut/imgui)) Look at: [https://github.com/cimgui](https://github.com/cimgui) for other widgets
 ---
-- [ ] **SQLite** [Link](https://www.sqlite.org/)
+- [x] **SQLite** [Link](https://www.sqlite.org/)
       ![[Software I Should Try - SQLiteLogo.png]]
 	- SQLite is a C-language library that implements a [small](https://www.sqlite.org/footprint.html), [fast](https://www.sqlite.org/fasterthanfs.html), [self-contained](https://www.sqlite.org/selfcontained.html), [high-reliability](https://www.sqlite.org/hirely.html), [full-featured](https://www.sqlite.org/fullsql.html), SQL database engine
 ---
@@ -137,7 +137,7 @@
       ![[Software I Should Try - AppImageIcon.png]]
 	- AppImage provides a way for upstream developers to provide “native” binaries for Linux users just the same way they could do for other operating systems.
 ---
-- [x] **Clay UI** [Link](https://www.nicbarker.com/clay)
+- [x] **Clay UI** [Link](https://www.nicbarker.com/clay) 
 		![[Software I Should Try - ClayExample.png]]
 	- Clay is a flex-box style UI auto layout library in C, with declarative syntax and microsecond performance
 ---
@@ -145,11 +145,15 @@
 	![[Software I Should Try - CairoLogo.png]]
 	- Cairo is a 2D graphics library with support for multiple output devices.
 ---
+- [x] **lazygit** [Link](https://github.com/jesseduffield/lazygit)
+![[lazygit_screenshot.png]]
+- A TUI for git suggested by Mariano
+---
 - [ ] **Shader Playground** [Link](https://shader-playground.timjones.io/)
 - [ ] **Radeon GPU Analyzer** [Link](https://gpuopen.com/rga/)
 - [x] **Martins' Knowledgebase** (Ping Martins in the Discord server to ask for access)
-- [ ] Actually Portable Executable
-- [ ] lobsters and/or Hacker News?
+- [x] Actually Portable Executable (Use gcc to compile non-graphical applications into a single binary that runs on Windows, MacOS, FreeBSD, OpenBSD, and NetBSD)
+- [x] lobsters and/or Hacker News?
 - [ ] zine website generator from zig community?
 - [ ] The light phone?
 - [ ] [Dictionaries](http://www.gwicks.net/dictionaries.htm) (Linked by fred)
@@ -173,7 +177,129 @@
 - [ ] **Lizard** [Github](https://github.com/terryyin/lizard)
 - [ ] **Valgrind** [Website](https://valgrind.org/) 
 - [ ] **set_vc_vars.py** (Plugin for Sublime) [Github](https://github.com/STealthy-and-haSTy/SublimeScraps/blob/master/plugins/set_vc_vars.py) [StackOverflow](https://stackoverflow.com/questions/39881091/how-to-run-sublimetext-with-visual-studio-environment-enabled/)
-- [ ] **gource** [Link](https://gource.io/) Commit visualization over time
+- [x] **gource** [Link](https://gource.io/) Commit visualization over time
 - [ ] **Netwide Assembler (NASM)** [Link](https://www.nasm.us/)
-- [ ] **Can I Use `___`?** [Link](https://caniuse.com/)
+- [x] **Can I Use `___`?** [Link](https://caniuse.com/)
+- [ ] Clinebot
+- [ ] **CrystaX NDK** [Link](https://www.crystax.net/)
+- [ ] **Open Scene Graph (OSG)** [Link](https://github.com/openscenegraph/OpenSceneGraph)
+- [ ] **MyGUI** [Link](http://mygui.info/) [Github](https://github.com/MyGUI/mygui)
+- [ ] **Terracopy**? 
+- [x] Tracy Profiler
+- [ ] **Racket** - Lisp like language (scheme variant)
+- [ ] **pugixml** [Link](https://pugixml.org/) XML parsing library made by zeux
+- [x] **Bruno** [Link](https://www.usebruno.com/)
+- [ ] **Typst** [Link](https://typst.app/) LateX-like layout engine that Andrew used for his slides
+- [ ] **Procreate** [Link](https://procreate.com/) iPad/iOS only alternative to Milton
+- [ ] **Krita** [Link](https://krita.org/en/) Free cross-platform alternative to Milton
+- [x] **nnd** [Link](https://github.com/al13n321/nnd) Debugger that Caleb uses (really nice TUI)
+- [x] **ddd** [Link](https://www.gnu.org/software/ddd/) Data Display Debugger, graphical frontend for gdb and other debuggers (==NOTE:== It's **really** bad)
+- [ ] **Clipper2** [Link](https://github.com/AngusJohnson/Clipper2) or [Straight Skeleton Algorithm](https://en.wikipedia.org/wiki/Straight_skeleton)
+- [ ] **CodeMic** [Link](https://codemic.io/) Video+VS Code integration
+- [ ] **Striga** [Link](https://gingerbill.itch.io/striga)
+- [ ] **Mermaid** [Link](https://mermaid.js.org/#/) Javascript-based alternative to Graphviz? (Can be used in Obsidian)
+- [ ] **Mapnik** [Website](https://mapnik.org/) [OSM Page](https://wiki.openstreetmap.org/wiki/Mapnik) [Wiki](https://github.com/mapnik/mapnik/wiki) [Github](https://github.com/mapnik/mapnik) 
+- [ ] **Anti-Grain Geometry** [Link](https://agg.sourceforge.net/antigrain.com/index.html) [SourceForge](https://sourceforge.net/p/agg/svn/HEAD/tree/) (Rendering library used by [Mapnik](https://wiki.openstreetmap.org/wiki/Mapnik))
+- [ ] **Nik4** [Github](https://github.com/Zverik/Nik4)
+- [ ] **Nob.h** [Github](https://github.com/tsoding/nob.h): Tsoding's "No Build" (build script in C)
+- [ ] **kb** [Github](https://github.com/JimmyLefevre/kb) **HarfBuzz** alternative (text shaping engine) in C
+- [ ] **GGPO** [Link](https://www.ggpo.net/) Networking Library for P2P games
+- [ ] **Wakamai Fondue** [Link](https://wakamaifondue.com/) Drop a font file and it tells you what that font supports
+- [ ] **The Forge** [Link](https://github.com/ConfettiFX/The-Forge) cross-platform programming framework (Worked on by Charlie)
+- [ ] https://wasmphobia.surma.technology/ - WASM size profiler online
+- [x] **Bit Warden** [Link](https://bitwarden.com/) password manager used by River and others. Free tier seems nice but not convinced I want it more than KeePass
+- [x] **Waycheck** [Link](https://gitlab.freedesktop.org/serebit/waycheck) Check which extensions the current wayland compositor supports
+- [ ] **Woodpecker** [Link](https://woodpecker-ci.org/) CI/CD System (used by Waycheck) (uses containers?)
+- [x] **Bustle** D-Bus activity visualizer ==TODO:== Could also try **D-Spy**
+- [ ] **Vicinae** [Github](https://github.com/vicinaehq/vicinae) Fast application launcher for Fedora (C++/Qt), [recommended](https://fedoramagazine.org/4-cool-new-projects-to-try-in-copr-for-december-2025/) by Fedora Magazine
+- [ ] pebble smart hackable watch
+- [ ] Fair Phone (EU or maybe UK phone that is more "from scratch")
+- [ ] [Mariano's NixOS Configs](https://github.com/AYM1607/nixos)
+- [ ] [Linux Software Iceberg](https://youtu.be/f-txoU7tpGU?si=Ml7-eLyhSxUpcPPU) 
+	- [x] **MPV** [Link](https://mpv.io/) a free, open source, and cross-platform media player (scriptable, minimal interface)
+	- [x] **Bottles** [Link](https://usebottles.com/) Easily run Windows Software
+	- [ ] **Lutris** or **Heroic Games Launcher** or **Gamescope**: Video game launcher (GOG, Epic, EA, Ubisoft, and Steam)
+	- [x] **Pinta** [Link](https://www.pinta-project.com/) Paint-like application
+	- [x] **Okular** [Link](https://okular.kde.org/) PDF Viewer (installed with KDE Plasma)
+	- [x] **Local Send** [Link](https://localsend.org/) Share files over the local network
+	- [x] **Metadata Cleaner** (Website is down?, can download through fedora repos) View metadata of files and remove
+	- [x] **Thunderbird** [Link](https://www.thunderbird.net/en-US/) Email client
+	- [ ] **Virt Manager**: ==TODO:==
+	- [ ] **TLP UI** [Github](https://github.com/d4nj1/TLPUI) Optimize all devices to maximize battery usage
+	- [ ] **Kommikku** Comic book reader
+	- [ ] **Apostrophe** [Apps for Gnome](https://apps.gnome.org/Apostrophe/) Distraction free markdown editor
+	- [x] **Switcheroo** [Link](https://apps.gnome.org/Converter/) Convert and manipulate images
+	- [ ] **Ferdium** [Link](https://ferdium.org/download) Manage many communication apps (email, discord, social media, etc.)
+	- [ ] **Celeste** [Github](https://github.com/hwittenborn/celeste) Connect Dropbox, Google Drive, etc. for bi-directional synchronization
+	- [x] **Timeshift** [Github](https://github.com/linuxmint/timeshift) System restore tool for Linux. Create snapshots (BTRFS or rsync+hardlinks)
+	- [ ] **BleachBit** [Link](https://www.bleachbit.org/) Helps find and delete unecassary junk files
+	- [ ] **Kdenlive** [Link](https://kdenlive.org/) Video Editing Software
+	- [ ] **Impression** [Apps for Gnome](https://apps.gnome.org/Impression/) GUI for burning .iso images to USB
+	- [ ] **Hypnotix** Watch public video streams (only .deb packages?)
+	- [ ] **Memorize** [Flathub](https://flathub.org/en/apps/io.github.david_swift.Flashcards) Flash card software
+	- [x] **EasyEffects** [Link](https://wwmm.github.io/easyeffects/) [Github](https://github.com/wwmm/easyeffects) 
+	- [ ] **Alpaca** [Link](https://jeffser.com/alpaca/) [Flathub](https://flathub.org/en/apps/com.jeffser.Alpaca) Offline LLM/AI Model GUI
+	- [ ] **Upscaler** AI upscale images offline
+	- [ ] **czkawka**: Finds duplicate files across your system
+	- [x] **LosslessCut** [Link](https://mifi.no/losslesscut/) [Github](https://github.com/mifi/lossless-cut) [Snapcraft](https://snapcraft.io/losslesscut) Cut video files without re-encoding
+	- [x] **TextPieces** [Apps for Gnome](https://apps.gnome.org/TextPieces/) Text scratchpad with a bunch of transformation options
+	- [ ] **Peek** [Github](https://github.com/phw/peek) Screen recorder with GIF export (no longer receiving updates)
+	- [ ] **Waydroid** [Link](https://waydro.id/) [Github](https://github.com/waydroid/waydroid) Run Android in a container (doesn't run great, maybe nvidia drivers are incompatible?)
+	- [ ] **OnionShare** Send files or host website on TOR network
+	- [ ] **Mosiah** It's like Shazam
+	- [ ] **Audio Sharing** Share desktop audio over the internet
+	- [ ] **Identity** Compare quality of multiple image or video files
+	- [ ] **Sterling PDF** Open source version of "I Love PDF". Allows a bunch of PDF editing tasks offline
+	- [ ] **Ananicy Cpp** or **Gamemode** Assign priorities to various running programs (good for gaming?)
+	- [ ] **systemd-oomd** Kills programs as you get close to running out of memory
+	- [ ] **Pinokio** AI browser/installer, single-click install, all kinds of media
+	- [ ] **Wireshark** or **Portmaster** Monitor incoming/outgoing network traffic
+	- [ ] **Powerlevel10k** Customize zsh shell
+	- [x] **Piper** [Github](https://github.com/libratbag/piper) Assign buttons and customize mouse
+	- [x] **lsd** Enhanced version of `ls` command (links don't work as well as I hoped, and there's a weird character printing before each entry)
+- [x] **Ollama** [Link](https://ollama.com/) Run open AI models locally (Fedora `ollama`) [Guide](https://pahautelman.github.io/pahautelman-blog/tutorials/build-your-local-ai/build-your-local-ai/) 
+- [ ] **Open WebUI** [Link](https://openwebui.com/) [Github](https://github.com/open-webui/open-webui) A web-based GUI for running AI tools through **Ollama**, etc.
+- [x] **uv** [Github](https://github.com/astral-sh/uv) [Docs](https://docs.astral.sh/uv/) An extremely fast Python package and project manager, written in Rust
+- [ ] **XCancel** [Link](https://xcancel.com/) Makes twitter easier to interact with (no logging in, better layout, etc.)
+- [ ] **Ladybird** [Github](https://github.com/LadybirdBrowser/ladybird) 
+- [ ] [sas-audio-processor](https://github.com/shiehn/sas-audio-processor) - Perform common audio processing tasks through a claude frontend (linked from Meta group)
+- [ ] **delta** [Link](https://github.com/dandavison/delta) - DIffing tool that (this is `git-delta` on Debian repos?)
+- [ ] **data-star** [Link](https://data-star.dev/) - Blake mentioned he wants to work with it (maybe related to VST plugins for DAWs?)
+- [ ] **migadu** [Link](https://migadu.com/) - Email provider based in Switzerland that has support for as many aliases as you want (somewhat expensive but can be worth it for separating spam sources)
+- [x] **Superluminal** [Link](https://superluminal.eu/) - Really nice profiler with sampling-based timeline feature (€59/$70.07)
+- [ ] **detour** [Link](https://github.com/graphitemaster/detour) - Allows for mixing statically linked stdlib while still allowing dynamic library loads at runtime?
+- [ ] **BBEdit** - MacOS text editor
+- [ ] **keydex** [Link](https://github.com/shikaan/keydex) - TUI for KeePass database - made by @shikaan_36356 (aka @no) on the HMN Discord
+- [ ] **DVUI** [Link](https://david-vanderson.github.io/) [GitHub](https://github.com/david-vanderson/dvui) - Immediate mode GUI for Zig, mentioned by someone in Wookash Discord
+- [ ] **Icarus IDE** [Link](https://giovannicarlino04.itch.io/icarus) - C/C++ IDE made by someone in BSC server
+- [ ] **gap** [Link](https://github.com/cdacamar/gap) - Linear diff algorithm by starfreakclone
+- [ ] **cwalk** [Link](https://github.com/likle/cwalk) - C Path manipulation library
+- [ ] **Cesium** [Link](https://github.com/CesiumGS/cesium) - Map visualization software
+- [ ] **Zotero** [Link](https://www.zotero.org/) - Tool for doing research, organization, annotation (and sharing?)
+- [ ] **Septum** [Link](https://github.com/pyjarrett/septum) - Large codebase search w/ context (Made by @pyj on Handmade Revolt)
+- [ ] **MubLoop** - Small audio tool for video game sound effects (easy looping and fade-in/out)
+- [ ] **Web Origami** [Link](https://weborigami.org/) - Framework for static-site generation, a dialog of Javascript
+- [ ] ambientcg - HDRi scenes and other PBR assets
+- [ ] polyhaven - HDRi scenes and other PBR assets
+- [ ] Tri-point light Blender Extension - Quickly set up key-light, fill-light, and back-light
+	- [ ] Pink backlight looks good
+- [ ] https://apps.kde.org/en-gb/drawy/ (Milton for Linux/KDE)
+- [ ] https://github.com/flxzt/rnote (Also Milton replacement for Linux)
 - [ ] 
+- [ ] https://gustavolsson.com/projects/uxnfloppy/ Gustav implementation of UXN (Devin's talk)
+- [ ] https://github.com/AllYourCodebase/ (ZigBuild for lots of codebases)
+- [ ] **Eureka Performance Analyzer** [Link](https://uica.uops.info/) - Analyzing predictive execution performance? (BSC2026)
+- [ ] **Plasticity** [Link](https://www.plasticity.xyz/) - New modeling program (more CAD like) that Eskil mentioned ($175USD single purchase for Indie license)
+- [ ] [notch.one](https://notch.one/) Demo scene person made stuff for live visualizations for concerts, etc.
+- [ ] https://forgejo.org/ - Self-hosted git
+- [ ] https://fossil-scm.org/home/doc/trunk/www/index.wiki - Jimmy self-hosts this for VCS [NewRoadOldWay](https://code.newroadoldway.com/file?name=kb_text_shape.h&ci=tip) 
+- [ ] MDI multi-document interface, composable interface of the past
+- [ ] victor mono medium font
+- [ ] [Cosmopolitan LibC](https://github.com/jart/cosmopolitan) - Compile once, run anywhere, compiler/libc implementation for C/C++
+- [ ] [Pi-hole](https://pi-hole.net/), [TrueNAS Scale](https://www.truenas.com/truenas-community-edition/), [TailScale](https://tailscale.com/) - https://pimylifeup.com/raspberry-pi-samba/
+- [x] **Samba** [Link](https://www.samba.org/) - File Sharing (See [[Raspberry Pi Notes]])
+- [ ] **Mr 4th C Scripting** [Link](https://git.mr4th.com/mr4th-public/c-scripting) - 
+- [ ] **pCloud** [Link](https://www.pcloud.com/) - Wassim uses it to provide upload links for video files
+- [ ] **h2testw** [Link](https://h2testw.org/) - Test integrity of SD cards
+- [ ] **zed** [Link](https://zed.dev/) - Editor built in Rust, extensions are written in Rust and compiled locally to wasm
+- [ ] **C3 Playground** [Link](https://manulinares.github.io/c3-playground/) - A playground built in C3 that compiles C3 to WASM in the browser!

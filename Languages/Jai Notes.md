@@ -1,0 +1,87 @@
+
+# How To
+- [x] **001_first.jai**
+	- `#import "Basic";`
+	- `main :: () { ... }`
+	- `print("%\n", variable);`
+- [x] **002_number_types.jai**
+	- `u8`, `u16`, `u32`, `u64`, `s8`, `s16`, `s32`, `s64`, `float32`, `float64`, `int`, `float`
+	- `nan32 := 0h7fbf_ffff;`
+	- `type_of(x)`, `size_of(x)`
+- [x] **003_booleans.jai**
+	- `bool` is 8-bits
+	- `new_var := cast(type)variable;`
+- [x] **004_arrays.jai**
+	- `x: [8]int;`
+	- `for index: 0..7 { ... }`
+	- `for str, index: str_array { ... }` (omit name before `:` to get `it` and `it_index` as default names)
+	- `x: []int;` "array view" - has `.count` and `.data` - `array_add(*array, item)`
+	- `x: [..]int;` "resizable array" - has `.allocated` and `.allocator`
+- [x] **005_strings.jai**
+	- `c: string;` `x := "Hello World!";` - has `.count` and `.data`
+	- `builder: String_Builder;` -  `append(*builder, str)` `builder_string_length(*builder)` `print_to_builder(*builder)`
+	- Escape sequences: `\r` `\n` `\e` `\t` `\"` `\\` `\0` `\xHH` `\dNNN` `\uHHHH` `\UHHHHHHHH`
+	- `my_string :: #string DONE ... DONE;` "Here String"
+- [ ] **006_structs.jai**
+	- `Name :: struct { member1: type; }` (No semicolon at the end)
+- [ ] **007_struct_literals.jai**
+- [ ] **008_types.jai**
+- [ ] **010_calling_procedures.jai**
+- [ ] **011_context.jai**
+- [ ] **012_temporary_storage.jai**
+- [ ] **013_enums.jai**
+	- `Name :: enum u32 { VALUE :: 5; VALUE2; }`
+- [ ] **014_enum_unary_dot.jai**
+- [ ] **015_array_literals.jai**
+- [ ] **018_print_functions.jai**
+	- `"%1%2"` required when two `%` characters need to be back to back?
+- [ ] **019_looping.jai**
+- [ ] **020_type_info.jai**
+- [ ] **022_if.jai**
+- [ ] **025_ifx.jai**
+- [ ] **027_if_case.jai**
+- [ ] **030_any.jai**
+- [ ] **040_import_and_load**
+- [ ] **042_using.jai**
+- [ ] **044_using_advanced**
+- [ ] **050_this.jai**
+- [ ] **080_scopes.jai**
+- [ ] **085_default_types_for_literals.jai**
+- [ ] **090_how_typechecking_works.jai**
+- [ ] **093_operator_overloading.jai**
+- [ ] **094_array_operators.jai**
+- [ ] **095_static_if.jai**
+- [ ] **100_polymorphic_procedures.jai**
+- [ ] **110_polymorphic_arguments.jai**
+- [ ] **115_auto_bakes.jai**
+- [ ] **120_polymorphic_structs.jai**
+- [ ] **151_file_and_global_scopes**
+- [ ] **160_type_restrictions.jai**
+- [ ] **170_modify.jai**
+- [ ] **180_type_variants.jai**
+- [ ] **200_memory_management.jai**
+- [ ] **225_comma_comma.jai**
+- [ ] **250_how_parameters_are_passed.jai**
+- [ ] **350_logging.jai**
+- [ ] **380_module_parameters**
+- [ ] **400_workspaces.jai**
+- [ ] **420_command_line.jai**
+- [ ] **450_basic_metaprogram**
+- [ ] **460_code_browsing_and_generation**
+- [ ] **470_running_hooks_in_the_target_workspace**
+- [ ] **480_custom_checks**
+- [ ] **490_browsing_by_module**
+- [ ] **495_default_metaprogram.jai**
+- [ ] **497_caller_code.jai**
+- [ ] **500_use_of_compile_time_execution.jai**
+- [ ] **550_is_constant.jai**
+- [ ] **551_things_that_are_constant.jai**
+- [ ] **560_no_reset.jai**
+- [ ] **600_insert.jai**
+- [ ] **630_compiler_get_nodes.jai**
+- [ ] **700_stack_trace.jai**
+- [ ] **730_for_expansions.jai**
+- [ ] **800_allocators.jai**
+- [ ] **900_inline_assembly.jai**
+- [ ] **935_type_info_reduction.jai**
+- [ ] **999_temperance.jai**

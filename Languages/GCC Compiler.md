@@ -2,13 +2,14 @@
 - [ ] Desktop Compiler Version: **v15.0.0**
 - [ ] Install Location: `C:/MinGW/bin/gcc.exe`
 - [ ] Avoid GCC on Windows because it doesn't have pdb support
-## CLI Options
+## CLI Options [Link](https://gcc.gnu.org/onlinedocs/gcc/Option-Summary.html)
 - [ ] `-D [DEFINE_NAME]{=VALUE}`: Sets a preprocessor define (optionally to a value)
 - [ ] `-I [PATH]`: Adds a directory for searching when resolving `#include`s
 - [ ] `-g3`: Produce debugging information in the operating system's native format (3 = ?)
 - [ ] `-MD`: (MSVC Option) Use the multithread-specific and DLL-specific version of the run-time library
 - [ ] `-MF [FILE_NAME]`: When used with the driver options -MD or -MMD, -MF overrides the default dependency output file
 - [ ] `-std=[VERSION]`: Specify which version of C/C++ language we should compile for
+- [ ] `--version`: Display version number and copyright info
 #### Embedded/Playdate Related Options
 - [ ] `-mthumb`: Requests that the compiler targets the T32 (Thumb) instruction set instead of A32 (Arm)
 - [ ] `-mcpu=cortex-m7`: Enables code generation for a specific Arm processor

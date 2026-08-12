@@ -1,4 +1,10 @@
 ## Notes
+- [ ] Mac Mini Info:
+	- [ ] OS Version: **Sonoma v14.7.2** (NOTE: Tahoe 26.0.1 is available Oct 30th 2025)
+	- [ ] CPU: **Apple M1**
+	- [ ] Year: **2020**
+	- [ ] RAM: **8GB**
+	- [ ] Disk: **500GB**
 - [ ] In recent versions of Mac OS Sonoma, you can disable mouse acceleration from the advanced options of the mouse category in Settings
 - [ ] [RedQuits](http://carsten-mielke.com/redquits.html) can be used to make the exit button actually close applications when you close the last window from that application
 - [ ] Task Manager = Activity Monitor
@@ -14,6 +20,9 @@
 - [ ] [Native Binaries on Apple Silicon](https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary)
 - [ ] `lipo` is a useful command for inspecting binaries (related to Mach-O universal binary object files) `lip -archs [binary]` to check that a binary has been compiled for both Intel and ARM chips
 - [ ] `~/.zshrc` gets run whenever a zsh terminal instance is created (`~/.bashrc` for bash)
+- [ ] Get current working directory in terminal: `echo $PWD`
+- [ ] Open a terminal in a folder by right clicking on the folder in Finder, selecting `Services` -> `New Terminal at Folder`
+- [ ] 
 # Keybindings
 - [ ] `Win+S`: Spotlight a.k.a. quick-launch (originally `Ctrl+Space`)
 - [ ] `Win+Tab`: Mission Control (originally `Ctrl+Alt+Up`)

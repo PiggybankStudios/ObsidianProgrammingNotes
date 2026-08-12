@@ -7,6 +7,7 @@
 - [ ] `bool` and `true`/`false` work just fine in MSVC as long as `stdbool.h` is included
 - [ ] [UUID Generation](http://graemehill.ca/minimalist-cross-platform-uuid-guid-generation-in-c++/)
 - [ ] [Mixing C and C++ Code](https://isocpp.org/wiki/faq/mixing-c-and-cpp)
+- [ ] [fopen vs open](https://www.delftstack.com/howto/c/open-vs-fopen-in-c/)
 - [ ] 
 ## Plan
 - [ ] Start a new codebase that is strictly C, not C++

@@ -4,6 +4,7 @@
 - [ ] Graphviz Version
 	- Desktop: 8.0.5
 	- Laptop: ?
+- [ ] "Squarify Treemap" - WizTree visualization name
 - [ ] 
 ## dot.exe Options
 - [ ] `--help`/`-?`: Print out the options
