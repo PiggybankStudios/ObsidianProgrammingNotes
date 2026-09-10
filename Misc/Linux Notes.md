@@ -103,6 +103,8 @@ Swap:              0           0           0
 	- [ ] `~/.local/share/icons`
 - [ ] Unix research conducted at the University of California, Berkeley. Originally known as "BSD Unix" or "Berkeley Unix," it is now simply referred to as BSD, standing for Berkeley Software Distribution.
 - [ ] Created [[Raspberry Pi Notes]] on August 2nd 2026
+- [ ] `lsb_release --all` can be used to get information about the current Linux Distro and should be installed by default for most distros
+- [ ] `install` is used by some `install.sh` scripts to copy binaries/assets/man pages/etc. into the correct folders and set the correct attributes. For example [install_binary_bundle.sh from Mupen64Plus-Core](https://github.com/mupen64plus/mupen64plus-core/blob/master/tools/install_binary_bundle.sh) 
 - [ ] 
 
 ---
