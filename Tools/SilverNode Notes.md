@@ -1,0 +1,31 @@
+## Bugs
+- [ ] Hold Z to zoom, releae while over preset panel, move mouse back over window and zoom resumes without holding Z
+- [ ] Changing denoise caused a freeze? Or it ran for a long time and I Force Quit before it finished
+- [ ] Dragging curve node outside square view removes node from curve until mouse returns to square
+- [ ] "Path" is uneditable in Export "Destination" window?
+- [ ] Mouse cursor is stuck in "hand point" mode while "Destination" window is open
+- [ ] "Format" dropdown isn't working in the "Destination" window for export? Clicking on the box does nothing
+- [ ] Changing "Bit depth" combobox, if I click outside the options after opening it closes the "Desintation" window, cancelling the export rather than just closing the combobox
+- [ ] Clicking between grid items should cancel selection
+- [ ] MacOS has something bound to holding letter keys like "Z", it pops up a window in the top-left corner that shows alternate forms of the letter. You might need to let MacOS know you are handling the key so it stops doing that. (the window sticks around and causes tab to get consumed to cycle through options)
+- [ ] 
+## Features or Tweaks
+- [ ] Hover to get full name of Color Correction sliders (and/or show full names by default and let people hide it if they know the names)
+- [ ] Single click ".." to go up a folder. Maybe change the icon to up arrow glyph like in File Explorer on Windows or Dolphin on Linux
+- [ ] Hover tooltip should show hotkey with a dark background so it's easier to read. The white icon on top of slider is hard to read on a high-dpi display (could use an icon with a background or give the icon lines a dark outer stroke)
+- [ ] "Use original name" should make the "Counter" options disabled?
+- [ ] Numeric widgets for "Counter" -> "Digits", "Start", "Step" have a very small triangle of hit testing for changing the mouse cursor from "I-beam" to "Hand Point" mode, but they have a larger clickable area
+- [ ] Exposure light icon and hint system lightbulb icon conflict slightly
+- [ ] (might just be my ignorance) Why does holding escape on an image with no modifications have an effect? Are there default effects applied that holding escape undoes?
+- [ ] Selection behavior in Grid video should following Ctrl+Click conventions. Also single click on a selected item currently changes the "primary" selected photo which is not standard (normally it would reduce the selection to just that one photo) but this is okay if primary selection changes are important
+- [ ] Copy/Paste system was unintuitive though I finally figured out how to work it after a few attempts. I like the idea now that I know but somehow it didn't make sense when I saw the radial menu initially
+- [ ] Right click radial menu in Grid should maybe help me discover the Copy/Paste radial menu? I had a hard time trying to find how to copy edits from one image to another. Right click is usually my go-to discovery path. Could also be a button below the image thumbnail for "Copy" or something
+- [ ] Ctrl+A to select all photos in the Grid view
+- [ ] Escape to clear selection slightly conflicts with holding Escape to preview effects removed
+- [ ] "Auto Edit" should be disabled until "Learn Auto Edit" has been clicked?
+- [ ] Space to preview selected photo in Grid view is not explained? I discovered it accidentally
+- [ ] Space-activated preview in Grid mode should have a N/N display so you know which photo you are viewing, of the total number of photos you had selected
+- [ ] I would love a hotkey to "Repeat Last Action". Like if I look at one image, right click, select "Auto Edit" then go to the next image, I'd love a hotkey that repeats the "Auto Edit" that I can repeatedly press on each successive photo
+- [ ] I feel like I am editing the "Shift+E" slider more often than the "E" slider. Maybe the hotkey should be swapped? Also the direction of these two sliders feels like they are flipped left/right
+- [ ] I would like to hit "Enter" after doing "Ctrl+C"->"D","C","F","V" copy all settings from a photo. Doing "Ctrl+C" again is fine but feels weird (I would keep it but also add "Enter" as an alternate option)
+- [ ] 

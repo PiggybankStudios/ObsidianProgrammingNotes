@@ -94,6 +94,14 @@
         "Mod",
         "Shift"
       ],
+      "key": "ArrowLeft"
+    },
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod",
+        "Shift"
+      ],
       "key": "Z"
     },
     {
@@ -102,13 +110,21 @@
         "Mod",
         "Shift"
       ],
-      "key": "ArrowLeft"
+      "key": "Z"
     }
   ],
   "editor:focus-right": [
     {
       "modifiers": [
         "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "ArrowRight"
+    },
+    {
+      "modifiers": [
+        "Ctrl",
         "Mod",
         "Shift"
       ],
@@ -120,7 +136,7 @@
         "Mod",
         "Shift"
       ],
-      "key": "ArrowRight"
+      "key": "X"
     }
   ],
   "editor:fold-all": [
@@ -167,6 +183,13 @@
         "Alt",
         "Mod"
       ],
+      "key": "ArrowRight"
+    },
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
       "key": "X"
     },
     {
@@ -174,7 +197,7 @@
         "Alt",
         "Mod"
       ],
-      "key": "ArrowRight"
+      "key": "X"
     }
   ],
   "workspace:previous-tab": [
@@ -196,6 +219,13 @@
         "Alt",
         "Mod"
       ],
+      "key": "ArrowLeft"
+    },
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
       "key": "Z"
     },
     {
@@ -203,7 +233,7 @@
         "Alt",
         "Mod"
       ],
-      "key": "ArrowLeft"
+      "key": "Z"
     }
   ],
   "workspace:goto-tab-1": [],
@@ -466,15 +496,6 @@
       "key": "T"
     }
   ],
-  "app:toggle-left-sidebar": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "S"
-    }
-  ],
   "editor:toggle-source": [
     {
       "modifiers": [
@@ -507,16 +528,6 @@
         "Mod"
       ],
       "key": "E"
-    }
-  ],
-  "app:toggle-right-sidebar": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod",
-        "Shift"
-      ],
-      "key": "S"
     }
   ],
   "editor:toggle-spellcheck": [
@@ -663,5 +674,39 @@
       "key": "G"
     }
   ],
-  "obsidian-textgenerator-plugin:generate-text": []
+  "obsidian-textgenerator-plugin:generate-text": [],
+  "app:toggle-left-sidebar": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "S"
+    },
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "S"
+    }
+  ],
+  "app:toggle-right-sidebar": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod",
+        "Shift"
+      ],
+      "key": "S"
+    },
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "S"
+    }
+  ]
 }

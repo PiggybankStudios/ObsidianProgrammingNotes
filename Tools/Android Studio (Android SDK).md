@@ -1,10 +1,29 @@
 # Notes
 - [ ] [Download Android Studio](https://developer.android.com/studio)
 - [ ] [APK Analyzer](https://developer.android.com/studio/debug/apk-analyzer) (`.apk` files can be found in places like `app\build\intermediates\apk\` in an Android Studio project)
-- [ ] NDK Version: **29.0.13599879** (`F:\Programs\android_studio_sdk\ndk\29.0.13599879\` on Desktop)
+- [ ] On *Desktop* (Windows 10):
+	- [ ] NDK Version: **29.0.13599879** (`F:\Programs\android_studio_sdk\ndk\29.0.13599879\` on Desktop)
+	- [ ] Java is installed at `C:\Program Files\Common Files\Oracle\Java\javapath\javac.exe` (also `Eclipse Adoptium` net to `Common Files`). Version **21.0.9** (Adoptium one is 17.0.7)
+	- [ ] `ANDROID_SDK` environment variable is set to `F:\Programs\android_studio_sdk`. Contains the following folders: `build-tools`, `cmake`, `emulator`, `extras`, `fonts`, `licenses`, `ndk`, `platform-tools`, `platforms`, `skins`, `sources`, `system-images`
+	- [ ] `build-tools` contains subfolders `35.0.0` and `36.0.0` 
+	- [ ] `adb version`: Android Debug Bridge version **1.0.41**, Version **36.0.0-13206524**
+	- [ ] `ndk` folder has **27.0.12077973** and **29.0.13599879** subfolders
+	- [ ] `clang` version (in `ndk\29.0.13599879\toolchains\llvm\prebuilt\windows-x86_64\bin`): Android (13065274, based on r547379) clang version **20.0.0** (the one installed with 27.0.12077973 is clang version 18.0.1)
+		- [ ] Also installed and available from 3 places: `C:\Program Files\LLVM\bin` **18.1.8**, `C:\MinGW\bin` **15.0.0**, and `C:\Users\robbitay\scoop\apps\llvm\current\bin` **18.1.2**
+	- [ ] 
+- [ ] On *OSX*:
+	- [ ] I ran `brew install --cask android-platform-tools` Version: **37.0.1-15733141**.  This installed it into `/opt/homebrew/bin/` which is a symlink to `/opt/homebrew/Caskroom/android-platform-tools/37.0.1/platform-tools/` 
+	- [ ] Also ran `brew install --cask android-commandlinetools` it printed a message about requiring java and we can install it by doing the following:
+	- [ ] `brew install --cask temurin`. Not sure exactly what that installed by I have `java` and `javac` binaries (version 26.0.2). Now `sdkmanager` runs!
+	- [ ] `android sdk --help`, `android sdk install platform-tools`, `android sdk list --all`, `android sdk install ndk-bundle` (**1GB** download) this created `/Users/robbitay/Library/Android/sdk/ndk-bundle`
+	- [ ] `android sdk install build-tools/36.0.0` 
+	- [ ] `android sdk install ndk/29.0.13599879` (900MB download)
+	- [ ] Java version 26+ causes: `Unsupported class file major version 70`. Had to do `brew install --cask temurin@25` instead. Now `java --version` reports **25.0.4 2026-07-21 LTS** . *Still doesn't work `Unsupported class file major version 69`*
+	- [ ] Installed `brew install --cask temurin@21` now `java --version` reports **21.0.12 2026-07-21 LTS**
+	- [ ] 
 - [ ] [Android Gradle API](https://developer.android.com/reference/tools/gradle-api/8.13/classes)
 - [ ] [Build your app from the command line](https://developer.android.com/build/building-cmdline) [StackOverflow](https://stackoverflow.com/questions/32643297/how-to-make-an-android-app-without-using-android-studio)
-- [ ] [Android SDK Command-line Tools](https://developer.android.com/tools/)
+- [ ] [Android SDK Command-line Tools](https://developer.android.com/tools/) [Platform-Tools (like `adb`)](https://developer.android.com/tools/releases/platform-tools) 
 - [ ] [Command-line Tools Download](https://developer.android.com/studio/index.html#command-line-tools-only)
 - [ ] [Using Android 8 and 9 Emulators Without Android Studio](https://www.andreszsogon.com/using-android-8-and-9-emulators-without-android-studio/)
 - [ ] [JNI Functions](https://docs.oracle.com/javase/8/docs/technotes/guides/jni/spec/functions.html)
@@ -53,7 +72,7 @@
    which can sometimes be important, like for audio thread
 - [ ] In Android emulator you can hold **Ctrl+LeftClick** to simulate 2 touch rotational/zoom movements. Or **Ctrl+RightClick** to simulate 2 touch drag movements
 - [ ] **Right Click** in Android emulator simulators **Back** button press
-- [ ] 
+- [ ] `sokol_app.h` keyboard input on Android [Issue #503](https://github.com/floooh/sokol/pull/503) 
 ---
 # Gradle Notes
 - [ ] `gradlew.bat` in an Android Studio project just calls `java.exe` on `gradle/wrapper/gradle-wrapper.jar`

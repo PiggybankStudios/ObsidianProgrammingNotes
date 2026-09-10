@@ -137,7 +137,7 @@
       ![[Software I Should Try - AppImageIcon.png]]
 	- AppImage provides a way for upstream developers to provide “native” binaries for Linux users just the same way they could do for other operating systems.
 ---
-- [x] **Clay UI** [Link](https://www.nicbarker.com/clay)
+- [x] **Clay UI** [Link](https://www.nicbarker.com/clay) 
 		![[Software I Should Try - ClayExample.png]]
 	- Clay is a flex-box style UI auto layout library in C, with declarative syntax and microsecond performance
 ---
@@ -268,4 +268,42 @@
 - [ ] **migadu** [Link](https://migadu.com/) - Email provider based in Switzerland that has support for as many aliases as you want (somewhat expensive but can be worth it for separating spam sources)
 - [x] **Superluminal** [Link](https://superluminal.eu/) - Really nice profiler with sampling-based timeline feature (€59/$70.07)
 - [ ] **detour** [Link](https://github.com/graphitemaster/detour) - Allows for mixing statically linked stdlib while still allowing dynamic library loads at runtime?
-- [ ] 
+- [ ] **BBEdit** - MacOS text editor
+- [ ] **keydex** [Link](https://github.com/shikaan/keydex) - TUI for KeePass database - made by @shikaan_36356 (aka @no) on the HMN Discord
+- [ ] **DVUI** [Link](https://david-vanderson.github.io/) [GitHub](https://github.com/david-vanderson/dvui) - Immediate mode GUI for Zig, mentioned by someone in Wookash Discord
+- [ ] **Icarus IDE** [Link](https://giovannicarlino04.itch.io/icarus) - C/C++ IDE made by someone in BSC server
+- [ ] **gap** [Link](https://github.com/cdacamar/gap) - Linear diff algorithm by starfreakclone
+- [ ] **cwalk** [Link](https://github.com/likle/cwalk) - C Path manipulation library
+- [ ] **Cesium** [Link](https://github.com/CesiumGS/cesium) - Map visualization software
+- [ ] **Zotero** [Link](https://www.zotero.org/) - Tool for doing research, organization, annotation (and sharing?)
+- [ ] **Septum** [Link](https://github.com/pyjarrett/septum) - Large codebase search w/ context (Made by @pyj on Handmade Revolt)
+- [ ] **MubLoop** - Small audio tool for video game sound effects (easy looping and fade-in/out)
+- [ ] **Web Origami** [Link](https://weborigami.org/) - Framework for static-site generation, a dialog of Javascript
+- [ ] ambientcg - HDRi scenes and other PBR assets
+- [ ] polyhaven - HDRi scenes and other PBR assets
+- [ ] Tri-point light Blender Extension - Quickly set up key-light, fill-light, and back-light
+	- [ ] Pink backlight looks good
+- [ ] https://apps.kde.org/en-gb/drawy/ (Milton for Linux/KDE)
+- [ ] https://github.com/flxzt/rnote (Also Milton replacement for Linux)
+- [ ] https://gustavolsson.com/projects/uxnfloppy/ Gustav implementation of UXN (Devin's talk)
+- [ ] https://github.com/AllYourCodebase/ (ZigBuild for lots of codebases)
+- [ ] **Eureka Performance Analyzer** [Link](https://uica.uops.info/) - Analyzing predictive execution performance? (BSC2026)
+- [ ] **Plasticity** [Link](https://www.plasticity.xyz/) - New modeling program (more CAD like) that Eskil mentioned ($175USD single purchase for Indie license)
+- [ ] [notch.one](https://notch.one/) Demo scene person made stuff for live visualizations for concerts, etc.
+- [ ] https://forgejo.org/ - Self-hosted git
+- [ ] https://fossil-scm.org/home/doc/trunk/www/index.wiki - Jimmy self-hosts this for VCS [NewRoadOldWay](https://code.newroadoldway.com/file?name=kb_text_shape.h&ci=tip) 
+- [ ] MDI multi-document interface, composable interface of the past
+- [ ] victor mono medium font
+- [ ] [Cosmopolitan LibC](https://github.com/jart/cosmopolitan) - Compile once, run anywhere, compiler/libc implementation for C/C++
+- [ ] [Pi-hole](https://pi-hole.net/), [TrueNAS Scale](https://www.truenas.com/truenas-community-edition/), [TailScale](https://tailscale.com/) - https://pimylifeup.com/raspberry-pi-samba/
+- [x] **Samba** [Link](https://www.samba.org/) - File Sharing (See [[Raspberry Pi Notes]])
+- [ ] **Mr 4th C Scripting** [Link](https://git.mr4th.com/mr4th-public/c-scripting) - 
+- [ ] **pCloud** [Link](https://www.pcloud.com/) - Wassim uses it to provide upload links for video files
+- [ ] **h2testw** [Link](https://h2testw.org/) - Test integrity of SD cards
+- [ ] **zed** [Link](https://zed.dev/) - Editor built in Rust, extensions are written in Rust and compiled locally to wasm
+- [ ] **C3 Playground** [Link](https://manulinares.github.io/c3-playground/) - A playground built in C3 that compiles C3 to WASM in the browser!
+- [ ] **Japanese Example Sentence Finder** [LInk](https://www.japaneseverbconjugator.com/SentenceFinder.asp) - A way to search for example sentences that contain a word or character (supports romanji input)
+- [ ] **Liquid DSP** [Link LiquidSDR](https://liquidsdr.org/) - 
+- [ ] **Theia IDE** [Link](https://github.com/eclipse-theia/theia-ide) - Eclipse Foundation's VS Code style IDE (John at HMC coworking mentioned it)
+- [ ] **Mixamo** [Link](https://www.mixamo.com/) - Rigged and animated characters, sort of abondon-ware from Adobe
+- [ ] **MPC-BE** [Github](https://github.com/MediaPlayerClassic/mpc-be) [SourceForge](https://sourceforge.net/projects/mpcbe/) - Capture Card Viewer

@@ -32,7 +32,8 @@
 - [ ] Checkout Mason Ramaley's GLFW wrapper? https://github.com/Games-by-Mason/glfw-zig
 ## Random Notes
 - [x] Zig Version: zig-windows-x86_64-**0.14.0-dev.2424**+7cd2c1ce8 downloaded Dec 9th 2024
-- Zig Version: zig-windows-x86_64-**0.13.0** downloaded Dec 14th 2024
+- [x] Zig Version: zig-windows-x86_64-**0.13.0** downloaded Dec 14th 2024
+- Zig Version: zig-x86_64-windows-**0.16.0** downloaded *August 1st 2026*
 - To disable runtime safety in a block, call `@setRuntimeSafety(false);` (allows for integer overflow/underflow etc.)
 - Convert an integer to a pointer: `@ptrFromInt(int_value);`
 - Pointers are `*T`, optional pointers are `?*T`

@@ -1,0 +1,19 @@
+## Build System's Responsibilities
+- [ ] *Finding* the Compiler(s) (telling user installation instructions, OS differences)
+- [ ] *CLI Argument* composition
+- [ ] *Configuration* parsing/checking
+- [ ] Handling *forward* slashes and *back* slashes properly
+- [ ] Handling *relative paths* properly (cross-compilation)
+- [ ] *Incremental compilation*
+	- [ ] tracking of intermediate files
+	- [ ] Dependency tree
+- [ ] Trigger tools *before/after* the build. (Android, SHDC)
+- [ ] Running *other build systems*
+- [ ] Running in the *cloud* (CI/CD, Distributed Compilation)
+- [ ] *Parallel compilation* of multiple translation units
+- [ ] *Equivalent options* to clang/msvc/gcc
+- [ ] *Escaping* characters in strings. (quotes around strings with spaces)
+- [ ] *Fast* build times (overhead, startup time)
+- [ ] Communicating issues to the user with useful *error messages*
+- [ ] Uploading *built artifacts* to Github
+- [ ] Recording an saving build *telemetry*

@@ -1,9 +1,10 @@
 ## Notes
 - [ ] Playdate SDK Versions:
-	- Previously used 2.0.3 and 2.1.0
-	- Desktop was on 2.1.1
-	- Updated to 2.7.4 on June 14th 2025
-- [ ] Install Path: `F:\Programs\PlayDateSDK`
+	- Previously used **2.0.3** and **2.1.0**
+	- Desktop was on **2.1.1**
+	- Updated to **2.7.4** on June 14th 2025
+	- MacBook Pro: **3.1.1** on August 2nd 2026
+- [ ] Install Path: `F:\Programs\PlayDateSDK` (MacOS `/Users/robbitay/Developer/PlaydateSDK/`)
 	- `bin\PlaydateSimulator.exe`
 	- `bin\pdc.exe`
 	- `bin\pdutil.exe`

@@ -2,7 +2,8 @@
 - [ ] Upper/Lowercase don't matter for commands (but generally lowercase is used?)
 - [ ] New-lines are allowed inside command arguments list
 - [ ] Quotation marks can be places around arguments or omitted if the string doesn't contain spaces or other disallowed characters
-- [ ] s
+- [ ] Installed **CMake 4.4.0** on MacBook Pro on July 27th 2026. Used .dmg from [their site](https://cmake.org/download/) and then ran `sudo "/Applications/CMake.app/Contents/bin/cmake-gui" --install` (See *Tools*->*How to Install for Command Line Use* in the GUI app)
+- [ ] 
 # CMake CLI Options
 - [ ] `cmake [path_to_source]`: Configure and generate files into the current folder (often you want to make a `build` folder or similar and `cd` into it before running this command). Once a build folder is filled, you can do `cmake [path_to_build]` to rerun cmake
 	- [ ] After initial generation, build options are found in `CMakeCache.txt`. Change these options and rerun cmake with `cmake .` to regenerate the project files with the new options

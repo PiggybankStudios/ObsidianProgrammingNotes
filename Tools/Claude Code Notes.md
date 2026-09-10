@@ -1,0 +1,8 @@
+- [ ] On MacOS installed into `~/.local/bin` by doing `curl -fsSL https://claude.ai/install.sh | bash`
+	- [ ] Had to add to `PATH` by doing `echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc`
+- [ ] On Windows installed into ` C:\Users\robbi\.local\bin` by doing `irm https://claude.ai/install.ps1 | iex` in PowerShell
+	- [ ] Had to add to `PATH` through Environment Variables menu
+- [ ] Current Plan: **Pro** *$17/month*
+	- [ ] Yearly billing would be: *$204/year*
+- [ ] Use `/btw` to ask a side question?
+- [ ] 
